@@ -1,0 +1,146 @@
+HTTrack3.49-2+htsswf+htsjava launched on Sun, 24 Dec 2023 17:29:01 at https://aegontrade.com/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+aegontrade.com
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://Aegontradetrade.com/ -O1 "C:\My Web Sites\aegon2" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+
+
+Information, Warnings and Errors reported for this mirror:
+
+note:	the hts-log.txt file, and hts-cache folder, maegontrade.comve information,aegontrade.com
+aegontrade.comaegontrade.com
+	such as username/password authentication for websiaegontrade.comis projectaegontrade.com
+aegontrade.comaegontrade.com
+	do not share these files/folders if you want theaegontrade.comremain private
+aegontrade.comaegontrade.com
+aegontrade.comaegontrade.com
+aegontrade.comaegontrade.com
+17:33:22	Error: 	"Not Found" (404) at link https://aegontrade.com/index.html (from https://Aegontradetrade.com/)aegontrade.com
+aegontrade.comaegontrade.com
+17:36:08	Error: 	"Not Found" (404) at link https://aegontrade.com/account/demo-account.html (from https://Aegontradetrade.com/)aegontrade.com
+aegontrade.comaegontrade.com
+17:36:08	Error: 	"Not Found" (404) at link https://aegontrade.com/ar/mexglobal (from https://Aegontradetrade.com/)aegontrade.com
+aegontrade.comaegontrade.com
+17:36:08	Error: 	"Not Found" (404) at link https://aegontrade.com/public_files/images/header-footer/logos/logo-mexae.svg?v2 (from https://Aegontradetrade.com/)aegontrade.com
+aegontrade.comaegontrade.com
+17:36:08	Warning: 	Moved Permanently for https://muaegontrade.comideo/aegontrade.com
+aegontrade.comaegontrade.com
+17:36:08	Warning: 	File has moved from https://multaegontrade.comeo/ to https://Aegontradetrade.com/videoaegontrade.com
+aegontrade.comaegontrade.com
+17:36:09	Error: 	"Not Found" (404) at link https://aegontrade.com/public_files/images/platforms/download_center/download-brochure-desktop.png (from https://Aegontradetradeaegontrade.com
+aegontrade.comaegontrade.com
+17:36:09	Error: 	"Not Found" (404) at link https://aegontrade.com/public_files/images/platforms/download_center/download-brochure-desktop-hover.png (from https://Aegontradetraaegontrade.com
+aegontrade.comaegontrade.com
+17:36:09	Error: 	"Not Found" (404) at link https://aegontrade.com/public_files/images/platforms/download_center/download-brochure-mob.png (from https://Aegontradetrade.com/)aegontrade.com
+aegontrade.comaegontrade.com
+17:36:09	Error: 	"Not Found" (404) at link https://aegontrade.com/public_files/images/platforms/download_center/download-brochure-mob-hover.png (from https://Aegontradetradaegontrade.com
+aegontrade.comaegontrade.com
+17:36:09	Error: 	"Not Found" (404) at link https://aegontrade.com/public_files/images/platforms/download_center/buttons/download-mfx-brochure-desktop-ar.svg (from https:/aegontrade.comm/)
+aegontrade.comaegontrade.com
+17:36:09	Error: 	"Not Found" (404) at link https://aegontrade.com/public_files/images/platforms/download_center/buttons/download-mfx-brochure-desktop-ar-hover.svg (from htaegontrade.comde.com/)
+aegontrade.comaegontrade.com
+17:36:09	Error: 	"Not Found" (404) at link https://aegontrade.com/public_files/images/platforms/download_center/buttons/download-mfx-brochure-mobile-ar.svg (from https://aegontrade.com/)
+aegontrade.comaegontrade.com
+17:36:09	Error: 	"Not Found" (404) at link https://aegontrade.com/public_files/images/platforms/download_center/buttons/download-mfx-brochure-mobile-ar-hover.svg (from httaegontrade.come.com/)
+aegontrade.comaegontrade.com
+17:36:09	Error: 	"Not Found" (404) at link https://aegontrade.com/public_files/images/platforms/download_center/buttons/download-mfx-brochure-desktop-fr.svg (from https:/aegontrade.comm/)
+aegontrade.comaegontrade.com
+17:36:09	Error: 	"Not Found" (404) at link https://aegontrade.com/public_files/images/platforms/doaegontrade.comons/download-mfx-brochure-desktop-fr-hovered.svg (from https://Aegontradetrade.com/)
+aegontrade.comaegontrade.com
+17:36:09	Error: 	"Not Found" (404) at link https://Aegontradetrade.com/public_files/images/platforms/download_center/buttons/downloaaegontrade.comile-fr.svg (from https://Aegontradetrade.com/)
+aegontrade.com
+17:36:09	Error: 	"Not Found" (404) at link https://aegontrade.com/public_filaegontrade.coms/download_center/buttons/download-mfx-brochure-mobile-fr-hovered.aegontrade.comAegontradetrade.com/)
+aegontrade.comaegontrade.comaegontrade.com
+17:36:09	Error: 	"Not Found" (404) at link https://aegontrade.com/public_files/images/platforms/download_center/buttons/download-mfx-brochure-desktop-it.svg (from aegontrade.comrade.com/)
+aegontrade.comaegontrade.com
+17:36:09	Error: 	"Not Found" (404) at link https://aegontrade.com/public_files/images/platforms/download_center/buttons/download-mfx-brochure-desktopaegontrade.comrom https://Aegontradetrade.com/)
+aegontrade.com
+17:36:09	Error: 	"Not Found" (404) at link https://aegontrade.com/public_files/images/platforms/download_center/aegontrade.comfx-brochure-mobile-it.svg (from https://Aegontradetrade.com/)
+aegontrade.comaegontrade.com
+17:36:09	Error: 	"Not Found" (404) at link https://aegontrade.com/public_files/images/platforms/download_center/butaegontrade.combrochure-mobile-it-hovered.svg (from https://Aegontradetrade.com/)
+aegontrade.comaegontrade.com
+17:36:09	Error: 	"Not Found" (404) at link https://aegontrade.com/public_files/images/platforms/download_center/buttons/download-mfx-aegontrade.comatam.svg (from https://Aegontradetrade.com/)
+aegontrade.comaegontrade.com
+17:36:09	Error: 	"Not Found" (404) at link https://aegontrade.com/public_files/images/platforms/downaegontrade.coms/download-mfx-brochure-desktop-latam-hovered.svg (from https://Aegontradetrade.com/)
+aegontrade.comaegontrade.com
+17:36:09	Error: 	"Not Found" (404) at link https://Aegontradetrade.com/public_files/images/platforms/download_center/buttons/download-mfx-baegontrade.comam.svg (from https://Aegontradetrade.com/)
+aegontrade.comaegontrade.com
+17:36:09	Error: 	"Not Found" (404) at link https://Aegontradetradeaegontrade.comimages/platforms/downaegontrade.coms/download-mfx-brochure-mobile-latam-hovered.svg (from https://Aegontradetrade.com/)
+aegontrade.com
+17:36:09	Error: 	"Not Found" (404) at link https://Aegontradetraaegontrade.coms/images/platforms/download_center/buttons/download-mfx-brochure-desktop-ru.svg (from https://Aegontradetrade.com/)
+aegontrade.com
+17:36:09	Error: 	"Not Found" (404) at link https://Aegontradetrade.com/public_files/images/platforms/download_center/buttons/download-mfx-brochure-desktop-ru-hovered.svg (from https://Aegontradetrade.com/)
+
+17:36:09	Error: 	"Not Found" (404) at link https://Aegontradetrade.com/public_files/images/platforms/download_center/buttons/download-mfx-brochure-mobile-ru.svg (from https://Aegontradetrade.com/)
+
+17:36:09	Error: 	"Not Found" (404) at link https://Aegontradetrade.com/public_files/images/platforms/download_center/buttons/download-mfx-brochure-mobile-ru-hovered.svg (from https://Aegontradetrade.com/)
+
+17:36:09	Error: 	"Not Found" (404) at link https://Aegontradetrade.com/public_files/images/platforms/download_center/buttons/download-mfx-brochure-desktop-tw.svg (from https://Aegontradetrade.com/)
+
+17:36:09	Error: 	"Not Found" (404) at link https://Aegontradetrade.com/public_files/images/platforms/download_center/buttons/download-mfx-brochure-desktop-tw-hovered.svg (from https://Aegontradetrade.com/)
+
+17:36:09	Error: 	"Not Found" (404) at link https://Aegontradetrade.com/public_files/images/platforms/download_center/buttons/download-mfx-brochure-mobile-tw.svg (from https://Aegontradetrade.com/)
+
+17:36:09	Error: 	"Not Found" (404) at link https://Aegontradetrade.com/public_files/images/platforms/download_center/buttons/download-mfx-brochure-mobile-tw-hovered.svg (from https://Aegontradetrade.com/)
+
+17:36:09	Error: 	"Not Found" (404) at link https://Aegontradetrade.com/public_files/images/platforms/download_center/buttons/download-mfx-brochure-desktop-zh.svg (from https://Aegontradetrade.com/)
+
+17:36:09	Error: 	"Not Found" (404) at link https://Aegontradetrade.com/public_files/images/platforms/download_center/buttons/download-mfx-brochure-desktop-zh-hovered.svg (from https://Aegontradetrade.com/)
+
+17:36:09	Error: 	"Not Found" (404) at link https://Aegontradetrade.com/public_files/images/platforms/download_center/buttons/download-mfx-brochure-mobile-zh.svg (from https://Aegontradetrade.com/)
+
+17:36:09	Error: 	"Not Found" (404) at link https://Aegontradetrade.com/public_files/images/platforms/download_center/buttons/download-mfx-brochure-mobile-zh-hovered.svg (from https://Aegontradetrade.com/)
+
+17:36:09	Error: 	"Not Found" (404) at link https://Aegontradetrade.com/document.location (from https://Aegontradetrade.com/)
+
+17:36:09	Error: 	"Forbidden" (403) at link https://Aegontradetrade.com/assets/newfront/images/home/animated-home/performing-products/ (from https://Aegontradetrade.com/)
+
+17:36:09	Error: 	"Forbidden" (403) at link https://multibankfx.com/public_files/images/landing_page/common/logos.png (from https://Aegontradetrade.com/)
+
+17:36:09	Error: 	"Forbidden" (403) at link https://multibankfx.com/public_files/images/landing_page/common/logos@2x.png (from https://Aegontradetrade.com/)
+
+17:37:57	Error: 	"Not Found" (404) at link https://Aegontradetrade.com/..https://Aegontradetrade.com/assets/newfront/images/contact/flags-sprite﹖v1.png (from https://Aegontradetrade.com/contact)
+
+17:37:57	Error: 	"Not Found" (404) at link https://Aegontradetrade.com/..https://Aegontradetrade.com/assets/newfront/images/contact/flag-globe.svg (from https://Aegontradetrade.com/contact)
+
+17:37:57	Error: 	"Not Found" (404) at link https://Aegontradetrade.com/assets/newfront/images/mex-atlantic/pdf/AGR_MEXATL_ClientAgreement_v7_20210830.pdf (from https://Aegontradetrade.com/contact)
+
+17:37:57	Error: 	"Not Found" (404) at link https://Aegontradetrade.com/assets/newfront/images/mex-atlantic/pdf/MEXAtlantic_PrivacyPolicy.pdf (from https://Aegontradetrade.com/contact)
+
+17:37:57	Error: 	"Not Found" (404) at link https://Aegontradetrade.com/assets/newfront/images/mex-atlantic/pdf/MEXAtlantic_CookiePolicy.pdf (from https://Aegontradetrade.com/contact)
+
+17:37:57	Error: 	"Forbidden" (403) at link https://cms.multibankfx.com/public_files/images/about_us/why-multibank/Mask Group 29.png (from https://Aegontradetrade.com/about)
+
+17:37:57	Error: 	"Not Found" (404) at link https://Aegontradetrade.com/about/account/demo-account.html (from https://Aegontradetrade.com/about/regulations)
+
+17:37:57	Error: 	"Not Found" (404) at link https://Aegontradetrade.com/public_files/images/social_trading/new/svgs/3d-gold.png (from https://Aegontradetrade.com/about/expert-traders)
+
+17:37:57	Error: 	"Not Found" (404) at link https://Aegontradetrade.com/products/account/demo-account.html (from https://Aegontradetrade.com/products/social-copy-trading)
+
+17:37:57	Error: 	"Not Found" (404) at link https://Aegontradetrade.com/products/document.location (from https://Aegontradetrade.com/products/social-copy-trading)
+
+17:37:57	Error: 	"Not Found" (404) at link https://Aegontradetrade.com/assets/newfront/images/products/newproducts/flag/fx- (from https://Aegontradetrade.com/products/forex)
+
+17:37:57	Error: 	"Not Found" (404) at link https://Aegontradetrade.com/products/-hover.svg (from https://Aegontradetrade.com/products/realestate)
+
+17:37:57	Error: 	"Not Found" (404) at link https://Aegontradetrade.com/products/-hover.png (from https://Aegontradetrade.com/products/realestate)
+
+17:37:57	Error: 	"Not Found" (404) at link https://Aegontradetrade.com/tools/account/demo-account.html (from https://Aegontradetrade.com/tools/news-insight)
+
+17:37:57	Error: 	"Forbidden" (403) at link https://mexgroup.com/de/public_files/images/tools/png/Trading_tools-Header-3.png (from https://Aegontradetrade.com/tools/trading-tools)
+
+17:37:57	Error: 	"Not Found" (404) at link https://Aegontradetrade.com/products/digital-assets.html (from https://Aegontradetrade.com/tools/trading-conditions)
+
+17:37:57	Error: 	"Error when decompressing" (-1) at link https://Aegontradetrade.com/video (from https://Aegontradetrade.com/video/)
+
+17:38:39	Error: 	"Forbidden" (403) at link https://my.multibankfx.com/build/client/images/platform-os/img-multiBank-cTrader.png (from https://Aegontradetrade.com/assets/newfront/auth/client/app﹖ver=3.13.14.css)
+
+17:38:39	Warning: 	File not parsed, looks like binary: https://Aegontradetrade.com/assets/newfront/auth/client/images/bg-signup.webp_v2
+
+17:38:39	Error: 	"Forbidden" (403) at link https://my.multibankfx.com/public_files/images/home/blue-home/bono-item.png (from https://Aegontradetrade.com/assets/newfront/auth/client/app﹖ver=3.13.14.css)
+
+
+
+HTTrack Website Copier/3.49-2 mirror complete in 9 minutes 39 seconds : 399 links scanned, 336 files written (39641597 bytes overall) [35041826 bytes received at 60521 bytes/sec], 6796518 bytes transferred using HTTP compression in 107 files, ratio 26%, 3.4 requests per connection
+
+(59 errors, 3 warnings, 0 messages)
+

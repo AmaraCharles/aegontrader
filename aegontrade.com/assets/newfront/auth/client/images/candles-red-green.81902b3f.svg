@@ -1,0 +1,822 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="3113.923" height="480"
+     viewBox="0 0 3113.923 480">
+    <defs>
+        <style>
+            .a{opacity:0.5;}.b{mix-blend-mode:screen;isolation:isolate;}.c{fill:url(#a);}.d{fill:url(#g);}.e{fill:url(#ds);}.f{fill:url(#dt);}.g{fill:url(#du);}.h{fill:url(#dv);}.i{fill:url(#dw);}.j{fill:url(#dx);}.k{fill:url(#ef);}.l{fill:url(#eh);}.m{fill:url(#ep);}.n{fill:url(#ey);}.o{fill:url(#iq);}.p{fill:url(#ir);}.q{fill:url(#is);}.r{fill:url(#it);}.s{fill:url(#iu);}.t{fill:url(#iv);}
+        </style>
+        <linearGradient id="a" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#ff2a00"/>
+            <stop offset="1" stop-color="#ff6a00"/>
+        </linearGradient>
+        <linearGradient id="g" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#007c87"/>
+            <stop offset="1" stop-color="#00c795"/>
+        </linearGradient>
+        <linearGradient id="ds" x1="752.796" y1="1" x2="752.796" y2="0" xlink:href="#g"/>
+        <linearGradient id="dt" x1="721.308" y1="1" x2="721.308" y2="0" xlink:href="#g"/>
+        <linearGradient id="du" x1="689.819" y1="1" x2="689.819" y2="0" xlink:href="#g"/>
+        <linearGradient id="dv" x1="75.73" y1="1" x2="75.73" y2="0" xlink:href="#g"/>
+        <linearGradient id="dw" x1="72.581" y1="1" x2="72.581" y2="0" xlink:href="#g"/>
+        <linearGradient id="dx" x1="69.432" y1="1" x2="69.432" y2="0" xlink:href="#g"/>
+        <linearGradient id="ef" x1="0.5" y1="1" x2="0.5" y2="0" xlink:href="#g"/>
+        <linearGradient id="eh" x1="0.5" y1="1" x2="0.5" y2="0" xlink:href="#a"/>
+        <linearGradient id="ep" x1="0.5" y1="1" x2="0.5" y2="0" xlink:href="#g"/>
+        <linearGradient id="ey" x1="0.5" y1="1" x2="0.5" y2="0" xlink:href="#a"/>
+        <linearGradient id="iq" x1="-1262.028" y1="1" x2="-1262.028" y2="0" xlink:href="#g"/>
+        <linearGradient id="ir" x1="-1293.516" y1="1" x2="-1293.516" y2="0" xlink:href="#g"/>
+        <linearGradient id="is" x1="-1325.005" y1="1" x2="-1325.005" y2="0" xlink:href="#g"/>
+        <linearGradient id="it" x1="-125.753" y1="1" x2="-125.753" y2="0" xlink:href="#g"/>
+        <linearGradient id="iu" x1="-128.902" y1="1" x2="-128.902" y2="0" xlink:href="#g"/>
+        <linearGradient id="iv" x1="-132.05" y1="1" x2="-132.05" y2="0" xlink:href="#g"/>
+    </defs>
+    <g class="a" transform="translate(0 -0.002)">
+        <g transform="translate(0 0.002)">
+            <g class="b">
+                <g transform="translate(6.975)">
+                    <g transform="translate(1464.136 53.495)">
+                        <rect class="c" width="1.55" height="371.294"/>
+                    </g>
+                    <g transform="translate(1439.734 180.097)">
+                        <rect class="c" width="1.55" height="67.013"/>
+                    </g>
+                    <g transform="translate(1415.331 109.866)">
+                        <rect class="c" width="1.55" height="166.703"/>
+                    </g>
+                    <g transform="translate(1390.929)">
+                        <rect class="c" width="1.55" height="262.556"/>
+                    </g>
+                    <g transform="translate(1366.527 51.612)">
+                        <rect class="c" width="1.55" height="43.949"/>
+                    </g>
+                    <g transform="translate(1342.125 38.925)">
+                        <rect class="c" width="1.55" height="40.16"/>
+                    </g>
+                    <g transform="translate(1317.722 38.892)">
+                        <rect class="d" width="1.55" height="56.073"/>
+                    </g>
+                    <g transform="translate(1293.32 63.243)">
+                        <rect class="d" width="1.55" height="81.077"/>
+                    </g>
+                    <g transform="translate(1268.918 50.55)">
+                        <rect class="c" width="1.55" height="79.942"/>
+                    </g>
+                    <g transform="translate(1244.515 48.455)">
+                        <rect class="c" width="1.55" height="108.357"/>
+                    </g>
+                    <g transform="translate(1220.114 109.946)">
+                        <rect class="d" width="1.55" height="84.109"/>
+                    </g>
+                    <g transform="translate(1195.711 137.486)">
+                        <rect class="c" width="1.55" height="71.18"/>
+                    </g>
+                    <g transform="translate(1171.309 156.771)">
+                        <rect class="c" width="1.55" height="54.179"/>
+                    </g>
+                    <g transform="translate(1146.907 158.454)">
+                        <rect class="d" width="1.55" height="72.742"/>
+                    </g>
+                    <g transform="translate(1122.504 96.468)">
+                        <rect class="c" width="1.55" height="158.368"/>
+                    </g>
+                    <g transform="translate(1098.102 129.006)">
+                        <rect class="d" width="1.55" height="84.109"/>
+                    </g>
+                    <g transform="translate(1073.7 167.047)">
+                        <rect class="d" width="1.55" height="59.554"/>
+                    </g>
+                    <g transform="translate(1049.298 178.704)">
+                        <rect class="d" width="1.55" height="69.856"/>
+                    </g>
+                    <g transform="translate(1024.895 150.711)">
+                        <rect class="c" width="1.55" height="164.147"/>
+                    </g>
+                    <g transform="translate(1000.493 178.385)">
+                        <rect class="d" width="1.55" height="78.804"/>
+                    </g>
+                    <g transform="translate(976.091 188.725)">
+                        <rect class="d" width="1.55" height="105.799"/>
+                    </g>
+                    <g transform="translate(951.689 195.071)">
+                        <rect class="c" width="1.55" height="124.033"/>
+                    </g>
+                    <g transform="translate(927.286 174.407)">
+                        <rect class="c" width="1.55" height="127.775"/>
+                    </g>
+                    <g transform="translate(902.884 106.627)">
+                        <rect class="c" width="1.55" height="147.996"/>
+                    </g>
+                    <g transform="translate(878.482 146.68)">
+                        <rect class="d" width="1.55" height="139.804"/>
+                    </g>
+                    <g transform="translate(854.08 196.553)">
+                        <rect class="d" width="1.55" height="126.165"/>
+                    </g>
+                    <g transform="translate(829.677 266.347)">
+                        <rect class="c" width="1.55" height="70.187"/>
+                    </g>
+                    <g transform="translate(805.275 94.645)">
+                        <rect class="c" width="1.55" height="276.765"/>
+                    </g>
+                    <g transform="translate(780.873 13.22)">
+                        <rect class="c" width="1.55" height="262.178"/>
+                    </g>
+                    <g transform="translate(756.471 81.336)">
+                        <rect class="c" width="1.55" height="56.831"/>
+                    </g>
+                    <g transform="translate(732.069 70.935)">
+                        <rect class="d" width="1.55" height="118.966"/>
+                    </g>
+                    <g transform="translate(707.666 51.68)">
+                        <rect class="c" width="1.55" height="133.363"/>
+                    </g>
+                    <g transform="translate(683.264 52.37)">
+                        <rect class="d" width="1.55" height="57.588"/>
+                    </g>
+                    <g transform="translate(658.86 67.87)">
+                        <rect class="d" width="1.55" height="95.475"/>
+                    </g>
+                    <g transform="translate(634.458 116.469)">
+                        <rect class="d" width="1.55" height="56.83"/>
+                    </g>
+                    <g transform="translate(610.056 73.404)">
+                        <rect class="c" width="1.55" height="100.022"/>
+                    </g>
+                    <g transform="translate(585.654 102.661)">
+                        <rect class="d" width="1.55" height="85.246"/>
+                    </g>
+                    <g transform="translate(561.251 107.512)">
+                        <rect class="c" width="1.55" height="117.451"/>
+                    </g>
+                    <g transform="translate(536.849 184.343)">
+                        <rect class="d" width="1.55" height="32.962"/>
+                    </g>
+                    <g transform="translate(512.447 157.228)">
+                        <rect class="c" width="1.55" height="97.181"/>
+                    </g>
+                    <g transform="translate(488.045 166.623)">
+                        <rect class="d" width="1.55" height="98.885"/>
+                    </g>
+                    <g transform="translate(463.642 200.703)">
+                        <rect class="c" width="1.55" height="72.744"/>
+                    </g>
+                    <g transform="translate(439.24 173.468)">
+                        <rect class="d" width="1.55" height="50.58"/>
+                    </g>
+                    <g transform="translate(414.838 166.364)">
+                        <rect class="d" width="1.55" height="104.568"/>
+                    </g>
+                    <g transform="translate(390.436 238.586)">
+                        <rect class="d" width="1.55" height="29.268"/>
+                    </g>
+                    <g transform="translate(366.033 245.079)">
+                        <rect class="c" width="1.55" height="36.087"/>
+                    </g>
+                    <g transform="translate(341.631 215.021)">
+                        <rect class="d" width="1.55" height="172.007"/>
+                    </g>
+                    <g transform="translate(317.229 311.299)">
+                        <rect class="d" width="1.55" height="49.254"/>
+                    </g>
+                    <g transform="translate(292.827 332.103)">
+                        <rect class="d" width="1.55" height="46.222"/>
+                    </g>
+                    <g transform="translate(268.424 315.134)">
+                        <rect class="c" width="1.55" height="81.078"/>
+                    </g>
+                    <g transform="translate(244.022 334.921)">
+                        <rect class="d" width="1.55" height="70.09"/>
+                    </g>
+                    <g transform="translate(219.62 379.6)">
+                        <rect class="d" width="1.55" height="92.443"/>
+                    </g>
+                    <g transform="translate(195.218 390.415)">
+                        <rect class="c" width="1.55" height="66.681"/>
+                    </g>
+                    <g transform="translate(170.816 318.6)">
+                        <rect class="c" width="1.55" height="161.4"/>
+                    </g>
+                    <g transform="translate(146.413 312.682)">
+                        <rect class="d" width="1.55" height="114.799"/>
+                    </g>
+                    <g transform="translate(122.011 330.714)">
+                        <rect class="c" width="1.55" height="43.949"/>
+                    </g>
+                    <g transform="translate(97.609 315.34)">
+                        <rect class="c" width="1.55" height="61.378"/>
+                    </g>
+                    <g transform="translate(73.207 306.758)">
+                        <rect class="d" width="1.55" height="86.004"/>
+                    </g>
+                    <g transform="translate(48.804 350.322)">
+                        <rect class="d" width="1.55" height="54.558"/>
+                    </g>
+                    <g transform="translate(24.402 323.665)">
+                        <rect class="c" width="1.55" height="95.475"/>
+                    </g>
+                    <g transform="translate(0 352.889)">
+                        <rect class="c" width="1.55" height="28.415"/>
+                    </g>
+                </g>
+                <g transform="translate(0 52.922)">
+                    <g transform="translate(1464.136 129.964)">
+                        <rect class="c" width="15.499" height="112.513"/>
+                    </g>
+                    <g transform="translate(1439.734 150.529)">
+                        <rect class="c" width="15.499" height="20.306"/>
+                    </g>
+                    <g transform="translate(1415.331 115.038)">
+                        <rect class="c" width="15.499" height="50.516"/>
+                    </g>
+                    <g transform="translate(1390.929 38.575)">
+                        <rect class="c" width="15.499" height="79.562"/>
+                    </g>
+                    <g transform="translate(1366.527 14.007)">
+                        <rect class="c" width="15.499" height="13.317"/>
+                    </g>
+                    <g transform="translate(1342.125)">
+                        <rect class="c" width="15.499" height="12.169"/>
+                    </g>
+                    <g transform="translate(1317.722 5.511)">
+                        <rect class="d" width="15.499" height="16.992"/>
+                    </g>
+                    <g transform="translate(1293.32 38.575)">
+                        <rect class="d" width="15.499" height="24.569"/>
+                    </g>
+                    <g transform="translate(1268.918 25.487)">
+                        <rect class="c" width="15.499" height="24.225"/>
+                    </g>
+                    <g transform="translate(1244.515 33.295)">
+                        <rect class="c" width="15.499" height="32.835"/>
+                    </g>
+                    <g transform="translate(1220.114 86.335)">
+                        <rect class="d" width="15.499" height="25.488"/>
+                    </g>
+                    <g transform="translate(1195.711 109.37)">
+                        <rect class="c" width="15.499" height="21.57"/>
+                    </g>
+                    <g transform="translate(1171.309 122.73)">
+                        <rect class="c" width="15.499" height="16.418"/>
+                    </g>
+                    <g transform="translate(1146.907 130.882)">
+                        <rect class="d" width="15.499" height="22.043"/>
+                    </g>
+                    <g transform="translate(1122.504 98.735)">
+                        <rect class="c" width="15.499" height="47.99"/>
+                    </g>
+                    <g transform="translate(1098.102 105.395)">
+                        <rect class="d" width="15.499" height="25.487"/>
+                    </g>
+                    <g transform="translate(1073.7 134.878)">
+                        <rect class="d" width="15.499" height="18.047"/>
+                    </g>
+                    <g transform="translate(1049.298 150.126)">
+                        <rect class="d" width="15.499" height="21.169"/>
+                    </g>
+                    <g transform="translate(1024.895 154.993)">
+                        <rect class="c" width="15.499" height="49.74"/>
+                    </g>
+                    <g transform="translate(1000.493 152.925)">
+                        <rect class="d" width="15.499" height="23.882"/>
+                    </g>
+                    <g transform="translate(976.091 172.673)">
+                        <rect class="d" width="15.499" height="32.06"/>
+                    </g>
+                    <g transform="translate(951.689 185.374)">
+                        <rect class="c" width="15.499" height="37.586"/>
+                    </g>
+                    <g transform="translate(927.286 166.013)">
+                        <rect class="c" width="15.499" height="38.719"/>
+                    </g>
+                    <g transform="translate(902.884 105.28)">
+                        <rect class="c" width="15.499" height="44.846"/>
+                    </g>
+                    <g transform="translate(878.482 142.478)">
+                        <rect class="d" width="15.499" height="42.364"/>
+                    </g>
+                    <g transform="translate(854.08 187.598)">
+                        <rect class="d" width="15.499" height="38.23"/>
+                    </g>
+                    <g transform="translate(829.677 237.885)">
+                        <rect class="c" width="15.499" height="21.267"/>
+                    </g>
+                    <g transform="translate(805.275 138.172)">
+                        <rect class="c" width="15.499" height="83.869"/>
+                    </g>
+                    <g transform="translate(780.873 51.664)">
+                        <rect class="c" width="15.499" height="79.447"/>
+                    </g>
+                    <g transform="translate(756.471 48.219)">
+                        <rect class="c" width="15.499" height="17.222"/>
+                    </g>
+                    <g transform="translate(732.069 59.471)">
+                        <rect class="d" width="15.499" height="36.049"/>
+                    </g>
+                    <g transform="translate(707.666 45.234)">
+                        <rect class="c" width="15.499" height="40.413"/>
+                    </g>
+                    <g transform="translate(683.264 19.516)">
+                        <rect class="d" width="15.499" height="17.452"/>
+                    </g>
+                    <g transform="translate(658.86 48.219)">
+                        <rect class="d" width="15.499" height="28.932"/>
+                    </g>
+                    <g transform="translate(634.458 83.351)">
+                        <rect class="d" width="15.499" height="17.222"/>
+                    </g>
+                    <g transform="translate(610.056 55.337)">
+                        <rect class="c" width="15.499" height="30.31"/>
+                    </g>
+                    <g transform="translate(585.654 79.447)">
+                        <rect class="d" width="15.499" height="25.833"/>
+                    </g>
+                    <g transform="translate(561.251 95.52)">
+                        <rect class="c" width="15.499" height="35.591"/>
+                    </g>
+                    <g transform="translate(536.849 142.908)">
+                        <rect class="d" width="15.499" height="9.988"/>
+                    </g>
+                    <g transform="translate(512.447 138.172)">
+                        <rect class="c" width="15.499" height="29.449"/>
+                    </g>
+                    <g transform="translate(488.045 148.16)">
+                        <rect class="d" width="15.499" height="29.966"/>
+                    </g>
+                    <g transform="translate(463.642 173.131)">
+                        <rect class="c" width="15.499" height="22.044"/>
+                    </g>
+                    <g transform="translate(439.24 138.172)">
+                        <rect class="d" width="15.499" height="15.328"/>
+                    </g>
+                    <g transform="translate(414.838 149.882)">
+                        <rect class="d" width="15.499" height="31.687"/>
+                    </g>
+                    <g transform="translate(390.436 195.864)">
+                        <rect class="d" width="15.499" height="8.868"/>
+                    </g>
+                    <g transform="translate(366.033 204.732)">
+                        <rect class="c" width="15.499" height="10.936"/>
+                    </g>
+                    <g transform="translate(341.631 222.04)">
+                        <rect class="d" width="15.499" height="52.124"/>
+                    </g>
+                    <g transform="translate(317.229 275.542)">
+                        <rect class="d" width="15.499" height="14.925"/>
+                    </g>
+                    <g transform="translate(292.827 295.29)">
+                        <rect class="d" width="15.499" height="14.007"/>
+                    </g>
+                    <g transform="translate(268.424 290.467)">
+                        <rect class="c" width="15.499" height="24.569"/>
+                    </g>
+                    <g transform="translate(244.022 306.425)">
+                        <rect class="d" width="15.499" height="21.24"/>
+                    </g>
+                    <g transform="translate(219.62 358.894)">
+                        <rect class="d" width="15.499" height="28.012"/>
+                    </g>
+                    <g transform="translate(195.218 360.73)">
+                        <rect class="c" width="15.499" height="20.207"/>
+                    </g>
+                    <g transform="translate(170.816 321.924)">
+                        <rect class="c" width="15.499" height="48.909"/>
+                    </g>
+                    <g transform="translate(146.413 299.767)">
+                        <rect class="d" width="15.499" height="34.787"/>
+                    </g>
+                    <g transform="translate(122.011 293.107)">
+                        <rect class="c" width="15.499" height="13.318"/>
+                    </g>
+                    <g transform="translate(97.609 283.807)">
+                        <rect class="c" width="15.499" height="18.599"/>
+                    </g>
+                    <g transform="translate(73.207 283.807)">
+                        <rect class="d" width="15.499" height="26.063"/>
+                    </g>
+                    <g transform="translate(48.804 316.413)">
+                        <rect class="d" width="15.499" height="16.533"/>
+                    </g>
+                    <g transform="translate(24.402 304.014)">
+                        <rect class="c" width="15.499" height="28.932"/>
+                    </g>
+                    <g transform="translate(0 309.87)">
+                        <rect class="c" width="15.499" height="8.611"/>
+                    </g>
+                </g>
+            </g>
+            <g transform="translate(1488.206 193.218)">
+                <g transform="translate(6.975)">
+                    <rect class="e" width="1.55" height="172.007"/>
+                </g>
+                <g transform="translate(31.377 96.278)">
+                    <rect class="f" width="1.55" height="49.254"/>
+                </g>
+                <g transform="translate(55.779 117.083)">
+                    <rect class="g" width="1.55" height="46.222"/>
+                </g>
+                <g transform="translate(0 59.942)">
+                    <rect class="h" width="15.499" height="52.124"/>
+                </g>
+                <g transform="translate(24.402 113.443)">
+                    <rect class="i" width="15.499" height="14.925"/>
+                </g>
+                <g transform="translate(48.804 133.191)">
+                    <rect class="j" width="15.499" height="14.007"/>
+                </g>
+            </g>
+        </g>
+        <g transform="translate(1561.413 0.002)">
+            <g class="b">
+                <g transform="translate(6.975)">
+                    <g transform="translate(1464.136 53.495)">
+                        <rect class="c" width="1.55" height="371.294"/>
+                    </g>
+                    <g transform="translate(1439.734 180.097)">
+                        <rect class="c" width="1.55" height="67.013"/>
+                    </g>
+                    <g transform="translate(1415.331 109.866)">
+                        <rect class="c" width="1.55" height="166.703"/>
+                    </g>
+                    <g transform="translate(1390.929)">
+                        <rect class="c" width="1.55" height="262.556"/>
+                    </g>
+                    <g transform="translate(1366.527 51.612)">
+                        <rect class="c" width="1.55" height="43.949"/>
+                    </g>
+                    <g transform="translate(1342.125 38.925)">
+                        <rect class="c" width="1.55" height="40.16"/>
+                    </g>
+                    <g transform="translate(1317.722 38.892)">
+                        <rect class="d" width="1.55" height="56.073"/>
+                    </g>
+                    <g transform="translate(1293.32 63.243)">
+                        <rect class="k" width="1.55" height="81.077"/>
+                    </g>
+                    <g transform="translate(1268.918 50.55)">
+                        <rect class="c" width="1.55" height="79.942"/>
+                    </g>
+                    <g transform="translate(1244.516 48.455)">
+                        <rect class="l" width="1.55" height="108.357"/>
+                    </g>
+                    <g transform="translate(1220.114 109.946)">
+                        <rect class="d" width="1.55" height="84.109"/>
+                    </g>
+                    <g transform="translate(1195.711 137.486)">
+                        <rect class="c" width="1.55" height="71.18"/>
+                    </g>
+                    <g transform="translate(1171.309 156.771)">
+                        <rect class="c" width="1.55" height="54.179"/>
+                    </g>
+                    <g transform="translate(1146.907 158.454)">
+                        <rect class="d" width="1.55" height="72.742"/>
+                    </g>
+                    <g transform="translate(1122.504 96.468)">
+                        <rect class="c" width="1.55" height="158.368"/>
+                    </g>
+                    <g transform="translate(1098.102 129.006)">
+                        <rect class="d" width="1.55" height="84.109"/>
+                    </g>
+                    <g transform="translate(1073.7 167.047)">
+                        <rect class="d" width="1.55" height="59.554"/>
+                    </g>
+                    <g transform="translate(1049.298 178.704)">
+                        <rect class="m" width="1.55" height="69.856"/>
+                    </g>
+                    <g transform="translate(1024.896 150.711)">
+                        <rect class="c" width="1.55" height="164.147"/>
+                    </g>
+                    <g transform="translate(1000.493 178.385)">
+                        <rect class="m" width="1.55" height="78.804"/>
+                    </g>
+                    <g transform="translate(976.091 188.725)">
+                        <rect class="d" width="1.55" height="105.799"/>
+                    </g>
+                    <g transform="translate(951.689 195.071)">
+                        <rect class="c" width="1.55" height="124.033"/>
+                    </g>
+                    <g transform="translate(927.286 174.407)">
+                        <rect class="c" width="1.55" height="127.775"/>
+                    </g>
+                    <g transform="translate(902.884 106.627)">
+                        <rect class="c" width="1.55" height="147.996"/>
+                    </g>
+                    <g transform="translate(878.482 146.68)">
+                        <rect class="k" width="1.55" height="139.804"/>
+                    </g>
+                    <g transform="translate(854.08 196.553)">
+                        <rect class="d" width="1.55" height="126.165"/>
+                    </g>
+                    <g transform="translate(829.677 266.347)">
+                        <rect class="n" width="1.55" height="70.187"/>
+                    </g>
+                    <g transform="translate(805.276 94.645)">
+                        <rect class="c" width="1.55" height="276.765"/>
+                    </g>
+                    <g transform="translate(780.873 13.22)">
+                        <rect class="c" width="1.55" height="262.178"/>
+                    </g>
+                    <g transform="translate(756.471 81.336)">
+                        <rect class="c" width="1.55" height="56.831"/>
+                    </g>
+                    <g transform="translate(732.069 70.935)">
+                        <rect class="d" width="1.55" height="118.966"/>
+                    </g>
+                    <g transform="translate(707.666 51.68)">
+                        <rect class="c" width="1.55" height="133.363"/>
+                    </g>
+                    <g transform="translate(683.264 52.37)">
+                        <rect class="d" width="1.55" height="57.588"/>
+                    </g>
+                    <g transform="translate(658.861 67.87)">
+                        <rect class="d" width="1.55" height="95.475"/>
+                    </g>
+                    <g transform="translate(634.458 116.469)">
+                        <rect class="d" width="1.55" height="56.83"/>
+                    </g>
+                    <g transform="translate(610.056 73.404)">
+                        <rect class="c" width="1.55" height="100.022"/>
+                    </g>
+                    <g transform="translate(585.653 102.661)">
+                        <rect class="d" width="1.55" height="85.246"/>
+                    </g>
+                    <g transform="translate(561.251 107.512)">
+                        <rect class="n" width="1.55" height="117.451"/>
+                    </g>
+                    <g transform="translate(536.849 184.343)">
+                        <rect class="d" width="1.55" height="32.962"/>
+                    </g>
+                    <g transform="translate(512.447 157.228)">
+                        <rect class="n" width="1.55" height="97.181"/>
+                    </g>
+                    <g transform="translate(488.045 166.623)">
+                        <rect class="d" width="1.55" height="98.885"/>
+                    </g>
+                    <g transform="translate(463.642 200.703)">
+                        <rect class="c" width="1.55" height="72.744"/>
+                    </g>
+                    <g transform="translate(439.24 173.468)">
+                        <rect class="d" width="1.55" height="50.58"/>
+                    </g>
+                    <g transform="translate(414.838 166.364)">
+                        <rect class="d" width="1.55" height="104.568"/>
+                    </g>
+                    <g transform="translate(390.436 238.586)">
+                        <rect class="d" width="1.55" height="29.268"/>
+                    </g>
+                    <g transform="translate(366.033 245.079)">
+                        <rect class="c" width="1.55" height="36.087"/>
+                    </g>
+                    <g transform="translate(341.631 215.021)">
+                        <rect class="d" width="1.55" height="172.007"/>
+                    </g>
+                    <g transform="translate(317.229 311.299)">
+                        <rect class="m" width="1.55" height="49.254"/>
+                    </g>
+                    <g transform="translate(292.827 332.103)">
+                        <rect class="d" width="1.55" height="46.222"/>
+                    </g>
+                    <g transform="translate(268.425 315.134)">
+                        <rect class="l" width="1.55" height="81.078"/>
+                    </g>
+                    <g transform="translate(244.022 334.921)">
+                        <rect class="d" width="1.55" height="70.09"/>
+                    </g>
+                    <g transform="translate(219.62 379.6)">
+                        <rect class="d" width="1.55" height="92.443"/>
+                    </g>
+                    <g transform="translate(195.218 390.415)">
+                        <rect class="c" width="1.55" height="66.681"/>
+                    </g>
+                    <g transform="translate(170.816 318.6)">
+                        <rect class="c" width="1.55" height="161.4"/>
+                    </g>
+                    <g transform="translate(146.413 312.682)">
+                        <rect class="d" width="1.55" height="114.799"/>
+                    </g>
+                    <g transform="translate(122.011 330.714)">
+                        <rect class="c" width="1.55" height="43.949"/>
+                    </g>
+                    <g transform="translate(97.609 315.34)">
+                        <rect class="n" width="1.55" height="61.378"/>
+                    </g>
+                    <g transform="translate(73.207 306.758)">
+                        <rect class="m" width="1.55" height="86.004"/>
+                    </g>
+                    <g transform="translate(48.804 350.322)">
+                        <rect class="d" width="1.55" height="54.558"/>
+                    </g>
+                    <g transform="translate(24.402 323.665)">
+                        <rect class="c" width="1.55" height="95.475"/>
+                    </g>
+                    <g transform="translate(0 352.889)">
+                        <rect class="c" width="1.55" height="28.415"/>
+                    </g>
+                </g>
+                <g transform="translate(0 52.922)">
+                    <g transform="translate(1464.136 129.964)">
+                        <rect class="c" width="15.499" height="112.513"/>
+                    </g>
+                    <g transform="translate(1439.734 150.529)">
+                        <rect class="c" width="15.499" height="20.306"/>
+                    </g>
+                    <g transform="translate(1415.331 115.038)">
+                        <rect class="c" width="15.499" height="50.516"/>
+                    </g>
+                    <g transform="translate(1390.929 38.575)">
+                        <rect class="c" width="15.499" height="79.562"/>
+                    </g>
+                    <g transform="translate(1366.527 14.007)">
+                        <rect class="c" width="15.499" height="13.317"/>
+                    </g>
+                    <g transform="translate(1342.125)">
+                        <rect class="c" width="15.499" height="12.169"/>
+                    </g>
+                    <g transform="translate(1317.722 5.511)">
+                        <rect class="d" width="15.499" height="16.992"/>
+                    </g>
+                    <g transform="translate(1293.32 38.575)">
+                        <rect class="d" width="15.499" height="24.569"/>
+                    </g>
+                    <g transform="translate(1268.918 25.487)">
+                        <rect class="c" width="15.499" height="24.225"/>
+                    </g>
+                    <g transform="translate(1244.516 33.295)">
+                        <rect class="c" width="15.499" height="32.835"/>
+                    </g>
+                    <g transform="translate(1220.114 86.335)">
+                        <rect class="d" width="15.499" height="25.488"/>
+                    </g>
+                    <g transform="translate(1195.711 109.37)">
+                        <rect class="c" width="15.499" height="21.57"/>
+                    </g>
+                    <g transform="translate(1171.309 122.73)">
+                        <rect class="c" width="15.499" height="16.418"/>
+                    </g>
+                    <g transform="translate(1146.907 130.882)">
+                        <rect class="d" width="15.499" height="22.043"/>
+                    </g>
+                    <g transform="translate(1122.504 98.735)">
+                        <rect class="c" width="15.499" height="47.99"/>
+                    </g>
+                    <g transform="translate(1098.102 105.395)">
+                        <rect class="d" width="15.499" height="25.487"/>
+                    </g>
+                    <g transform="translate(1073.7 134.878)">
+                        <rect class="d" width="15.499" height="18.047"/>
+                    </g>
+                    <g transform="translate(1049.298 150.126)">
+                        <rect class="d" width="15.499" height="21.169"/>
+                    </g>
+                    <g transform="translate(1024.896 154.993)">
+                        <rect class="c" width="15.499" height="49.74"/>
+                    </g>
+                    <g transform="translate(1000.493 152.925)">
+                        <rect class="d" width="15.499" height="23.882"/>
+                    </g>
+                    <g transform="translate(976.091 172.673)">
+                        <rect class="d" width="15.499" height="32.06"/>
+                    </g>
+                    <g transform="translate(951.689 185.374)">
+                        <rect class="c" width="15.499" height="37.586"/>
+                    </g>
+                    <g transform="translate(927.286 166.013)">
+                        <rect class="c" width="15.499" height="38.719"/>
+                    </g>
+                    <g transform="translate(902.884 105.28)">
+                        <rect class="c" width="15.499" height="44.846"/>
+                    </g>
+                    <g transform="translate(878.482 142.478)">
+                        <rect class="d" width="15.499" height="42.364"/>
+                    </g>
+                    <g transform="translate(854.08 187.598)">
+                        <rect class="d" width="15.499" height="38.23"/>
+                    </g>
+                    <g transform="translate(829.677 237.885)">
+                        <rect class="c" width="15.499" height="21.267"/>
+                    </g>
+                    <g transform="translate(805.276 138.172)">
+                        <rect class="c" width="15.499" height="83.869"/>
+                    </g>
+                    <g transform="translate(780.873 51.664)">
+                        <rect class="c" width="15.499" height="79.447"/>
+                    </g>
+                    <g transform="translate(756.471 48.219)">
+                        <rect class="c" width="15.499" height="17.222"/>
+                    </g>
+                    <g transform="translate(732.069 59.471)">
+                        <rect class="d" width="15.499" height="36.049"/>
+                    </g>
+                    <g transform="translate(707.666 45.234)">
+                        <rect class="c" width="15.499" height="40.413"/>
+                    </g>
+                    <g transform="translate(683.264 19.516)">
+                        <rect class="d" width="15.499" height="17.452"/>
+                    </g>
+                    <g transform="translate(658.861 48.219)">
+                        <rect class="d" width="15.499" height="28.932"/>
+                    </g>
+                    <g transform="translate(634.458 83.351)">
+                        <rect class="d" width="15.499" height="17.222"/>
+                    </g>
+                    <g transform="translate(610.056 55.337)">
+                        <rect class="c" width="15.499" height="30.31"/>
+                    </g>
+                    <g transform="translate(585.653 79.447)">
+                        <rect class="d" width="15.499" height="25.833"/>
+                    </g>
+                    <g transform="translate(561.251 95.52)">
+                        <rect class="c" width="15.499" height="35.591"/>
+                    </g>
+                    <g transform="translate(536.849 142.908)">
+                        <rect class="d" width="15.499" height="9.988"/>
+                    </g>
+                    <g transform="translate(512.447 138.172)">
+                        <rect class="c" width="15.499" height="29.449"/>
+                    </g>
+                    <g transform="translate(488.045 148.16)">
+                        <rect class="d" width="15.499" height="29.966"/>
+                    </g>
+                    <g transform="translate(463.642 173.131)">
+                        <rect class="c" width="15.499" height="22.044"/>
+                    </g>
+                    <g transform="translate(439.24 138.172)">
+                        <rect class="d" width="15.499" height="15.328"/>
+                    </g>
+                    <g transform="translate(414.838 149.882)">
+                        <rect class="d" width="15.499" height="31.687"/>
+                    </g>
+                    <g transform="translate(390.436 195.864)">
+                        <rect class="d" width="15.499" height="8.868"/>
+                    </g>
+                    <g transform="translate(366.033 204.732)">
+                        <rect class="c" width="15.499" height="10.936"/>
+                    </g>
+                    <g transform="translate(341.631 222.04)">
+                        <rect class="d" width="15.499" height="52.124"/>
+                    </g>
+                    <g transform="translate(317.229 275.542)">
+                        <rect class="d" width="15.499" height="14.925"/>
+                    </g>
+                    <g transform="translate(292.827 295.29)">
+                        <rect class="d" width="15.499" height="14.007"/>
+                    </g>
+                    <g transform="translate(268.425 290.467)">
+                        <rect class="c" width="15.499" height="24.569"/>
+                    </g>
+                    <g transform="translate(244.022 306.425)">
+                        <rect class="d" width="15.499" height="21.24"/>
+                    </g>
+                    <g transform="translate(219.62 358.894)">
+                        <rect class="d" width="15.499" height="28.012"/>
+                    </g>
+                    <g transform="translate(195.218 360.73)">
+                        <rect class="c" width="15.499" height="20.207"/>
+                    </g>
+                    <g transform="translate(170.816 321.924)">
+                        <rect class="c" width="15.499" height="48.909"/>
+                    </g>
+                    <g transform="translate(146.413 299.767)">
+                        <rect class="d" width="15.499" height="34.787"/>
+                    </g>
+                    <g transform="translate(122.011 293.107)">
+                        <rect class="c" width="15.499" height="13.318"/>
+                    </g>
+                    <g transform="translate(97.609 283.807)">
+                        <rect class="c" width="15.499" height="18.599"/>
+                    </g>
+                    <g transform="translate(73.207 283.807)">
+                        <rect class="d" width="15.499" height="26.063"/>
+                    </g>
+                    <g transform="translate(48.804 316.413)">
+                        <rect class="d" width="15.499" height="16.533"/>
+                    </g>
+                    <g transform="translate(24.402 304.014)">
+                        <rect class="c" width="15.499" height="28.932"/>
+                    </g>
+                    <g transform="translate(0 309.87)">
+                        <rect class="c" width="15.499" height="8.611"/>
+                    </g>
+                </g>
+            </g>
+            <g transform="translate(1488.206 193.218)">
+                <g transform="translate(6.975)">
+                    <rect class="o" width="1.55" height="172.007"/>
+                </g>
+                <g transform="translate(31.377 96.278)">
+                    <rect class="p" width="1.55" height="49.254"/>
+                </g>
+                <g transform="translate(55.779 117.083)">
+                    <rect class="q" width="1.55" height="46.222"/>
+                </g>
+                <g transform="translate(0 59.942)">
+                    <rect class="r" width="15.499" height="52.124"/>
+                </g>
+                <g transform="translate(24.402 113.443)">
+                    <rect class="s" width="15.499" height="14.925"/>
+                </g>
+                <g transform="translate(48.804 133.191)">
+                    <rect class="t" width="15.499" height="14.007"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="zxx" class="js">
+
+
+<!-- Mirrored from aegontrade.com/password/reset by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 24 Dec 2023 16:37:57 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <base >
+    <meta charset="utf-8">
+ <title>Login | Aegontrade</title>
+    <meta name="title" Content="Aegontrade - Reset Password">
+    <meta name="description" content="Aegontrade is a modern copy trading platform for both — beginners and professionals. Learn conveniently and invest wisely!">
+    <meta name="keywords" content="copy,copytrading,stock,forex,options,pips">
+    <link rel="shortcut icon" href="../assets/images/logoIcon/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="apple-touch-icon" href="../assets/images/logoIcon/logo.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Aegontrade - Reset Password">
+    
+    <meta itemprop="name" content="Aegontrade - Reset Password">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="../assets/images/seo/62e1644a6eaf71658938442.jpg">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Aegontrade  - Smart Trading Platform">
+    <meta property="og:description" content="Aegontrade is a modern copy trading platform for both — beginners and professionals. Learn conveniently and invest wisely!">
+    <meta property="og:image" content="../assets/images/seo/62e1644a6eaf71658938442.jpg"/>
+    <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="315" />
+    <meta property="og:url" content="reset.html">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, minimal-ui">
+<meta name="base-url" content="../index.html"/>
+    <meta name="base-url-with-locale" content="../login.html"/>
+    <meta name="locale" content="en"/>
+
+<!DOCTYPE html>
+<html lang="en"  translate="no">
+    
+    <style>
+
+
+
+
+
+
+.candles-loader-overlay {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  top: 0;
+}
+
+[dir] .candles-loader-overlay {
+  background-color: rgba(1, 9, 50, 0.7);
+  left: 0;
+  right: 0;
+}
+
+.candles-loader-overlay .candles-loader {
+  position: absolute;
+  top: 50%;
+}
+
+[dir=ltr] .candles-loader-overlay .candles-loader {
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+[dir=rtl] .candles-loader-overlay .candles-loader {
+  right: 50%;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+
+.candles-loader {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+[dir] .candles-loader {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.candles-loader > .candles-loader-candle {
+  height: 1.75rem;
+  width: 0.85rem;
+}
+
+[dir] .candles-loader > .candles-loader-candle {
+  border-radius: 0.75rem;
+  background-color: #bb914a;
+  -webkit-animation: candles-loader 1s ease-in-out infinite;
+          animation: candles-loader 1s ease-in-out infinite;
+}
+
+[dir=ltr] .candles-loader > .candles-loader-candle {
+  margin-right: 0.5rem;
+}
+
+[dir=rtl] .candles-loader > .candles-loader-candle {
+  margin-left: 0.5rem;
+}
+
+[dir=ltr] .candles-loader > .candles-loader-candle:last-of-type {
+  margin-right: 0;
+}
+
+[dir=rtl] .candles-loader > .candles-loader-candle:last-of-type {
+  margin-left: 0;
+}
+
+[dir] .candles-loader > .candles-loader-candle:nth-child(2) {
+  -webkit-animation-delay: -0.75s;
+          animation-delay: -0.75s;
+}
+
+[dir] .candles-loader > .candles-loader-candle:nth-child(3) {
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s;
+}
+
+[dir] .candles-loader > .candles-loader-candle:nth-child(4) {
+  -webkit-animation-delay: -0.25s;
+          animation-delay: -0.25s;
+}
+
+[dir] .candles-loader > .candles-loader-candle:nth-child(even) {
+  -webkit-transform: translateY(-0.5rem);
+          transform: translateY(-0.5rem);
+}
+
+:root[dir=rtl] .candles-loader > .candles-loader-candle:nth-child(even) {
+  -webkit-transform: translateY(0.5rem);
+          transform: translateY(0.5rem);
+}
+
+[dir] .candles-loader > .candles-loader-candle:nth-child(odd) {
+  -webkit-transform: translateY(0.5rem);
+          transform: translateY(0.5rem);
+}
+
+:root[dir=rtl] .candles-loader > .candles-loader-candle:nth-child(odd) {
+  -webkit-transform: translateY(-0.5rem);
+          transform: translateY(-0.5rem);
+}
+
+@-webkit-keyframes candles-loader {
+  0%, 100% {
+    -webkit-box-shadow: 0 0 0 #bb914a, 0 0 0 #bb914a;
+            box-shadow: 0 0 0 #bb914a, 0 0 0 #bb914a;
+  }
+
+  50% {
+    -webkit-box-shadow: 0 -0.75rem 0 #bb914a, 0 0.75rem 0 #bb914a;
+            box-shadow: 0 -0.75rem 0 #bb914a, 0 0.75rem 0 #bb914a;
+  }
+}
+
+@keyframes  candles-loader {
+  0%, 100% {
+    -webkit-box-shadow: 0 0 0 #bb914a, 0 0 0 #bb914a;
+            box-shadow: 0 0 0 #bb914a, 0 0 0 #bb914a;
+  }
+
+  50% {
+    -webkit-box-shadow: 0 -0.75rem 0 #bb914a, 0 0.75rem 0 #bb914a;
+            box-shadow: 0 -0.75rem 0 #bb914a, 0 0.75rem 0 #bb914a;
+  }
+}
+
+@-webkit-keyframes fab-abtn-in {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes  fab-abtn-in {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes fab-abtn-out {
+  from {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes  fab-abtn-out {
+  from {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@-webkit-keyframes rotate-in {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateZ(70deg);
+            transform: rotateZ(70deg);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+}
+
+@keyframes  rotate-in {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateZ(70deg);
+            transform: rotateZ(70deg);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+}
+
+@-webkit-keyframes rotate-out {
+  from {
+    opacity: 1;
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: rotateZ(-70deg);
+            transform: rotateZ(-70deg);
+  }
+}
+
+@keyframes  rotate-out {
+  from {
+    opacity: 1;
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: rotateZ(-70deg);
+            transform: rotateZ(-70deg);
+  }
+}
+
+
+.candles-loader-overlay-1 {
+  position: fixed;
+  z-index: 9999999;
+  bottom: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+[dir] .candles-loader-overlay-1 {
+  background: rgb(1, 13, 75) !important;
+  left: 0;
+  right: 0;
+}
+
+.candles-loader-overlay-1 .candles-loader {
+  position: absolute;
+  top: 50%;
+}
+
+[dir=ltr] .candles-loader-overlay-1 .candles-loader {
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+[dir=rtl] .candles-loader-overlay-1 .candles-loader {
+  right: 50%;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+
+.candles-loader {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+[dir] .candles-loader {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.candles-loader > .candles-loader-candle {
+  height: 1.75rem;
+  width: 0.85rem;
+}
+
+[dir] .candles-loader > .candles-loader-candle {
+  border-radius: 0.75rem;
+  background-color: #bb914a;
+  -webkit-animation: candles-loader 1s ease-in-out infinite;
+          animation: candles-loader 1s ease-in-out infinite;
+}
+
+[dir=ltr] .candles-loader > .candles-loader-candle {
+  margin-right: 0.5rem;
+}
+
+[dir=rtl] .candles-loader > .candles-loader-candle {
+  margin-left: 0.5rem;
+}
+
+[dir=ltr] .candles-loader > .candles-loader-candle:last-of-type {
+  margin-right: 0;
+}
+
+[dir=rtl] .candles-loader > .candles-loader-candle:last-of-type {
+  margin-left: 0;
+}
+
+[dir] .candles-loader > .candles-loader-candle:nth-child(2) {
+  -webkit-animation-delay: -0.75s;
+          animation-delay: -0.75s;
+}
+
+[dir] .candles-loader > .candles-loader-candle:nth-child(3) {
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s;
+}
+
+[dir] .candles-loader > .candles-loader-candle:nth-child(4) {
+  -webkit-animation-delay: -0.25s;
+          animation-delay: -0.25s;
+}
+
+[dir] .candles-loader > .candles-loader-candle:nth-child(even) {
+  -webkit-transform: translateY(-0.5rem);
+          transform: translateY(-0.5rem);
+}
+
+:root[dir=rtl] .candles-loader > .candles-loader-candle:nth-child(even) {
+  -webkit-transform: translateY(0.5rem);
+          transform: translateY(0.5rem);
+}
+
+[dir] .candles-loader > .candles-loader-candle:nth-child(odd) {
+  -webkit-transform: translateY(0.5rem);
+          transform: translateY(0.5rem);
+}
+
+:root[dir=rtl] .candles-loader > .candles-loader-candle:nth-child(odd) {
+  -webkit-transform: translateY(-0.5rem);
+          transform: translateY(-0.5rem);
+}
+
+@-webkit-keyframes candles-loader {
+  0%, 100% {
+    -webkit-box-shadow: 0 0 0 #bb914a, 0 0 0 #bb914a;
+            box-shadow: 0 0 0 #bb914a, 0 0 0 #bb914a;
+  }
+
+  50% {
+    -webkit-box-shadow: 0 -0.75rem 0 #bb914a, 0 0.75rem 0 #bb914a;
+            box-shadow: 0 -0.75rem 0 #bb914a, 0 0.75rem 0 #bb914a;
+  }
+}
+
+@keyframes  candles-loader {
+  0%, 100% {
+    -webkit-box-shadow: 0 0 0 #bb914a, 0 0 0 #bb914a;
+            box-shadow: 0 0 0 #bb914a, 0 0 0 #bb914a;
+  }
+
+  50% {
+    -webkit-box-shadow: 0 -0.75rem 0 #bb914a, 0 0.75rem 0 #bb914a;
+            box-shadow: 0 -0.75rem 0 #bb914a, 0 0.75rem 0 #bb914a;
+  }
+}
+
+[dir] .opacity {
+  background: rgb(1, 13, 75) !important;
+}
+
+
+  .overlay {
+    background-color: rgba(1, 9, 50, 0.8);
+    left: 0;
+    right: 0;
+
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+.candles-loader-wrapper {
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+}
+</style>
+
+
+<head>
+    <meta charset="utf-8">
+    <title>
+                        Login
+ - My MultiBank
+            </title>
+    
+    <link rel="icon" type="image/x-icon" href="../assets/newfront/auth/favicon-prod.ico"/>
+    <link rel="stylesheet"
+          href="../assets/newfront/auth/client/app%ef%b9%96ver%3d3.13.14.css">
+
+        <link rel="stylesheet" href="../../use.typekit.net/gml4hsn.css">
+    
+        <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&amp;display=swap"
+        rel="stylesheet">
+
+    <style>.mod-multibank:not(.mod-skin-dark):not(.mod-nav-dark) .page-header
+        {
+            border : none;
+        }
+
+        @-webkit-keyframes candles-loader
+        {
+            0%,
+            100%
+            {
+                -webkit-box-shadow : 0 0 0 #bb914a, 0 0 0 #bb914a;
+                box-shadow         : 0 0 0 #bb914a, 0 0 0 #bb914a;
+            }
+            50%
+            {
+                -webkit-box-shadow : 0 -0.75rem 0 #bb914a, 0 0.75rem 0 #bb914a;
+                box-shadow         : 0 -0.75rem 0 #bb914a, 0 0.75rem 0 #bb914a;
+            }
+        }
+
+        @keyframes  candles-loader
+        {
+            0%,
+            100%
+            {
+                -webkit-box-shadow : 0 0 0 #bb914a, 0 0 0 #bb914a;
+                box-shadow         : 0 0 0 #bb914a, 0 0 0 #bb914a;
+            }
+            50%
+            {
+                -webkit-box-shadow : 0 -0.75rem 0 #bb914a, 0 0.75rem 0 #bb914a;
+                box-shadow         : 0 -0.75rem 0 #bb914a, 0 0.75rem 0 #bb914a;
+            }
+        }
+
+    </style>
+     <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+        rel="stylesheet">
+
+
+
+    </head>
+
+<body class="multibank  d-flex flex-column vh-100 mod-multibank mod-skin-light bg-content-gradient-secondary auth-bg     cp-login animated-candles
+">
+    
+     <div id="candles-loader-overlay" style="display:none"  class="overlay">
+       <div  class="candles-loader-wrapper">
+    <div class="candles-loader">
+        <div class="candles-loader-candle"></div>
+        <div class="candles-loader-candle"></div>
+        <div class="candles-loader-candle"></div>
+        <div class="candles-loader-candle"></div>
+    </div></div>
+</div>
+
+
+  <div id="candles-loader-overlayy" style="display:none"  class="overlay processload">
+       <div  class="candles-loader-wrapper">
+    <div class="candles-loader">
+        <div class="candles-loader-candle"></div>
+        <div class="candles-loader-candle"></div>
+        <div class="candles-loader-candle"></div>
+        <div class="candles-loader-candle"></div>
+    </div>
+    
+    <div class="candles-loader-text" style="color:#fff; margin-top: 1rem;
+    z-index: 111111111111;
+">Verifying Your Email Address…</div></div>
+</div>
+    <!-- BEGIN Page Header -->
+    <header class="page-header h-auto auth-header" role="banner"><nav class="navbar navbar-auth navbar-expand-md fixed-top"><div class="d-flex align-items-center container-fluid p-0">
+                     
+                        
+                        <div class="ml-auto d-flex align-items-center"><div class="ml-3 position-relative language-dropdown-container">
+                            <a href="../index.html" class="header-icon ">
+                                <span class="badge badge-primary badge-icon">Go Back</span></a>
+                                
+                             </div><div class="ml-3 hidden-sm-down d-none"></div></div></div></nav></header><!-- END Page Header -->
+               
+               
+               
+               <main role="main" class=" ">
+                <div class="container h-100- px-4 px-sm-0">
+                    <div class="row flex h-100 align-items-center"><div
+                    class=" col-sm-12 col-md-8 col-lg-6 col-xl-6 mx-auto ">
+                    <div class="text-center auth-logo">
+                        <img src="../assets/newfront/auth/client/images/logos/my-multibank-logo.png" alt="BO Portal" aria-roledescription="logo"
+                                 class="company_logo"/>
+                    </div>
+
+
+             <br><br><div class="auth-container text-white"><div class=""><div class="text-center pb-3"><h3 class="mb-5">
+                    Forgot your password?
+                </h3><p class="mt-n4">
+                    Not a problem, happens to the best of us. Just enter your registered email below and we'll send you instructions to reset your password.
+                </p></div>
+                
+                <form  method="post"  class="needs-validation form-dark form-transparent" action="https://aegontrade.com/password/email" >
+                    <input type="hidden" name="_token" value="jIhAppWlgGelbFoEDmu6QTKLU1ytxVar3NXTHGVM">                    <div class="form-group">
+                        <label class="form-label" for="lostaccount">
+                    Email Address
+                </label>
+                <input type="email" id="forgot_password_username" name="value" required="required" placeholder="Recovery email" class="form-control-lg valid-email form-control" />
+                <input name="type" value="email" hidden readonly/>
+                </div>
+                <div class="text-center text-center pb-7">
+                    <div class="form-group">
+                        <button type="submit"
+                        class="btn btn-primary btn-rounded text-uppercase btn-rounded login-mobile">
+                    Submit
+                </button>
+                
+                </div></div><p class="mb-0 text-center">
+                Already a member?
+                <a href="../login.html" class="fw-500 text-primary">
+                    Login
+                </a></p>
+                </form></div></div>
+                
+       <script>
+   $('form').on('submit', function () {
+            if ($(this)) {
+                $('#candles-loader-overlay').show()
+            }
+        });
+    </script>          
+     
+
+       
+
+     
+    </div></div></div></main>
+            
+            <style>.footer-statement
+    {
+        align-items : center;
+        font-size   : 0.8125rem;
+        color       : #868E96;
+        text-align  : center;
+        /*font-family: 'Roboto';*/
+    }
+
+    @media (min-width : 1399px)
+    {
+        .container
+        {
+            max-width : 1399px;
+        }
+    }
+
+    .auth-footer
+    {
+        padding-top : 40px;
+    }
+
+    .sponsor
+    {
+        font-size : 1.2em;
+    }
+
+    .sponsor-container
+    {
+        height : 20em;
+    }
+
+    .sponsor-main
+    {
+        margin-top : 5em;
+    }
+
+    .vertial-hr
+    {
+        border-left : 0.02em solid #74788e;
+        height      : 16.3em;
+        opacity     : 0.5;
+        margin      : 0 9.4em;
+    }
+
+    .horizontal-hr
+    {
+        border-top : 0.02em solid #74788e;
+        width      : 100%;
+        opacity    : 0.5;
+    }
+
+    /* footer - mobile responsive layout - START */
+    @media  only screen and (min-width : 700px) and (max-width : 1200px)
+    {
+        .vertial-hr
+        {
+            margin : 0 3em;
+        }
+
+        .sponsor-main
+        {
+            zoom : 0.9;
+        }
+    }
+
+    @media  only screen and (min-width : 860px) and (max-width : 914px)
+    {
+        .sponsor-main
+        {
+            zoom : 0.9;
+        }
+    }
+
+    @media  only screen and (max-width : 1024px)
+    {
+        /*.vertial-hr {*/
+        /*    margin : 0 7em;*/
+        /*}*/
+        .footer-statement
+        {
+            flex      : 1;
+            max-width : 90%;
+        }
+    }
+
+    @media  only screen and (min-width : 425px) and (max-width : 768px)
+    {
+        .sponsor-main
+        {
+            flex-direction : column;
+        }
+
+        .vertial-hr
+        {
+            display : none;
+        }
+    }
+
+    @media  only screen and (max-width : 425px)
+    {
+        .sponsor-main
+        {
+            flex-direction : column;
+        }
+
+        .vertial-hr
+        {
+            display : none;
+        }
+
+        .horizontal-hr
+        {
+            width : 80%;
+        }
+
+        .footer-statement
+        {
+            margin : 0 2em;
+        }
+    }
+
+    /* footer - mobile responsive layout - END */
+    .public-footer {
+        height: 100%;
+    }
+</style>
+
+
+<footer class="public-footer align-items-center d-flex flex-column justify-content-end"><div class="d-flex align-items-center justify-content-center mt-5"><p class="footer-statement col-md-8 mt-5 mb-10 p-0 text-white">
+            Copyright © : 2006-2023 AT Group Limited. All rights reserved. 
+        </p></div></footer><!-- BEGIN Color profile --><!-- this area is hidden and will not be seen on screens or screen readers --><!-- we use this only for CSS color refernce for JS stuff --><!-- END Color profile -->
+        
+        <script src="../assets/newfront/auth/client/app%ef%b9%96ver%3d3.13.14.js"></script>
+        
+        <script src="../assets/newfront/auth/client/login%ef%b9%96ver%3d3.13.14.js"></script>
+        
+    
+      
+       <script src="../assets/templates/basic/assets/js/bundle19ce.js?ver=3.0.3"></script>
+    
+      <link rel="stylesheet" href="../assets/global/css/iziToast.min.css">
+<script src="../assets/global/js/iziToast.min.js"></script>
+
+<script>
+    "use strict";
+    function notify(status,message) {
+        iziToast[status]({
+            message: message,
+            position: "topRight"
+        });
+    }
+</script>
+<script src="//code.tidio.co/ojs2s7hnfjsovm1w8ldgzuamljv9trjs.js" async></script>
+</body>
+
+
+<!-- Mirrored from aegontrade.com/password/reset by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 24 Dec 2023 16:37:57 GMT -->
+</html>

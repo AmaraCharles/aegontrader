@@ -1,0 +1,12 @@
+<svg id="icn-socialTrading-time" xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 50 50">
+  <g id="Rectangle_32903" data-name="Rectangle 32903" fill="#fff" stroke="#707070" stroke-width="1" opacity="0">
+    <rect width="150" height="150" stroke="none"/>
+    <rect x="0.5" y="0.5" width="49" height="49" fill="none"/>
+  </g>
+  <g id="Layer_3" data-name="Layer 3" transform="translate(4.167 2.333)">
+    <g id="Group_30744" data-name="Group 30744">
+      <path id="Path_52650" data-name="Path 52650" d="M493.259,423.886l.03-3.569-8.051,4.557,7.972,4.693.029-3.431a18.62,18.62,0,1,1-19.9,17.769l-2.245-.1a20.865,20.865,0,0,0,19.944,21.75c.307.013.61.02.914.02a20.867,20.867,0,0,0,1.3-41.692Z" transform="translate(-471.077 -420.317)" fill="#03105f"/>
+      <path id="Path_52651" data-name="Path 52651" d="M577.907,521.775l1.573-1.606-6.98-6.836-.1-9.887-2.248.023.107,10.695.732-.007-.424.433Z" transform="translate(-551.595 -487.875)" fill="#03105f"/>
+    </g>
+  </g>
+</svg>
