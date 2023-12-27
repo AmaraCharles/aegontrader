@@ -61,7 +61,7 @@
 			        <div class="main-header">
     <!-- Logo Header -->
     <div class="logo-header" data-background-color="dark">
-        <a href="./dashboard.html" class="logo" style="font-size: 27px; color:#fff;">AEGONTRADE</a>
+        <a href="./dashboard.html" class="logo" style="font-size: 27px; color:#fff;"><img src="../logo.png" alt="" width="200" height="70"></a>
         <button class="ml-auto navbar-toggler sidenav-toggler" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon">
                 <i class="fa-solid fa-bars"></i>
@@ -376,239 +376,229 @@
         }
     </style>
     
-    <div class=" mb-5 row">
-												<div class="col-lg-4  ">
-							<div class=" border greyback
-                            
-                            ">
-								<!-- Table Head -->
-								<div class="hed">
-								<h2 class="text-light " style="font-size: 15px;font-weight: 700;">STARTER</h2>
-								<!-- Price -->
-								<div class="second" style="display: flex;justify-content: space-between;">
-			<div class="price-holder" style="font-size: 30px; font-weight: 700;">						<span class="symbol text-light">$</span>
-									<span class="amount text-light" style="font-size: 40PX;">500</span>
-                                </div>
-                                <div class="img"><img src="tick.png" alt=""></div>
-                            						</div>
-                                                </div>
-								<!-- Features -->
-								<div class="pricing-features  ">
-									<div class="feature end text-light" >Minimum   -<span class=" text-light right">$500</span></div>
-									<div class="feature end text-light">Maximum   -<span class="text-light right">$999</span></div>
-									<div class="feature end text-light">Duration   -<span class="text-light right">3 days</span></div>
-									<div class="feature end text-light">ROI   -<span class="text-light right">5%</span></div>
-									
-								</div> 
-								<!-- Button -->
-								<div class="">
-									<form class="feature">
-										<h5 class="text-light"></h5>
-										<input type="number" min="10000" max="19999" name="iamount" placeholder="Enter trade amount" class="form-control text-dark bg-light"  id="amount" > <br>
-										<input type="hidden" name="duration" value="1 week">
-										<input type="hidden" name="id" value="5">
-										<!-- <input type="submit" class="btn btn-block pricing-action btn-primary" value="Join plan"> -->
-										<button type="button" class="btn btn-block block  " onclick="takeplan()" style="background: #139E99;">Join plan</button>
-									</form>
-								</div>
-							</div>
-						</div>
-												<div class="col-lg-4">
-                                                    <div class=" border greyback
-                            
-                                                    ">
-                                                        <!-- Table Head -->
-                                                        <div class="hed">
-                                                        <h2 class="text-light " style="font-size: 15px;font-weight: 700;">STARTER PLUS</h2>
-                                                        <!-- Price -->
-                                                        <div class="second" style="display: flex;justify-content: space-between;">
-                                    <div class="price-holder" style="font-size: 30px; font-weight: 700;">						<span class="symbol text-light">$</span>
-                                                            <span class="amount text-light" style="font-size: 40PX;">1,000</span>
-                                                        </div>
-                                                        <div class="img"><img src="tick.png" alt=""></div>
-                                                                            </div>
-                                                                        </div>
-                                                        <!-- Features -->
-                                                        <div class="pricing-features  ">
-                                                            <div class="feature end text-light" >Minimum   -<span class=" text-light right">$1,000</span></div>
-                                                            <div class="feature end text-light">Maximum   -<span class="text-light right">$4,999</span></div>
-                                                            <div class="feature end text-light">Duration   -<span class="text-light right">3 days</span></div>
-                                                            <div class="feature end text-light">ROI   -<span class="text-light right">5%</span></div>
-                                                            
-                                                        </div> 
-                                                        <!-- Button -->
-                                                        <div class="">
-                                                            <form class="feature">
-                                                                <h5 class="text-light"></h5>
-                                                                <input type="number" min="10000" max="19999" name="iamount" placeholder="Enter trade amount" class="form-control text-dark bg-light"  id="amount" > <br>
-                                                                <input type="hidden" name="duration" value="1 week">
-                                                                <input type="hidden" name="id" value="5">
-                                                                <!-- <input type="submit" class="btn btn-block pricing-action btn-primary" value="Join plan"> -->
-                                                                <button type="button" class="btn btn-block block  " onclick="takeplan()" style="background: #139E99;">Join plan</button>
-                                                            </form>
-                                                        </div>
-                                                    </div>
-						</div>
-												<div class="col-lg-4">
-                                                    <div class=" border greyback
-                            
-                                                    ">
-                                                        <!-- Table Head -->
-                                                        <div class="hed">
-                                                        <h2 class="text-light " style="font-size: 15px;font-weight: 700;">STANDARD</h2>
-                                                        <!-- Price -->
-                                                        <div class="second" style="display: flex;justify-content: space-between;">
-                                    <div class="price-holder" style="font-size: 30px; font-weight: 700;">						<span class="symbol text-light">$</span>
-                                                            <span class="amount text-light" style="font-size: 40PX;">5,000</span>
-                                                        </div>
-                                                        <div class="img"><img src="tick.png" alt=""></div>
-                                                                            </div>
-                                                                        </div>
-                                                        <!-- Features -->
-                                                        <div class="pricing-features  ">
-                                                            <div class="feature end text-light" >Minimum   -<span class=" text-light right">$5,000</span></div>
-                                                            <div class="feature end text-light">Maximum   -<span class="text-light right">$9,999</span></div>
-                                                            <div class="feature end text-light">Duration   -<span class="text-light right">7 days</span></div>
-                                                            <div class="feature end text-light">ROI   -<span class="text-light right">17%</span></div>
-                                                            
-                                                        </div> 
-                                                        <!-- Button -->
-                                                        <div class="">
-                                                            <form class="feature">
-                                                                <h5 class="text-light"></h5>
-                                                                <input type="number" min="10000" max="19999" name="iamount" placeholder="Enter trade amount" class="form-control text-dark bg-light"  id="amount" > <br>
-                                                                <input type="hidden" name="duration" value="1 week">
-                                                                <input type="hidden" name="id" value="5">
-                                                                <!-- <input type="submit" class="btn btn-block pricing-action btn-primary" value="Join plan"> -->
-                                                                <button type="button" class="btn btn-block block  " onclick="takeplan()" style="background: #139E99;">Join plan</button>
-                                                            </form>
-                                                        </div>
-                                                    </div>
-						</div>
-											</div>
-
-
-                                            <div class="col-lg-4">
+    <div class="mb-5 prices row">
+        <div class="col-lg-4 mb-4 ">
+          <div class=" border greyback
+                        
+                        ">
+            <!-- Table Head -->
+            <div class="hed">
+            <h2 class="text-light " style="font-size: 15px;font-weight: 700;">STARTER</h2>
+            <!-- Price -->
+            <div class="second" style="display: flex;justify-content: space-between;">
+  <div class="price-holder" style="font-size: 30px; font-weight: 700;">						<span class="symbol text-light">$</span>
+              <span class="amount text-light" style="font-size: 40px;">500</span>
+                            </div>
+                            <div class="img"><img src="tick.png" alt=""></div>
+                                    </div>
+                                            </div>
+            <!-- Features -->
+            <div class="pricing-features  ">
+              <div class="feature end text-light" >Minimum   -<span class=" text-light right">$500</span></div>
+              <div class="feature end text-light">Maximum   -<span class="text-light right">$999</span></div>
+              <div class="feature end text-light">Duration   -<span class="text-light right">3 days</span></div>
+              <div class="feature end text-light">ROI   -<span class="text-light right">5%</span></div>
+              
+            </div> 
+            <!-- Button -->
+            <div class="">
+              <form class="feature">
+                <h5 class="text-light"></h5>
+                <input type="number" min="10000" max="19999"  placeholder="Enter trade amount" class="form-control text-dark bg-light"  id="amount2" > <br>
+                <!-- <input type="submit" class="btn btn-block pricing-action btn-primary" value="Join plan"> -->
+                <button type="button" class="btn btn-block block  " onclick="takeplan()" style="background: #139E99;">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+                    <div class="col-lg-4 mb-4 ">
                                                 <div class=" border greyback
                         
                                                 ">
                                                     <!-- Table Head -->
                                                     <div class="hed">
-                                                    <h2 class="text-light " style="font-size: 15px;font-weight: 700;">ADVANCED</h2>
+                                                    <h2 class="text-light " style="font-size: 15px;font-weight: 700;">STARTER PLUS</h2>
                                                     <!-- Price -->
                                                     <div class="second" style="display: flex;justify-content: space-between;">
                                 <div class="price-holder" style="font-size: 30px; font-weight: 700;">						<span class="symbol text-light">$</span>
-                                                        <span class="amount text-light" style="font-size: 40PX;">10,000</span>
+                                                        <span class="amount text-light" style="font-size: 40PX;">1,000</span>
                                                     </div>
                                                     <div class="img"><img src="tick.png" alt=""></div>
                                                                         </div>
                                                                     </div>
                                                     <!-- Features -->
                                                     <div class="pricing-features  ">
-                                                        <div class="feature end text-light" >Minimum   -<span class=" text-light right">$10,000</span></div>
-                                                        <div class="feature end text-light">Maximum   -<span class="text-light right">$29,999</span></div>
-                                                        <div class="feature end text-light">Duration   -<span class="text-light right">14 days</span></div>
-                                                        <div class="feature end text-light">ROI   -<span class="text-light right">40%</span></div>
+                                                        <div class="feature end text-light" >Minimum   -<span class=" text-light right">$1,000</span></div>
+                                                        <div class="feature end text-light">Maximum   -<span class="text-light right">$4,999</span></div>
+                                                        <div class="feature end text-light">Duration   -<span class="text-light right">3 days</span></div>
+                                                        <div class="feature end text-light">ROI   -<span class="text-light right">5%</span></div>
                                                         
                                                     </div> 
                                                     <!-- Button -->
                                                     <div class="">
                                                         <form class="feature">
                                                             <h5 class="text-light"></h5>
-                                                            <input type="number" min="10000" max="19999" name="iamount" placeholder="Enter trade amount" class="form-control text-dark bg-light"  id="amount" > <br>
+                                                            <input type="number" min="10000" max="19999" name="iamount" placeholder="Enter trade amount" class="form-control text-dark bg-light"  id="amount3" > <br>
                                                             <input type="hidden" name="duration" value="1 week">
                                                             <input type="hidden" name="id" value="5">
                                                             <!-- <input type="submit" class="btn btn-block pricing-action btn-primary" value="Join plan"> -->
-                                                            <button type="button" class="btn btn-block block  " onclick="takeplan()" style="background: #139E99;">Join plan</button>
+                                                            <button type="button" class="btn btn-block block  " onclick="takeplan()" style="background: #139E99;"> Subscribe</button>
                                                         </form>
                                                     </div>
                                                 </div>
-                    </div>
-                                        </div>
-
-
-
-                                        <div class="col-lg-4">
-                                            <div class=" border greyback
-                    
-                                            ">
-                                                <!-- Table Head -->
-                                                <div class="hed">
-                                                <h2 class="text-light " style="font-size: 15px;font-weight: 700;">GOLD</h2>
-                                                <!-- Price -->
-                                                <div class="second" style="display: flex;justify-content: space-between;">
-                            <div class="price-holder" style="font-size: 30px; font-weight: 700;">						<span class="symbol text-light">$</span>
-                                                    <span class="amount text-light" style="font-size: 40PX;">30,000</span>
-                                                </div>
-                                                <div class="img"><img src="tick.png" alt=""></div>
+        </div>
+                    <div class="col-lg-4 mb-2">
+                                                <div class=" border greyback
+                        
+                                                ">
+                                                    <!-- Table Head -->
+                                                    <div class="hed">
+                                                    <h2 class="text-light " style="font-size: 15px;font-weight: 700;">STANDARD</h2>
+                                                    <!-- Price -->
+                                                    <div class="second" style="display: flex;justify-content: space-between;">
+                                <div class="price-holder" style="font-size: 30px; font-weight: 700;">						<span class="symbol text-light">$</span>
+                                                        <span class="amount text-light" style="font-size: 40PX;">5,000</span>
+                                                    </div>
+                                                    <div class="img"><img src="tick.png" alt=""></div>
+                                                                        </div>
                                                                     </div>
-                                                                </div>
-                                                <!-- Features -->
-                                                <div class="pricing-features  ">
-                                                    <div class="feature end text-light" >Minimum   -<span class=" text-light right">$30,000</span></div>
-                                                    <div class="feature end text-light">Maximum   -<span class="text-light right">$99,999</span></div>
-                                                    <div class="feature end text-light">Duration   -<span class="text-light right">14 days</span></div>
-                                                    <div class="feature end text-light">ROI   -<span class="text-light right">50%</span></div>
-                                                    
-                                                </div> 
-                                                <!-- Button -->
-                                                <div class="">
-                                                    <form class="feature">
-                                                        <h5 class="text-light"></h5>
-                                                        <input type="number" min="10000" max="19999" name="iamount" placeholder="Enter trade amount" class="form-control text-dark bg-light"  id="amount" > <br>
-                                                        <input type="hidden" name="duration" value="1 week">
-                                                        <input type="hidden" name="id" value="5">
-                                                        <!-- <input type="submit" class="btn btn-block pricing-action btn-primary" value="Join plan"> -->
-                                                        <button type="button" class="btn btn-block block  " onclick="takeplan()" style="background: #139E99;">Join plan</button>
-                                                    </form>
+                                                    <!-- Features -->
+                                                    <div class="mb-2 pricing-features  ">
+                                                        <div class="feature end text-light" >Minimum   -<span class=" text-light right">$5,000</span></div>
+                                                        <div class="feature end text-light">Maximum   -<span class="text-light right">$9,999</span></div>
+                                                        <div class="feature end text-light">Duration   -<span class="text-light right">7 days</span></div>
+                                                        <div class="feature end text-light">ROI   -<span class="text-light right">17%</span></div>
+                                                        
+                                                    </div> 
+                                                    <!-- Button -->
+                                                    <div class="">
+                                                        <form class="feature">
+                                                            <h5 class="text-light"></h5>
+                                                            <input type="number" min="10000" max="19999" name="iamount" placeholder="Enter trade amount" class="form-control text-dark bg-light"  id="amount4" > <br>
+                                                            <input type="hidden" name="duration" value="1 week">
+                                                            <input type="hidden" name="id" value="5">
+                                                            <!-- <input type="submit" class="btn btn-block pricing-action btn-primary" value="Join plan"> -->
+                                                            <button type="button" class="btn btn-block block  " onclick="takeplan()" style="background: #139E99;">Subscribe </button>
+                                                        </form>
+                                                    </div>
                                                 </div>
-                                         
-                                    </div>
-
-                                    <div class="col-lg-4">
-                                        <div class=" border greyback
-                
-                                        ">
-                                            <!-- Table Head -->
-                                            <div class="hed">
-                                            <h2 class="text-light " style="font-size: 15px;font-weight: 700;">ULTIMATE</h2>
-                                            <!-- Price -->
-                                            <div class="second" style="display: flex;justify-content: space-between;">
-                        <div class="price-holder" style="font-size: 30px; font-weight: 700;">						<span class="symbol text-light">$</span>
-                                                <span class="amount text-light" style="font-size: 40PX;">100,000</span>
-                                            </div>
-                                            <div class="img"><img src="tick.png" alt=""></div>
+        </div>
+                  </div>
+                  <div class="mb-5 prices row">
+                    <div class="col-lg-4 mb-4 ">
+                      <div class=" border greyback
+                                    
+                                    ">
+                        <!-- Table Head -->
+                        <div class="hed">
+                        <h2 class="text-light " style="font-size: 15px;font-weight: 700;">ADVANCED</h2>
+                        <!-- Price -->
+                        <div class="second" style="display: flex;justify-content: space-between;">
+              <div class="price-holder" style="font-size: 30px; font-weight: 700;">						<span class="symbol text-light">$</span>
+                          <span class="amount text-light" style="font-size: 40PX;">10,000</span>
+                                        </div>
+                                        <div class="img"><img src="tick.png" alt=""></div>
+                                                </div>
+                                                        </div>
+                        <!-- Features -->
+                        <div class="pricing-features  ">
+                          <div class="feature end text-light" >Minimum   -<span class=" text-light right">$10,000</span></div>
+                          <div class="feature end text-light">Maximum   -<span class="text-light right">$29,999</span></div>
+                          <div class="feature end text-light">Duration   -<span class="text-light right">14 days</span></div>
+                          <div class="feature end text-light">ROI   -<span class="text-light right">40%</span></div>
+                          
+                        </div> 
+                        <!-- Button -->
+                        <div class="">
+                          <form class="feature">
+                            <h5 class="text-light"></h5>
+                            <input type="number" min="10000" max="19999"  placeholder="Enter trade amount" class="form-control text-dark bg-light"  id="amount1" > <br>
+                            <!-- <input type="submit" class="btn btn-block pricing-action btn-primary" value="Join plan"> -->
+                            <button type="button" class="btn btn-block block  " onclick="takeplan()" style="background: #139E99;">Subscribe</button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                                <div class="col-lg-4 mb-4 ">
+                                                            <div class=" border greyback
+                                    
+                                                            ">
+                                                                <!-- Table Head -->
+                                                                <div class="hed">
+                                                                <h2 class="text-light " style="font-size: 15px;font-weight: 700;">GOLD</h2>
+                                                                <!-- Price -->
+                                                                <div class="second" style="display: flex;justify-content: space-between;">
+                                            <div class="price-holder" style="font-size: 30px; font-weight: 700;">						<span class="symbol text-light">$</span>
+                                                                    <span class="amount text-light" style="font-size: 40PX;">30,000</span>
+                                                                </div>
+                                                                <div class="img"><img src="tick.png" alt=""></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                <!-- Features -->
+                                                                <div class="pricing-features  ">
+                                                                    <div class="feature end text-light" >Minimum   -<span class=" text-light right">$30,000</span></div>
+                                                                    <div class="feature end text-light">Maximum   -<span class="text-light right">$99,999</span></div>
+                                                                    <div class="feature end text-light">Duration   -<span class="text-light right">14 days</span></div>
+                                                                    <div class="feature end text-light">ROI   -<span class="text-light right">50%</span></div>
+                                                                    
+                                                                </div> 
+                                                                <!-- Button -->
+                                                                <div class="">
+                                                                    <form class="feature">
+                                                                        <h5 class="text-light"></h5>
+                                                                        <input type="number" min="10000" max="19999" name="iamount" placeholder="Enter trade amount" class="form-control text-dark bg-light"  id="amount5" > <br>
+                                                                        <input type="hidden" name="duration" value="1 week">
+                                                                        <input type="hidden" name="id" value="5">
+                                                                        <!-- <input type="submit" class="btn btn-block pricing-action btn-primary" value="Join plan"> -->
+                                                                        <button type="button" class="btn btn-block block  " onclick="takeplan()" style="background: #139E99;"> Subscribe</button>
+                                                                    </form>
                                                                 </div>
                                                             </div>
-                                            <!-- Features -->
-                                            <div class="pricing-features  ">
-                                                <div class="feature end text-light" >Minimum   -<span class=" text-light right">$100,000</span></div>
-                                                <div class="feature end text-light">Maximum   -<span class="text-light right">$500,000</span></div>
-                                                <div class="feature end text-light">Duration   -<span class="text-light right">28 days</span></div>
-                                                <div class="feature end text-light">ROI   -<span class="text-light right">120%</span></div>
-                                                
-                                            </div> 
-                                            <!-- Button -->
-                                            <div class="">
-                                                <form class="feature">
-                                                    <h5 class="text-light"></h5>
-                                                    <input type="number" min="10000" max="19999" name="iamount" placeholder="Enter trade amount" class="form-control text-dark bg-light"  id="amount" > <br>
-                                                    <input type="hidden" name="duration" value="1 week">
-                                                    <input type="hidden" name="id" value="5">
-                                                    <!-- <input type="submit" class="btn btn-block pricing-action btn-primary" value="Join plan"> -->
-                                                    <button type="button" class="btn btn-block block  " onclick="takeplan()" style="background: #139E99;">Join plan</button>
-                                                </form>
-                                            </div>
-                                            
-                                        </div>
-            </div>
-                                </div>
+                    </div>
+                                <div class="col-lg-4 mb-2">
+                                                            <div class=" border greyback
+                                    
+                                                            ">
+                                                                <!-- Table Head -->
+                                                                <div class="hed">
+                                                                <h2 class="text-light " style="font-size: 15px;font-weight: 700;">ULTIMATE</h2>
+                                                                <!-- Price -->
+                                                                <div class="second" style="display: flex;justify-content: space-between;">
+                                            <div class="price-holder" style="font-size: 30px; font-weight: 700;">						<span class="symbol text-light">$</span>
+                                                                    <span class="amount text-light" style="font-size: 40PX;">100,000</span>
+                                                                </div>
+                                                                <div class="img"><img src="tick.png" alt=""></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                <!-- Features -->
+                                                                <div class="mb-2 pricing-features  ">
+                                                                    <div class="feature end text-light" >Minimum   -<span class=" text-light right">$100,000</span></div>
+                                                                    <div class="feature end text-light">Maximum   -<span class="text-light right">$500,999</span></div>
+                                                                    <div class="feature end text-light">Duration   -<span class="text-light right">28 days</span></div>
+                                                                    <div class="feature end text-light">ROI   -<span class="text-light right">120%</span></div>
+                                                                    
+                                                                </div> 
+                                                                <!-- Button -->
+                                                                <div class="">
+                                                                    <form class="feature">
+                                                                        <h5 class="text-light"></h5>
+                                                                        <input type="number" min="10000" max="19999" name="iamount" placeholder="Enter trade amount" class="form-control text-dark bg-light"  id="amount6" > <br>
+                                                                        <input type="hidden" name="duration" value="1 week">
+                                                                        <input type="hidden" name="id" value="5">
+                                                                        <!-- <input type="submit" class="btn btn-block pricing-action btn-primary" value="Join plan"> -->
+                                                                        <button type="button" class="btn btn-block block  " onclick="takeplan()" style="background: #139E99;">Subscribe </button>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                    </div>
+                              </div>
+                                      </div>
 				</div>	
 			</div>
     				<footer class="footer bg-dark text-light">
 					<div class="container-fluid">
 						<div class="text-center row copyright text-align-center">
-							<p>All Rights Reserved © upstoxclime 2023</p>
+							<p>All Rights Reserved © aegontrade 2023</p>
 						</div>
 					</div>
 				</footer>
