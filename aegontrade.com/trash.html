@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="zxx" class="js">
+
+
+<!-- Mirrored from aegontrade.com/register by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 24 Dec 2023 16:32:43 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <base >
+    <meta charset="utf-8">
+ <title>Login | Aegontrade</title>
+    <meta name="title" Content="Aegontrade - Register">
+    <meta name="description" content="Aegontrade is a modern copy trading platform for both — beginners and professionals. Learn conveniently and invest wisely!">
+    <meta name="keywords" content="copy,copytrading,stock,forex,options,pips">
+    <link rel="shortcut icon" href="assets/images/logoIcon/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="apple-touch-icon" href="assets/images/logoIcon/logo.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Aegontrade - Register">
+    
+    <meta itemprop="name" content="Aegontrade - Register">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="assets/images/seo/62e1644a6eaf71658938442.jpg">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Aegontrade  - Smart Trading Platform">
+    <meta property="og:description" content="Aegontrade is a modern copy trading platform for both — beginners and professionals. Learn conveniently and invest wisely!">
+    <meta property="og:image" content="assets/images/seo/62e1644a6eaf71658938442.jpg"/>
+    <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="315" />
+    <meta property="og:url" content="register.html">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, minimal-ui">
+<meta name="base-url" content="index.html"/>
+    <meta name="base-url-with-locale" content="login.html"/>
+    <meta name="locale" content="en"/>
+
+<!DOCTYPE html>
+<html lang="en"  translate="no">
+    
+    <style>
+
+
+
+
+
+
+.candles-loader-overlay {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  top: 0;
+}
+
+[dir] .candles-loader-overlay {
+  background-color: rgba(1, 9, 50, 0.7);
+  left: 0;
+  right: 0;
+}
+
+.candles-loader-overlay .candles-loader {
+  position: absolute;
+  top: 50%;
+}
+
+[dir=ltr] .candles-loader-overlay .candles-loader {
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+[dir=rtl] .candles-loader-overlay .candles-loader {
+  right: 50%;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+
+.candles-loader {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+[dir] .candles-loader {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.candles-loader > .candles-loader-candle {
+  height: 1.75rem;
+  width: 0.85rem;
+}
+
+[dir] .candles-loader > .candles-loader-candle {
+  border-radius: 0.75rem;
+  background-color: #bb914a;
+  -webkit-animation: candles-loader 1s ease-in-out infinite;
+          animation: candles-loader 1s ease-in-out infinite;
+}
+
+[dir=ltr] .candles-loader > .candles-loader-candle {
+  margin-right: 0.5rem;
+}
+
+[dir=rtl] .candles-loader > .candles-loader-candle {
+  margin-left: 0.5rem;
+}
+
+[dir=ltr] .candles-loader > .candles-loader-candle:last-of-type {
+  margin-right: 0;
+}
+
+[dir=rtl] .candles-loader > .candles-loader-candle:last-of-type {
+  margin-left: 0;
+}
+
+[dir] .candles-loader > .candles-loader-candle:nth-child(2) {
+  -webkit-animation-delay: -0.75s;
+          animation-delay: -0.75s;
+}
+
+[dir] .candles-loader > .candles-loader-candle:nth-child(3) {
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s;
+}
+
+[dir] .candles-loader > .candles-loader-candle:nth-child(4) {
+  -webkit-animation-delay: -0.25s;
+          animation-delay: -0.25s;
+}
+
+[dir] .candles-loader > .candles-loader-candle:nth-child(even) {
+  -webkit-transform: translateY(-0.5rem);
+          transform: translateY(-0.5rem);
+}
+
+:root[dir=rtl] .candles-loader > .candles-loader-candle:nth-child(even) {
+  -webkit-transform: translateY(0.5rem);
+          transform: translateY(0.5rem);
+}
+
+[dir] .candles-loader > .candles-loader-candle:nth-child(odd) {
+  -webkit-transform: translateY(0.5rem);
+          transform: translateY(0.5rem);
+}
+
+:root[dir=rtl] .candles-loader > .candles-loader-candle:nth-child(odd) {
+  -webkit-transform: translateY(-0.5rem);
+          transform: translateY(-0.5rem);
+}
+
+@-webkit-keyframes candles-loader {
+  0%, 100% {
+    -webkit-box-shadow: 0 0 0 #bb914a, 0 0 0 #bb914a;
+            box-shadow: 0 0 0 #bb914a, 0 0 0 #bb914a;
+  }
+
+  50% {
+    -webkit-box-shadow: 0 -0.75rem 0 #bb914a, 0 0.75rem 0 #bb914a;
+            box-shadow: 0 -0.75rem 0 #bb914a, 0 0.75rem 0 #bb914a;
+  }
+}
+
+@keyframes  candles-loader {
+  0%, 100% {
+    -webkit-box-shadow: 0 0 0 #bb914a, 0 0 0 #bb914a;
+            box-shadow: 0 0 0 #bb914a, 0 0 0 #bb914a;
+  }
+
+  50% {
+    -webkit-box-shadow: 0 -0.75rem 0 #bb914a, 0 0.75rem 0 #bb914a;
+            box-shadow: 0 -0.75rem 0 #bb914a, 0 0.75rem 0 #bb914a;
+  }
+}
+
+@-webkit-keyframes fab-abtn-in {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes  fab-abtn-in {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes fab-abtn-out {
+  from {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes  fab-abtn-out {
+  from {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@-webkit-keyframes rotate-in {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateZ(70deg);
+            transform: rotateZ(70deg);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+}
+
+@keyframes  rotate-in {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateZ(70deg);
+            transform: rotateZ(70deg);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+}
+
+@-webkit-keyframes rotate-out {
+  from {
+    opacity: 1;
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: rotateZ(-70deg);
+            transform: rotateZ(-70deg);
+  }
+}
+
+@keyframes  rotate-out {
+  from {
+    opacity: 1;
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: rotateZ(-70deg);
+            transform: rotateZ(-70deg);
+  }
+}
+
+
+.candles-loader-overlay-1 {
+  position: fixed;
+  z-index: 9999999;
+  bottom: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+[dir] .candles-loader-overlay-1 {
+  background: rgb(1, 13, 75) !important;
+  left: 0;
+  right: 0;
+}
+
+.candles-loader-overlay-1 .candles-loader {
+  position: absolute;
+  top: 50%;
+}
+
+[dir=ltr] .candles-loader-overlay-1 .candles-loader {
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+[dir=rtl] .candles-loader-overlay-1 .candles-loader {
+  right: 50%;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+
+.candles-loader {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+[dir] .candles-loader {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.candles-loader > .candles-loader-candle {
+  height: 1.75rem;
+  width: 0.85rem;
+}
+
+[dir] .candles-loader > .candles-loader-candle {
+  border-radius: 0.75rem;
+  background-color: #bb914a;
+  -webkit-animation: candles-loader 1s ease-in-out infinite;
+          animation: candles-loader 1s ease-in-out infinite;
+}
+
+[dir=ltr] .candles-loader > .candles-loader-candle {
+  margin-right: 0.5rem;
+}
+
+[dir=rtl] .candles-loader > .candles-loader-candle {
+  margin-left: 0.5rem;
+}
+
+[dir=ltr] .candles-loader > .candles-loader-candle:last-of-type {
+  margin-right: 0;
+}
+
+[dir=rtl] .candles-loader > .candles-loader-candle:last-of-type {
+  margin-left: 0;
+}
+
+[dir] .candles-loader > .candles-loader-candle:nth-child(2) {
+  -webkit-animation-delay: -0.75s;
+          animation-delay: -0.75s;
+}
+
+[dir] .candles-loader > .candles-loader-candle:nth-child(3) {
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s;
+}
+
+[dir] .candles-loader > .candles-loader-candle:nth-child(4) {
+  -webkit-animation-delay: -0.25s;
+          animation-delay: -0.25s;
+}
+
+[dir] .candles-loader > .candles-loader-candle:nth-child(even) {
+  -webkit-transform: translateY(-0.5rem);
+          transform: translateY(-0.5rem);
+}
+
+:root[dir=rtl] .candles-loader > .candles-loader-candle:nth-child(even) {
+  -webkit-transform: translateY(0.5rem);
+          transform: translateY(0.5rem);
+}
+
+[dir] .candles-loader > .candles-loader-candle:nth-child(odd) {
+  -webkit-transform: translateY(0.5rem);
+          transform: translateY(0.5rem);
+}
+
+:root[dir=rtl] .candles-loader > .candles-loader-candle:nth-child(odd) {
+  -webkit-transform: translateY(-0.5rem);
+          transform: translateY(-0.5rem);
+}
+
+@-webkit-keyframes candles-loader {
+  0%, 100% {
+    -webkit-box-shadow: 0 0 0 #bb914a, 0 0 0 #bb914a;
+            box-shadow: 0 0 0 #bb914a, 0 0 0 #bb914a;
+  }
+
+  50% {
+    -webkit-box-shadow: 0 -0.75rem 0 #bb914a, 0 0.75rem 0 #bb914a;
+            box-shadow: 0 -0.75rem 0 #bb914a, 0 0.75rem 0 #bb914a;
+  }
+}
+
+@keyframes  candles-loader {
+  0%, 100% {
+    -webkit-box-shadow: 0 0 0 #bb914a, 0 0 0 #bb914a;
+            box-shadow: 0 0 0 #bb914a, 0 0 0 #bb914a;
+  }
+
+  50% {
+    -webkit-box-shadow: 0 -0.75rem 0 #bb914a, 0 0.75rem 0 #bb914a;
+            box-shadow: 0 -0.75rem 0 #bb914a, 0 0.75rem 0 #bb914a;
+  }
+}
+
+[dir] .opacity {
+  background: rgb(1, 13, 75) !important;
+}
+
+
+  .overlay {
+    background-color: rgba(1, 9, 50, 0.8);
+    left: 0;
+    right: 0;
+
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+.candles-loader-wrapper {
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+}
+</style>
+
+
+<head>
+    <meta charset="utf-8">
+    <title>
+                        Login
+ - My MultiBank
+            </title>
+    
+    <link rel="icon" type="image/x-icon" href="assets/newfront/auth/favicon-prod.ico"/>
+    <link rel="stylesheet"
+          href="assets/newfront/auth/client/app%ef%b9%96ver%3d3.13.14.css">
+
+        <link rel="stylesheet" href="../use.typekit.net/gml4hsn.css">
+    
+        <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&amp;display=swap"
+        rel="stylesheet">
+
+    <style>.mod-multibank:not(.mod-skin-dark):not(.mod-nav-dark) .page-header
+        {
+            border : none;
+        }
+
+        @-webkit-keyframes candles-loader
+        {
+            0%,
+            100%
+            {
+                -webkit-box-shadow : 0 0 0 #bb914a, 0 0 0 #bb914a;
+                box-shadow         : 0 0 0 #bb914a, 0 0 0 #bb914a;
+            }
+            50%
+            {
+                -webkit-box-shadow : 0 -0.75rem 0 #bb914a, 0 0.75rem 0 #bb914a;
+                box-shadow         : 0 -0.75rem 0 #bb914a, 0 0.75rem 0 #bb914a;
+            }
+        }
+
+        @keyframes  candles-loader
+        {
+            0%,
+            100%
+            {
+                -webkit-box-shadow : 0 0 0 #bb914a, 0 0 0 #bb914a;
+                box-shadow         : 0 0 0 #bb914a, 0 0 0 #bb914a;
+            }
+            50%
+            {
+                -webkit-box-shadow : 0 -0.75rem 0 #bb914a, 0 0.75rem 0 #bb914a;
+                box-shadow         : 0 -0.75rem 0 #bb914a, 0 0.75rem 0 #bb914a;
+            }
+        }
+
+    </style>
+     <script src="../cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+        rel="stylesheet">
+
+
+
+    </head>
+
+<body class="multibank  d-flex flex-column vh-100 mod-multibank mod-skin-light bg-content-gradient-secondary auth-bg     cp-login animated-candles
+">
+    
+     <div id="candles-loader-overlay" style="display:none"  class="overlay">
+       <div  class="candles-loader-wrapper">
+    <div class="candles-loader">
+        <div class="candles-loader-candle"></div>
+        <div class="candles-loader-candle"></div>
+        <div class="candles-loader-candle"></div>
+        <div class="candles-loader-candle"></div>
+    </div></div>
+</div>
+
+
+  <div id="candles-loader-overlayy" style="display:none"  class="overlay processload">
+       <div  class="candles-loader-wrapper">
+    <div class="candles-loader">
+        <div class="candles-loader-candle"></div>
+        <div class="candles-loader-candle"></div>
+        <div class="candles-loader-candle"></div>
+        <div class="candles-loader-candle"></div>
+    </div>
+    
+    <div class="candles-loader-text" style="color:#fff; margin-top: 1rem;
+    z-index: 111111111111;
+">Verifying Your Email Address…</div></div>
+</div>
+    <!-- BEGIN Page Header -->
+    <header class="page-header h-auto auth-header" role="banner"><nav class="navbar navbar-auth navbar-expand-md fixed-top"><div class="d-flex align-items-center container-fluid p-0">
+                     
+                        
+                        <div class="ml-auto d-flex align-items-center"><div class="ml-3 position-relative language-dropdown-container">
+                            <a href="index.html" class="header-icon ">
+                                <span class="badge badge-primary badge-icon">Go Back</span></a>
+                                
+                             </div><div class="ml-3 hidden-sm-down d-none"></div></div></div></nav></header><!-- END Page Header -->
+               
+               
+               
+               <main role="main" class=" ">
+                <div class="container h-100- px-4 px-sm-0">
+                    <div class="row flex h-100 align-items-center"><div
+                    class=" col-sm-12 col-md-8 col-lg-6 col-xl-6 mx-auto ">
+                    <div class="text-center auth-logo">
+                        <img src="assets/newfront/auth/client/images/logos/my-multibank-logo.png" alt="BO Portal" aria-roledescription="logo"
+                                 class="company_logo"/>
+                    </div>
+
+
+             
+        
+
+
+<div class="auth-container text-white">
+                        <style>
+                            .lock {
+                              width: 368px;
+                              height: 36px;
+                              margin: 15px auto 10px;
+                              border-radius: 100px;
+                              background: rgba(88, 189, 125, 0.1);
+                              display: flex;
+                              align-items: center;
+                          }
+                          
+                          .lock .icon {
+                              width: 36px;
+                              height: 36px;
+                              min-width: 36px;
+                              background: #58bd7d;
+                              border-radius: 50%;
+                              display: flex;
+                              align-items: center;
+                              justify-content: center;
+                          }
+                          .lock p {
+                              font-weight: 700;
+                              font-size: 14px;
+                              color: #f3f3f3;
+                              padding-left: 28px;
+                              letter-spacing: 0.1px;
+                          }
+                          .lock p span {
+                              color: #58bd7d;
+                          }
+                          </style>
+
+
+                          <div class="lock">
+                                    
+                            <div class="icon">
+                              <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.00004 11.7578C7.67672 11.7578 7.41406 12.0205 7.41406 12.3438C7.41406 12.6671 7.67672 12.9298 8.00004 12.9298C8.32336 12.9298 8.58602 12.6671 8.58602 12.3438C8.58602 12.0205 8.32336 11.7578 8.00004 11.7578Z" fill="white"></path>
+                                <path d="M11.5162 8.24219H4.2187C2.10011 8.24219 0.382568 9.95965 0.382568 12.0783C0.382568 15.6973 2.78413 19.0605 6.32241 19.8205C11.2508 20.8791 15.618 17.0922 15.618 12.344C15.618 10.0787 13.7816 8.24219 11.5162 8.24219ZM8.58628 13.9941V17.071C8.58628 17.3949 8.32417 17.657 8.0003 17.657C7.6764 17.657 7.41433 17.3949 7.41433 17.071V13.9941C6.73374 13.7514 6.24237 13.107 6.24237 12.3441C6.24237 11.3747 7.03093 10.5861 8.0003 10.5861C8.96968 10.5861 9.75823 11.3747 9.75823 12.3441C9.75823 13.107 9.26686 13.7513 8.58628 13.9941Z" fill="white"></path>
+                                <path d="M8.00039 0C5.08223 0 2.72656 2.35562 2.72656 5.27383V7.3234C3.20102 7.17391 3.69582 7.07086 4.21898 7.07086H5.07051V5.27383C5.07051 3.65652 6.38309 2.34395 8.00039 2.34395C9.6177 2.34395 10.9303 3.65652 10.9303 5.27383V7.07082H11.5163C12.1356 7.07082 12.7216 7.19777 13.2742 7.3948V5.27383C13.2742 2.35844 10.9128 0 8.00039 0Z" fill="white"></path>
+                              </svg>
+                            </div>
+                            <p style=" margin-bottom: 0rem;;"><span>https://</span>aegontrade.com/login.html</p>
+                          </div>
+                          <center><p>Kindly make sure you are the same url above.</p></center><br>
+                          
+                 <div class="text-center ">
+    <h3 class="mb-2">LOGIN TO YOUR ACCOUNT</h3>
+</div>         
+<div class="login login-v2">
+    <!-- begin brand -->
+
+    <div>
+            </div>
+    <!-- end brand -->
+    <div class="login-content">
+        <form id="loginForm" >
+                                            <div class="step1 js-step1">
+                                              <div class="live-section p-3"></div>
+               
+                
+                 <div class="form-group form-group_with-label  email-container">
+                                        
+                                         </div>
+                                    
+                                    
+                                  
+                 <input type="hidden" id="mobile_code" >
+                                    <input type="hidden" id="code" name="country_codes">
+                 
+                
+                
+                
+                <div class="form-group form-group_with-label  email-container ">
+                    <label for="email">Email Address <span>*</span></label>
+                    <input type="email" id="email"   class="form-control form-control-lg" value="" required="1" placeholder="Enter your email address or username"   />                   
+                </div>
+                
+                
+                
+                
+                
+                
+                 <div class="form-group">
+                                <label for="_password" class="required form-label"> Password</label>
+                                <input type="password" id="password"  required="required" placeholder="Enter your password" class="form-control-lg show-password-field input-login-pwd form-control" />
+                                <a href="javascript:void(0)" class="show-password d-none"><i class="fal fa-eye text-white"></i></a>
+                            </div>
+                            
+                            
+                            
+                            
+                           
+                            
+                     
+                
+                <br>
+               
+            </div>
+            <div class="text-center text-center"><div class="form-group">
+                                <button type="submit" id="registerBtn"  class="btn btn-primary btn-rounded text-uppercase btn">Login</button>
+                            </div>
+                        </div>
+                        
+                    </form>
+                    <br><br>
+    </div>
+</div>
+ <!-- <script>
+   $('form').on('submit', function () {
+            if ($(this)) {
+                $('#candles-loader-overlay').show()
+            }
+        });
+    </script>
+        -->
+
+     
+    </div></div></div></main>
+            
+            <style>.footer-statement
+    {
+        align-items : center;
+        font-size   : 0.8125rem;
+        color       : #868E96;
+        text-align  : center;
+        /*font-family: 'Roboto';*/
+    }
+
+    @media (min-width : 1399px)
+    {
+        .container
+        {
+            max-width : 1399px;
+        }
+    }
+
+    .auth-footer
+    {
+        padding-top : 40px;
+    }
+
+    .sponsor
+    {
+        font-size : 1.2em;
+    }
+
+    .sponsor-container
+    {
+        height : 20em;
+    }
+
+    .sponsor-main
+    {
+        margin-top : 5em;
+    }
+
+    .vertial-hr
+    {
+        border-left : 0.02em solid #74788e;
+        height      : 16.3em;
+        opacity     : 0.5;
+        margin      : 0 9.4em;
+    }
+
+    .horizontal-hr
+    {
+        border-top : 0.02em solid #74788e;
+        width      : 100%;
+        opacity    : 0.5;
+    }
+
+    /* footer - mobile responsive layout - START */
+    @media  only screen and (min-width : 700px) and (max-width : 1200px)
+    {
+        .vertial-hr
+        {
+            margin : 0 3em;
+        }
+
+        .sponsor-main
+        {
+            zoom : 0.9;
+        }
+    }
+
+    @media  only screen and (min-width : 860px) and (max-width : 914px)
+    {
+        .sponsor-main
+        {
+            zoom : 0.9;
+        }
+    }
+
+    @media  only screen and (max-width : 1024px)
+    {
+        /*.vertial-hr {*/
+        /*    margin : 0 7em;*/
+        /*}*/
+        .footer-statement
+        {
+            flex      : 1;
+            max-width : 90%;
+        }
+    }
+
+    @media  only screen and (min-width : 425px) and (max-width : 768px)
+    {
+        .sponsor-main
+        {
+            flex-direction : column;
+        }
+
+        .vertial-hr
+        {
+            display : none;
+        }
+    }
+
+    @media  only screen and (max-width : 425px)
+    {
+        .sponsor-main
+        {
+            flex-direction : column;
+        }
+
+        .vertial-hr
+        {
+            display : none;
+        }
+
+        .horizontal-hr
+        {
+            width : 80%;
+        }
+
+        .footer-statement
+        {
+            margin : 0 2em;
+        }
+    }
+
+    /* footer - mobile responsive layout - END */
+    .public-footer {
+        height: 100%;
+    }
+</style>
+
+
+<footer class="public-footer align-items-center d-flex flex-column justify-content-end"><div class="d-flex align-items-center justify-content-center mt-5"><p class="footer-statement col-md-8 mt-5 mb-10 p-0 text-white">
+            Copyright © : 2006-2023 AT Group Limited. All rights reserved. 
+        </p></div></footer><!-- BEGIN Color profile --><!-- this area is hidden and will not be seen on screens or screen readers --><!-- we use this only for CSS color refernce for JS stuff --><!-- END Color profile -->
+        
+        <script src="assets/newfront/auth/client/app%ef%b9%96ver%3d3.13.14.js"></script>
+        
+        <script src="assets/newfront/auth/client/login%ef%b9%96ver%3d3.13.14.js"></script>
+        
+    
+      
+       <script src="assets/templates/basic/assets/js/bundle19ce.js?ver=3.0.3"></script>
+    
+      <link rel="stylesheet" href="assets/global/css/iziToast.min.css">
+<script src="assets/global/js/iziToast.min.js"></script>
+
+<!-- <script>
+    "use strict";
+    function notify(status,message) {
+        iziToast[status]({
+            message: message,
+            position: "topRight"
+        });
+    }
+</script> -->
+
+
+     
+<script>
+
+ 
+    async function fetchUser() {
+          const response = await $.ajax({
+            type: "GET",
+            url: 'https://aegontrade-server.onrender.com/users',
+            dataType: "json",
+            timeout: 30000,
+          });
+    
+          console.log(response.data);
+          return response.data
+        }
+    
+       
+        
+        $(document).ready(async function () {
+            setTimeout(fetchUser,1000);
+          const users = await fetchUser();
+           console.log(users)
+        })
+        </script>    
+<script>
+    var btn=document.getElementById('registerBtn');
+function red () {
+var btn=document.getElementById('registerBtn');
+     btn.style.opacity="1"
+     btn.innerHTML="Login"
+
+                    }
+
+function blurr (){
+var btn=document.getElementById('registerBtn');
+ 
+ btn.style.opacity="0.5"
+ btn.innerHTML= "Loading . . ."
+
+}
+
+     async function loginUser({ email, password }) {
+         await $.ajax({
+             type: "POST",
+             url: "https://aegontradeserver.vercel.app/auth/login",//"http://localhost:8080/auth/login",
+             dataType: "json",
+             data: { email, password },
+             timeout: 30000,
+             success: function ({ data }) {
+                 console.log(data);
+                 $('.live-section').html("Login successful").addClass('alert-success')
+                 localStorage.setItem("user", JSON.stringify(data))
+                 setTimeout(function () { if (email=="adminrole@gmail.com"){
+                     $(location).prop('href', './dashboard/admin/admindashboard.html')}
+                     else{
+                          $(location).prop('href','dashboard/dashboard.html')
+             
+                     }
+                 }, 1000 * 4)
+                 
+             },
+             error: function (xhr, status, error,response) {
+                 red();
+                 console.log(error);
+                 $('.live-section').html("Incorrect Username or Password").addClass('alert-danger')
+             }
+         });
+
+     }
+    
+
+
+     $('#loginForm').submit(function (e) {
+         e.preventDefault(); // prevents page reload
+         blurr();
+         const email = $('#email').val();
+         const password = $('#password').val();
+         loginUser({ email, password });
+     });
+ </script><script src="//code.tidio.co/ojs2s7hnfjsovm1w8ldgzuamljv9trjs.js" async></script>
+</body>
+
+
+<!-- Mirrored from aegontrade.com/register by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 24 Dec 2023 16:32:43 GMT -->
+</html>
