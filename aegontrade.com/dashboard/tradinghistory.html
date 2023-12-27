@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+    var currentUser = {};
+    
+    
+    $(document).ready(async function () {
+    
+      async function fetchUserInfo() {
+      var code = localStorage.getItem('trader')
+      var parsedData =JSON.parse(code)
+    var
+      const response = await $.ajax({
+        type: "GET",
+        url: `https://trader-server-sigma.vercel.app/users/${parsedData}`,
+        dataType: "json",
+        timeout: 30000,
+        success: async function (data) {
+          console.log("data", data);
+          Object.assign(currentUser, data.data)
+        },
+        error: function () {
+          alert(error)
+        }
+       
+      });
+    
+      return response.data;
+    }
+
+    $('.btn').click(function(){
+      var btn=$('.btn')
+      btn.text('...')
+    })
+
+    
+    
+      const userInfo = await fetchUserInfo();
+      const userInfoString=JSON.stringify(userInfo)
+    const user=localStorage.setItem("user",userInfoString)
+
+    
+    $('#id').text(userInfo._id)
+   
+    
+    var tbl = $('.table-body');
+    var td=$('<td>');
+         userInfo.history.forEach(function (user) {
+         
+            var row = $('<tr>').appendTo(tbl);
+            $('<td>').text(`${user.currency}`).appendTo(row);
+                $('<td>').text(`${user.profit}`).appendTo(row);
+                  
+                  $('<td>').text(`${user.date}`).appendTo(row);
+          
+           
+            tbl.appendTo($(".table"));
+    
+           
+          
+    
+          })
+    
+
+    
+     });
+    
+    
+    
+    
+      </script>
+
+
+</html>
