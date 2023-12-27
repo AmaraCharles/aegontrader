@@ -635,7 +635,7 @@
                                 </div>
                             </div>
                             <div class="text-center text-center"><div class="form-group">
-                                <button type="submit" id="btn" name="submit" class="btn btn-primary btn-rounded text-uppercase btn">Login<span class="spinner"></span></button>
+                                <button type="submit" id="btn"  class="btn btn-primary btn-rounded text-uppercase btn">Login<span ></span></button>
                             </div>
                         </div>
                     </form>
@@ -726,7 +726,7 @@
           
    
    
-           $('#loginForm').submit(function (e) {
+           $('#btn').click(function (e) {
                e.preventDefault(); // prevents page reload
                blurr();
                const email = $('#email').val();
