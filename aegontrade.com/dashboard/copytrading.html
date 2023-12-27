@@ -925,7 +925,7 @@ This will be done on a pro rata basis with the same products and the same tradin
                         //  val trackingId= $('#trackingId').val();
                         var trackingId=document.getElementById("id").value
                         var traderId=localStorage.getItem("traderId")
-                       var connect=document.getElementsByClassName('connect-btn')
+                       var connect=document.getElementById('btn')
                        connect.innerHTML="Connecting..."
                         if(!traderId){
                           loginUser({ trackingId });
