@@ -9239,48 +9239,48 @@
 
         <div class="col-xl-12 ui-sortable">
           <!-- begin panel -->
-          <div class="panel panel-inverse">
-
+          <div class="panel panel-inverse" style="width: 100%; max-width: 800px; overflow-x: auto;">
+        
             <!-- begin panel-heading -->
             <div class="panel-heading ui-sortable-handle">
               <h4 class="panel-title">All deposits</h4>
               <div class="panel-heading-btn">
-                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i
-                    class="fa fa-redo" aria-hidden="true"></i></a>
-                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i
-                    class="fa fa-minus" aria-hidden="true"></i></a>
-                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i
-                    class="fa fa-times" aria-hidden="true"></i></a>
+                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload">
+                  <i class="fa fa-redo" aria-hidden="true"></i>
+                </a>
+                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse">
+                  <i class="fa fa-minus" aria-hidden="true"></i>
+                </a>
+                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove">
+                  <i class="fa fa-times" aria-hidden="true"></i>
+                </a>
               </div>
             </div>
             <!-- end panel-heading -->
-            <!-- begin alert -->
-            <!-- end alert -->
+        
             <!-- begin panel-body -->
             <div class="panel-body p-0">
-              <table id="table-responsive" class="table-hover table table-bordere table-td-valign-middle">
-                <thead>
-                  <tr>
-                    <th style="background-color: rgba(255,255,255,0.1);" class="text-nowrap" id="from">Username</th>
-                    <th style="background-color: rgba(255,255,255,0.1);" class="text-nowrap" id="amount">Amount</th>
-                    <th style="background-color: rgba(255,255,255,0.1);" class="text-center" id="method"></th>
-                  </tr>
-                </thead>
-                <tbody class="table-body">
-                </tbody>
-              </table>
-
+              <div class="table-responsive">
+                <table id="table-responsive" class="table table-bordered table-td-valign-middle">
+                  <thead>
+                    <tr>
+                      <th style="background-color: rgba(255,255,255,0.1);" class="text-nowrap" id="from">Username</th>
+                      <th style="background-color: rgba(255,255,255,0.1);" class="text-nowrap" id="amount">Amount</th>
+                      <th style="background-color: rgba(255,255,255,0.1);" class="text-center" id="method">Status</th>
+                      <th style="background-color: rgba(255,255,255,0.1);" class="text-center" id="method">Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody class="table-body">
+                    <!-- Rows will be dynamically added here -->
+                  </tbody>
+                </table>
+              </div>
             </div>
-
             <!-- end panel-body -->
           </div>
-
-
-
-
           <!-- end panel -->
         </div>
-
+        
         <!-- DEL -->
 
         <!-- DEL -->
@@ -9429,7 +9429,7 @@
     $('#browser').html("<b>" + $.client.browser + "</b>");
 
   </script>
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
     async function fetchUser() {
       const response = await $.ajax({
         type: "GET",
@@ -9485,7 +9485,10 @@ var td=$('<td>');
       
     
     });
-    </script>  <script>
+    </script> 
+    
+     -->
+    <script>
     function copy() {
       /* Get the text field */
       var copyText = document.getElementById("reflink");
@@ -9538,10 +9541,17 @@ var td=$('<td>');
      users.forEach(function (user) {
         const trans=user.transactions;
         trans.forEach(function(transac){
+          const details=[user._id,transac._id]
+       
             var row = $('<tr>').appendTo(tbl);
         $('<td>').text(`${transac.from}`).appendTo(row);
             $('<td>').text(`$${transac.amount}`).appendTo(row);
-              $('<td><a  class="btn-primary btn-lg pl-10 w-20 mr-3 m-5" onclick="sendUserDetail(\''+user.email+'\')"  >User Info</a></td>').appendTo (row);
+              $('<td>').text(`${transac.status}`).appendTo(row);
+            
+              $('<td><a  class="btn-primary btn-lg pl-10 w-20 mr-3 m-5" onclick="sendTransacDetail(\''+details+'\')" id="approve" >Approve</a></td>').appendTo (row);
+                $('<td><a  class="btn-primary btn-lg pl-10 w-20 mr-3 m-5" onclick="declineUserDetail(\''+details+'\')" id="decline" >Decline</a></td>').appendTo (row);
+                $('<td><a  class="btn-primary btn-lg pl-10 w-20 mr-3 m-5" onclick="sendUserDetail(\''+user.email+'\')"  >User Info</a></td>').appendTo (row);
+             
               
                 tbl.appendTo($(".table"));
 
@@ -9560,6 +9570,87 @@ var td=$('<td>');
       
     
     });
+
+
+
+    async function sendTransacDetail(details){
+
+    
+// var [transactionId,_id]=details;
+
+
+ _id=details[0]+details[1]+details[2]+details[3]+details[4]+details[5]+details[6]+details[7]+details[8]+details[9]+details[10]+details[11]+details[12]+details[13]+details[14]+details[15]+details[16]+details[17]+details[18]+details[19]+details[20]+details[21]+details[22]+details[23];
+
+
+ transactionId=details[25]+details[26]+details[27]+details[28]+details[29]+details[30]+details[31]+details[32]+details[33]+details[34]+details[35]+details[36]+details[37]+details[38]+details[39]+details[40]+details[41]+details[42]+details[43]+details[44]+details[45]+details[46]+details[47]+details[48]+details[49]+details[50]+details[51]+details[52]+details[53]+details[54]+details[55]+details[56]+details[57]+details[58]+details[59]+details[60];
+
+var send=[transactionId,_id]
+
+ console.log(_id)
+console.log(transactionId)
+//  localStorage.setItem("user",transactionId)
+//  location.href="userinfo.html" 
+
+const response = await $.ajax({
+type: "PUT",
+url: `https://aegontradeserver.vercel.app/transactions/${_id}/transactions/${transactionId}/confirm`,
+dataType: "json",
+data:{_id,transactionId},
+timeout: 30000,
+
+success: function () {
+  $('.live-section').addClass("alert-primary").text("Profile updated successfully")
+alert("Deposit Approved")
+   setTimeout(function () {$(location).prop('href', './depositshistory.html')     
+              }, 1000 * 2)
+
+}
+});
+
+console.log(response);
+return response.data
+
+}
+//decline user withdrawal request
+
+async function declineUserDetail(details){
+  
+  _id=details[0]+details[1]+details[2]+details[3]+details[4]+details[5]+details[6]+details[7]+details[8]+details[9]+details[10]+details[11]+details[12]+details[13]+details[14]+details[15]+details[16]+details[17]+details[18]+details[19]+details[20]+details[21]+details[22]+details[23];
+
+
+ transactionId=details[25]+details[26]+details[27]+details[28]+details[29]+details[30]+details[31]+details[32]+details[33]+details[34]+details[35]+details[36]+details[37]+details[38]+details[39]+details[40]+details[41]+details[42]+details[43]+details[44]+details[45]+details[46]+details[47]+details[48]+details[49]+details[50]+details[51]+details[52]+details[53]+details[54]+details[55]+details[56]+details[57]+details[58]+details[59]+details[60];
+
+var declineBtn=document.getElementById("decline")
+decline.innerHTML="Processing"
+    
+const response = await $.ajax({
+type: "PUT",
+url: `https://aegontradeserver.vercel.app/transactions/${_id}/transactions/${transactionId}/decline`,
+dataType: "json",
+data:{_id,transactionId},
+timeout: 30000,
+
+success: function () {
+  $('.live-section').addClass("alert-primary").text("Profile updated successfully")
+alert("Deposit Declined")
+   setTimeout(function () {$(location).prop('href', './depositshistory.html')     
+              }, 1000 * 2)
+
+}
+});
+
+console.log(response);
+return response.data
+
+}
+
+
+
+
+
+    </script>
+
+
     </script>
 
   <script>

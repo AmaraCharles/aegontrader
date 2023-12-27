@@ -344,12 +344,12 @@ input:checked ~ .faq-tab-content {
 .nav-height {
     height: 100vh !important;
 }
-.custom-translator {
+/* .custom-translator {
     position: fixed;
     top: 20px;
     right: 2%;
     z-index: 999999;
-}
+} */
 .trading_view_slider {
     /* height: 100px; */
 }

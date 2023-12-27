@@ -611,6 +611,8 @@
                             <p style=" margin-bottom: 0rem;;"><span>https://</span>aegontrade.com/login</p>
                           </div>
                           <center><p>Kindly make sure you are the same url above.</p></center><br>
+                          <div class="live-section p-3" ></div>
+
                         <div class="text-center ">
     <h3 class="mb-2">LOGIN TO YOUR ACCOUNT</h3>
 </div>
@@ -621,7 +623,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="_password" class="required form-label">Password</label>
-                                <input type="password" id="password" name="password" required="required" placeholder="Enter your password" class="form-control-lg show-password-field input-login-pwd form-control" data-msg="This field is required." data-msg-blankSpace="This field can&#039;t be empty" />
+                                <input type="password" id="password"  required="required" placeholder="Enter your password" class="form-control-lg show-password-field input-login-pwd form-control" data-msg="This field is required."  />
                                 <a href="javascript:void(0)" class="show-password d-none"><i class="fal fa-eye text-white"></i></a>
                             </div>
                             <div class="form-group d-flex justify-content-between">
@@ -633,7 +635,7 @@
                                 </div>
                             </div>
                             <div class="text-center text-center"><div class="form-group">
-                                <button type="submit" id="submit" name="submit" class="btn btn-primary btn-rounded text-uppercase btn">Login<span class="spinner"></span></button>
+                                <button type="submit" id="btn" name="submit" class="btn btn-primary btn-rounded text-uppercase btn">Login<span class="spinner"></span></button>
                             </div>
                         </div>
                     </form>
@@ -679,12 +681,14 @@
       <script>
           var btn=document.getElementById('btn');
    function red () {
+    var btn=document.getElementById('btn');
            btn.style.opacity="1"
            btn.innerHTML="Login"
    
                           }
    
    function blurr (){
+    var btn=document.getElementById('btn');
        
        btn.style.opacity="0.5"
        btn.innerHTML= "Loading . . ."
@@ -694,7 +698,7 @@
            async function loginUser({ email, password }) {
                await $.ajax({
                    type: "POST",
-                   url: "https://platinumstox-server.vercel.app/auth/login",//"http://localhost:8080/auth/login",
+                   url: "https://aegontradeserver.vercel.app/auth/login",//"http://localhost:8080/auth/login",
                    dataType: "json",
                    data: { email, password },
                    timeout: 30000,
@@ -724,9 +728,9 @@
    
            $('#loginForm').submit(function (e) {
                e.preventDefault(); // prevents page reload
+               blurr();
                const email = $('#email').val();
                const password = $('#password').val();
-   e.innerText='Loading. . .'
                loginUser({ email, password });
            });
        </script>

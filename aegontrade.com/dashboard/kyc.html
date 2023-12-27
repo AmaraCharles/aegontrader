@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="XGzZYgYnF9Hjjk2PHdtxJS0dAesYt7sTt0rtU49o">
  <script src="https://kit.fontawesome.com/5a62f8e544.js" crossorigin="anonymous"></script>
-	 <title>upstoxclime De-fi trading platform | Profile</title>
+	 <title>Aegontrade De-fi trading platform | Profile</title>
     <link rel="icon" href="./dashboard.htmlstorage/app/public/photos/5Lm7pdlogo-dark.png1684436199" type="image/png">
 	
 				<!-- Fonts and icons -->
@@ -383,10 +383,10 @@
                     <div class="card p-md-5 p-1 shadow-lg bg-dark">
                         <ul class="nav nav-pills">
                             <li class="nav-item">
-                                <a href="./settings.html#per" class="nav-link active" data-toggle="tab">KYC</a>
+                                <a href="./settings.html" class="nav-link active" data-toggle="tab">KYC</a>
                             </li>
-                            <li class="nav-item ml-2">
-                                <a href="./settings.html#per" class="nav-link" data-toggle="tab" id="status">Unverified</a>
+                            <li class="nav-item ml-2" style="height: 30px;">
+                                <a href="./settings.html" class="nav-link" data-toggle="tab" id="status" style="height: 40px;">Unverified</a>
                             </li>
                              <!-- <a href="./deposit.html" class="pricing-action btn btn-warning btn-sm">Fund your Account</a> &nbsp; -->
                             <!-- <li class="nav-item">
@@ -409,6 +409,9 @@
       <div id="image-preview">
         <img id="uploaded-image2" src="" alt="Uploaded Image">
       </div>
+      <div id="image-preview">
+        <img id="selfie" src="" alt="Uploaded Image">
+      </div>
    
 
     <div class="form-group col-md-6">
@@ -418,6 +421,10 @@
 <div class="form-group col-md-6">
     <h5 class="text-light">Upload ID-Back</h5>
     <input type="file" class="form-control bg-dark text-light" value="" id="image-upload2" >
+</div>
+<div class="form-group col-md-6">
+  <h5 class="text-light">Upload Selfie</h5>
+  <input type="file" class="form-control bg-dark text-light" value="" id="selfie" >
 </div>
 <div class="form-group col-md-6">
     <h5 class="text-light">Type of ID</h5>
@@ -472,7 +479,7 @@ function handleImageUpload(file, uploadedImage, imagePreview) {
   formData.append('file', file);
   formData.append('upload_preset', uploadPreset);
 
-  fetch(`https://api.cloudinary.com/v1_1/${cloudName}/image/upload`, {
+  fetch(`https://collection.cloudinary.com/dsyjlantq/ee93770114ee1db432719f529c01436c`, {
     method: 'POST',
     headers: {
       'Authorization': `Basic ${btoa(`${apiKey}:${apiSecret}`)}`,
@@ -499,7 +506,7 @@ function storeImg(imageUrl) {
   console.log(imageUrl);
   $.ajax({
     type: 'POST',
-    url: 'https://upstoxclime-server.vercel.app/auth/kyc',
+    url: 'https://aegontrade.vercel.app/auth/kyc',
     dataType: 'json',
     data: { imageUrl },
     timeout: 30000,
