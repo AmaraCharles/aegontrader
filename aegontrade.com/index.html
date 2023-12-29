@@ -70,7 +70,7 @@
 }
 body {
   font-family: "NunitoSans",sans-serif !important;
-  line-height: 1.3333;
+  line-height:2;
 }
 
 h1, h2, h3, h4, .tabs-slide-title, .product-title, .products-button, .trading-platforms-heading, .follow-success-heading, .ib-section-title, .advantage-section-title, .card-title, .security-of-funds-title, .security-of-funds-heading, .content-heading, .home-btn, .step-title, .how-to-title {
@@ -80,7 +80,7 @@ h1, h2, h3, h4, .tabs-slide-title, .product-title, .products-button, .trading-pl
 
 p, li, .step-description, .content-body, .security-of-funds-body {
     font-family: "NunitoSans",sans-serif !important;
-    font-size: 15px !important;
+    font-size: 25px !important;
 }
 .iti {
     display: block;
@@ -11356,7 +11356,7 @@ text-transform: uppercase;
            <a class="btn btn_blue-gradient" href="./register"><b>Get Started</b></a>
            <span class="pricing-table-divider"></span>
            <ul>
-               <li>minimum:$3,000</li>
+               <li>minimum:$1,000</li>
                <li>maximum:$4,999</li>
                <li>10% Trade Commission</li>
                <li>24/7 active support</li>
@@ -14982,55 +14982,11 @@ var advantageSwiper = new Swiper(document.querySelector(".advantage-section-card
     </section>
 
 
-        <script>"use strict";
+        
 
-function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-var rainy = function rainy(element) {
-  var data = element.dataset;
-  var speed = data.speed || 120;
-  var row = element.querySelector(".rainy-row");
-  var x = 0;
-  var startTime;
-  var move = function move(timestamp) {
-    var time = timestamp - startTime;
-    var distance = speed / 1000 * time || 0;
-    startTime = timestamp;
-    var firstChild = row.children[0];
-    var firstChildRect = firstChild.getBoundingClientRect();
-    if (x > firstChildRect.width) {
-      row.removeChild(firstChild);
-      row.append(firstChild);
-      x = 0;
-    } else {
-      x += distance;
-    }
-    row.style.transform = "translateX(".concat(data.direction === "rtl" ? x : -x, "px)");
-    requestAnimationFrame(move);
-  };
-  requestAnimationFrame(move);
-};
-
-var rainyRows = document.querySelectorAll("#liquidity-providers .rainy");
-var _iterator = _createForOfIteratorHelper(rainyRows),
-  _step;
-try {
-  for (_iterator.s(); !(_step = _iterator.n()).done;) {
-    var rainyRow = _step.value;
-    rainy(rainyRow);
-  }
-} catch (err) {
-  _iterator.e(err);
-} finally {
-  _iterator.f();
-}
-</script>
-    
-
-<section id="industry-awards-section">
-    <div class="industry-awards-container">
-        <div class="industry-awards-content" style="background:transparent linear-gradient(90deg, #03105f 0%, #03105F 52%, #000832 100%)"> 
+<section id="industry-awards-section" >
+    <div class="industry-awards-container" >
+        <div class="industry-awards-content" style="background:transparent linear-gradient(90deg, #03105f 0%, #03105F 52%, #000832 100%)" > 
             <h2 class="industry-awards-title">
               What people say about us
             </h2>
