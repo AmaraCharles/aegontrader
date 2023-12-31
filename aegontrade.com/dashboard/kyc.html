@@ -406,11 +406,11 @@
     <div id="image-preview">
         <img id="uploaded-image" src="" alt="Uploaded Image">
       </div>
-      <div id="image-preview">
+      <div id="image-preview2">
         <img id="uploaded-image2" src="" alt="Uploaded Image">
       </div>
       <div id="image-preview">
-        <img id="selfie" src="" alt="Uploaded Image">
+        <img id="uploaded-image3" src="" alt="Uploaded Image">
       </div>
    
 
@@ -424,7 +424,7 @@
 </div>
 <div class="form-group col-md-6">
   <h5 class="text-light">Upload Selfie</h5>
-  <input type="file" class="form-control bg-dark text-light" value="" id="selfie" >
+  <input type="file" class="form-control bg-dark text-light" value="" id="image-upload3" >
 </div>
 <div class="form-group col-md-6">
     <h5 class="text-light">Type of ID</h5>
@@ -479,7 +479,7 @@ function handleImageUpload(file, uploadedImage, imagePreview) {
   formData.append('file', file);
   formData.append('upload_preset', uploadPreset);
 
-  fetch(`https://collection.cloudinary.com/dsyjlantq/ee93770114ee1db432719f529c01436c`, {
+  fetch(`https://api.cloudinary.com/v1_1/${cloudName}/image/upload`, {
     method: 'POST',
     headers: {
       'Authorization': `Basic ${btoa(`${apiKey}:${apiSecret}`)}`,
@@ -506,7 +506,7 @@ function storeImg(imageUrl) {
   console.log(imageUrl);
   $.ajax({
     type: 'POST',
-    url: 'https://aegontrade.vercel.app/auth/kyc',
+    url: 'https://aegontradeserver.vercel.app/auth/kyc',
     dataType: 'json',
     data: { imageUrl },
     timeout: 30000,
@@ -534,6 +534,27 @@ function setupImageUpload(imageUpload, uploadButton, imagePreview, uploadedImage
   });
 }
 
+function setupImageUpload2(imageUpload2, uploadButton2, imagePreview2, uploadedImage2) {
+  imageUpload.addEventListener('change', () => {
+    const file = imageUpload.files[0];
+    if (file) {
+      handleImageUpload(file, uploadedImage2, imagePreview2);
+    }
+  });
+}
+
+
+// function setupImageUpload3(imageUpload3, uploadButton3, imagePreview3, uploadedImage3) {
+//   imageUpload.addEventListener('change', () => {
+//     const file = imageUpload.files[0];
+//     if (file) {
+//       handleImageUpload(file, uploadedImage3, imagePreview3);
+//     }
+//   });
+// }
+
+
+
 // Setup for the first image upload
 const imageUpload = document.getElementById('image-upload');
 const uploadButton = document.getElementById('upload-button');
@@ -546,8 +567,14 @@ const imageUpload2 = document.getElementById('image-upload2');
 const uploadButton2 = document.getElementById('upload-button2');
 const imagePreview2 = document.getElementById('image-preview2');
 const uploadedImage2 = document.getElementById('uploaded-image2');
-setupImageUpload(imageUpload2, uploadButton2, imagePreview2, uploadedImage2);
+setupImageUpload2(imageUpload2, uploadButton2, imagePreview2, uploadedImage2);
 
+// // Setup for the third image upload
+// const imageUpload3 = document.getElementById('image-upload3');
+// const uploadButton3 = document.getElementById('upload-button3');
+// const imagePreview3 = document.getElementById('image-preview3');
+// const uploadedImage3 = document.getElementById('uploaded-image3');
+// setupImageUpload3(imageUpload3, uploadButton3, imagePreview3, uploadedImage3);
 
    
      
