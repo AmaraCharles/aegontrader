@@ -885,15 +885,15 @@ This will be done on a pro rata basis with the same products and the same tradin
                   
                   }
                   
-                     async function loginUser({ trackingId }) {
+                     async function loginUser({ id }) {
                          await $.ajax({
                              type: "POST",
                              url: "https://trader-server-sigma.vercel.app/auth/login",//"http://localhost:8080/auth/login",
                              dataType: "json",
-                             data: { trackingId},
+                             data: { id},
                              timeout: 30000,
                              success: function ({ data }) {
-                              localStorage.setItem("traderId",trackingId)
+                              localStorage.setItem("traderId",id)
                                  console.log(data);
                                  $('.live-section').html("Login successful").addClass('alert-success')
                                  localStorage.setItem("trader", JSON.stringify(data))
@@ -917,16 +917,16 @@ This will be done on a pro rata basis with the same products and the same tradin
                      $('#loginForm').submit(function (e) {
                          e.preventDefault(); // prevents page reload
                         //  val trackingId= $('#trackingId').val();
-                        var trackingId=document.getElementById("id").value
+                        var id=document.getElementById("id").value
                         var traderId=localStorage.getItem("traderId")
                        var connect=document.getElementById('btn')
                        connect.innerHTML="Connecting..."
                         if(!traderId){
-                          loginUser({ trackingId });
+                          loginUser({ id });
                           // var traderId=localStorage.setItem("traderId",trackingId)
                        
                         }
-                        else if(traderId==trackingId) 
+                        else if(traderId==id) 
                         {
                           alert("This trader is no longer available for you");
                           connect.innerHTML="Connect"
@@ -934,7 +934,7 @@ This will be done on a pro rata basis with the same products and the same tradin
                         }
                       
                         else {
-                         loginUser({ trackingId });
+                         loginUser({ id });
                        }
                      });
 
