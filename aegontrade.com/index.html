@@ -9412,10 +9412,24 @@ $(document).ready(function () {
 });</script> 
 
 
-    
+    <style>
+      @media (min-width:700px) {
+
+        .move{
+          
+display: flex;
+flex-direction: column;
+align-items: center !important;
+justify-content: center !important;
+padding: 30px;
+          
+        }
+        
+      }
+    </style>
 
     <section id="trading-platforms-section">
-      <div class="trading-platforms-wrapper" style="display: flex; flex-direction: column;align-items: center;justify-content: center;">
+      <div class="trading-platforms-wrapper move" >
           <div class="trading-platforms-heading">
               EXPLORE OPTIONS TRADING
           </div>
@@ -9461,7 +9475,7 @@ $(document).ready(function () {
         </picture>
   
     </div>
-    <div class="col-lg-6 mt-lg-4 mt-xl-0 flex-xl-fill mt4-mt5-slide">
+    <div class="col-lg-6 mt-lg-4 mt-xl-0 flex-xl-fill mt4-mt5-slide move">
         <div class="how-to-steps row">
             <div class="step-title">WHAT IS OPTIONS TRADING?</div>
             <div class="step-description mt45-slide">Options trading is when you buy or sell an underlying asset at a pre-negotiated price by a certain future date.
