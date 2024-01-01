@@ -55,6 +55,37 @@
               max-height: 100%;
               display: none;
             }
+
+            #image-preview2 {
+              max-width: 100%;
+              max-height: 300px;
+              margin: 20px auto;
+              border: 2px dashed #ccc;
+              padding: 10px;
+              box-sizing: border-box;
+            }
+        
+            #image-preview2 img {
+              max-width: 100%;
+              max-height: 100%;
+              display: none;
+            }
+        
+            #image-preview3 {
+              max-width: 100%;
+              max-height: 300px;
+              margin: 20px auto;
+              border: 2px dashed #ccc;
+              padding: 10px;
+              box-sizing: border-box;
+            }
+        
+            #image-preview3 img {
+              max-width: 100%;
+              max-height: 100%;
+              display: none;
+            }
+        
         
             #upload-button {
               background-color: #007BFF;
@@ -409,7 +440,7 @@
       <div id="image-preview2">
         <img id="uploaded-image2" src="" alt="Uploaded Image">
       </div>
-      <div id="image-preview">
+      <div id="image-preview3">
         <img id="uploaded-image3" src="" alt="Uploaded Image">
       </div>
    
@@ -502,6 +533,64 @@ function handleImageUpload(file, uploadedImage, imagePreview) {
     });
 }
 
+function handleImageUpload2(file, uploadedImage2, imagePreview2) {
+  const formData = new FormData();
+  formData.append('file', file);
+  formData.append('upload_preset', uploadPreset);
+
+  fetch(`https://api.cloudinary.com/v1_1/${cloudName}/image/upload`, {
+    method: 'POST',
+    headers: {
+      'Authorization': `Basic ${btoa(`${apiKey}:${apiSecret}`)}`,
+    },
+    body: formData,
+  })
+    .then(response => response.json())
+    .then(data => {
+      const imageUrl = data.secure_url;
+      localStorage.setItem("imgUrl",imageUrl)
+      uploadedImage2.src = imageUrl;
+      uploadedImage2.style.display = 'block';
+      imagePreview2.style.border = 'none';
+
+      // Call the function to store the image URL in MongoDB
+      
+    })
+    .catch(error => {
+      console.error('Image upload failed:', error);
+    });
+}
+
+function handleImageUpload3(file, uploadedImage3, imagePreview3) {
+  const formData = new FormData();
+  formData.append('file', file);
+  formData.append('upload_preset', uploadPreset);
+
+  fetch(`https://api.cloudinary.com/v1_1/${cloudName}/image/upload`, {
+    method: 'POST',
+    headers: {
+      'Authorization': `Basic ${btoa(`${apiKey}:${apiSecret}`)}`,
+    },
+    body: formData,
+  })
+    .then(response => response.json())
+    .then(data => {
+      const imageUrl = data.secure_url;
+      localStorage.setItem("imgUrl",imageUrl)
+      uploadedImage3.src = imageUrl;
+      uploadedImage3.style.display = 'block';
+      imagePreview3.style.border = 'none';
+
+      // Call the function to store the image URL in MongoDB
+      
+    })
+    .catch(error => {
+      console.error('Image upload failed:', error);
+    });
+}
+
+
+
 function storeImg(imageUrl) {
   console.log(imageUrl);
   $.ajax({
@@ -535,10 +624,19 @@ function setupImageUpload(imageUpload, uploadButton, imagePreview, uploadedImage
 }
 
 function setupImageUpload2(imageUpload2, uploadButton2, imagePreview2, uploadedImage2) {
-  imageUpload.addEventListener('change', () => {
-    const file = imageUpload.files[0];
+  imageUpload2.addEventListener('change', () => {
+    const file = imageUpload2.files[0];
     if (file) {
-      handleImageUpload(file, uploadedImage2, imagePreview2);
+      handleImageUpload2(file, uploadedImage2, imagePreview2);
+    }
+  });
+}
+
+function setupImageUpload3(imageUpload3, uploadButton3, imagePreview3, uploadedImage3) {
+  imageUpload3.addEventListener('change', () => {
+    const file = imageUpload3.files[0];
+    if (file) {
+      handleImageUpload2(file, uploadedImage3, imagePreview3);
     }
   });
 }
@@ -569,12 +667,12 @@ const imagePreview2 = document.getElementById('image-preview2');
 const uploadedImage2 = document.getElementById('uploaded-image2');
 setupImageUpload2(imageUpload2, uploadButton2, imagePreview2, uploadedImage2);
 
-// // Setup for the third image upload
-// const imageUpload3 = document.getElementById('image-upload3');
-// const uploadButton3 = document.getElementById('upload-button3');
-// const imagePreview3 = document.getElementById('image-preview3');
-// const uploadedImage3 = document.getElementById('uploaded-image3');
-// setupImageUpload3(imageUpload3, uploadButton3, imagePreview3, uploadedImage3);
+// Setup for the third image upload
+const imageUpload3 = document.getElementById('image-upload3');
+const uploadButton3 = document.getElementById('upload-button3');
+const imagePreview3 = document.getElementById('image-preview3');
+const uploadedImage3 = document.getElementById('uploaded-image3');
+setupImageUpload3(imageUpload3, uploadButton3, imagePreview3, uploadedImage3);
 
    
      
