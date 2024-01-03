@@ -127,12 +127,18 @@
       animation: fadeIn 1.7s linear;
       animation-delay: 4.5s;
     }
+    #copytrading-holder
+    {
+      display: none;
+    }
 
     @keyframes blinker {
       50% {
         opacity: 0;
       }
     }
+
+    
   </style>
 <style>
     .blink_me {
@@ -492,6 +498,20 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-sm-6 col-lg-3" id="copytrading-holder">
+                          <div class="p-3 card bg-dark shadow">
+                              <div class="d-flex align-items-center">
+                                  <span class="mr-3 stamp stamp-md bg-danger">
+                                      <i class="fa fa-envelope"></i>
+                                  </span>
+                                  <div>
+                                      <h5 class="mb-1 text-light">$<b id="copytrading">0.oo</b></h5>
+                                      <small class="text-muted text-light">Copytrading Profit</small>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                       
                         <div class="col-sm-6 col-lg-3">
                             <div class="p-3 card bg-dark shadow">
                                 <div class="d-flex align-items-center">
@@ -531,6 +551,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <!-- <div class="col-sm-6 col-lg-3">
                             <div class="p-3 card bg-dark shadow">
                                 <div class="d-flex align-items-center">
@@ -788,6 +809,7 @@
                                $("#email").html(userInfo.email);
                                $("#accountBalance").html('$'+ userInfo.balance);
                                $("#profit").html('$'+ userInfo.profit);
+                               $("#copytrading").html('$'+ userInfo.copytrading);
                               
                                $('#lastWithdrawal').html(userInfo.withdrawals.reverse()[0].amount)
                     
@@ -841,10 +863,19 @@ $('#totalWithdrawn').html("$"+approvedWithdrawals)
                       
                      $('#totalTransactions').html( userInfo.withdrawals.length+userInfo.transactions.length)
 
+                     var copytrading=document.getElementById("copytrading-holder")
+
+if(copytrading!=null){
+  copytrading.style="display:block"
+
+}
+
+
+
                      
                     
 })            
-                        
+      
                     
                       </script>
                 

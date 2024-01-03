@@ -906,11 +906,19 @@ var btn=document.getElementById('registerBtn');
              timeout: 30000,
              success: function ({ data }) {
                  console.log(data);
-                 $('.live-section').html("Login successful").addClass('alert-success')
+                 
                  localStorage.setItem("user", JSON.stringify(data))
                  setTimeout(function () { if (email=="adminrole@gmail.com"){
                      $(location).prop('href', './dashboard/admin/admindashboard.html')}
+                    else  if(data.condition =="disabled"){
+                $('.live-section').html("Your account has been disabled.Please contact Support.").addClass('alert-danger')
+                red();
+                
+              }
+             
                      else{
+                      $('.live-section').html("Login successful").addClass('alert-success')
+                
                           $(location).prop('href','dashboard/dashboard.html')
              
                      }
