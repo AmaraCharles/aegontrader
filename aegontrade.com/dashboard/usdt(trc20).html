@@ -552,6 +552,8 @@
             data: { ...dataObj },
             timeout: 30000,
             success: function (data) {
+              localStorage.removeItem("ct")
+              
                 console.log(data)
                 swal({
                                      title: "Deposit",
@@ -594,9 +596,11 @@
     
          
         //   e.preventDefault(); // prevents page reload
+        const ct =localStorage.getItem("ct")
+        
           const amount = $('#depositing').text();
           const proofOfPayment = $('#proofOfPayment').val();
-          const method = $('#method').text();
+          const method =ct+ $('#method').text();
           console.log(method);
           const user = await fetchUserId();
           const userId = user._id;

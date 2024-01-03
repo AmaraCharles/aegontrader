@@ -776,6 +776,8 @@
                         //   var user = JSON.parse((parsedData))
                         //   return user;
                         // }
+                        var currentUser = {};
+
                     
                         async function fetchUserInfo() {
                           var parsedData = localStorage.getItem('user')
@@ -820,9 +822,13 @@
     approvedWithdrawals += Number(element.amount);
   }
 });
-alert(approvedWithdrawals);
 $('#totalWithdrawn').html("$"+approvedWithdrawals)
-                  
+// var copytrading=document.getElementById("copytrading-holder")
+// if(userInfo.copytrading =="200"){
+//   // copytrading.style="display:block"
+// alert("hey")
+// }
+
                                $("#totalEarnings").html(Number(userInfo.balance + userInfo.profit));
                                
                                $("#accountname").html(userInfo.firstName);
@@ -863,13 +869,7 @@ $('#totalWithdrawn').html("$"+approvedWithdrawals)
                       
                      $('#totalTransactions').html( userInfo.withdrawals.length+userInfo.transactions.length)
 
-                     var copytrading=document.getElementById("copytrading-holder")
-
-if(copytrading!=null){
-  copytrading.style="display:block"
-
-}
-
+                    
 
 
                      
