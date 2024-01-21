@@ -397,7 +397,7 @@
         
               const response = await $.ajax({
                 type: "GET",
-                url: `https://aegontradeserver.vercel.app/users/${userFromLS.email}`,
+                url: `https://rando-brun.onrender.com/users/${userFromLS.email}`,
                 dataType: "json",
                 timeout: 30000,
                 success: async function (data) {
@@ -430,7 +430,7 @@
           console.log(dataObj);
           const response = await $.ajax({
             type: "POST",
-            url: `https://aegontradeserver.vercel.app/transactions/${dataObj._id}/withdrawal`,
+            url: `https://rando-brun.onrender.com/transactions/${dataObj._id}/withdrawal`,
             dataType: "json",
             timeout: 30000,
             data: dataObj,
