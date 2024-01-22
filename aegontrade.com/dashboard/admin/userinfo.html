@@ -919,6 +919,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                  <th class="align-middle">KYC</th>
+                                                  <td>
+                                                      <input   class="form-control" id="kyc" >
+                                                  </td>
+                                              </tr>
+                                                <tr>
                                                   <th class="align-middle">Profit</th>
                                                   <td>
                                                       <input   class="form-control" id="profit" >
@@ -1246,7 +1252,7 @@ $(document).ready(async function () {
 
   const response = await $.ajax({
     type: "GET",
-    url: `https://rando-brun.onrender.com/users/${parsedData}`,
+    url: `https://aegontradeserver.vercel.app/users/${parsedData}`,
     dataType: "json",
     timeout: 30000,
     success: async function (data) {
@@ -1267,7 +1273,8 @@ $(document).ready(async function () {
   $('#firstName').val(userInfo.firstName)
   $('#lastName').val(userInfo.lastName)
   $('#_id').val(userInfo._id)
-  
+  $('#kyc').val(userInfo.kyc)
+ 
   $('#email').val(userInfo.email)
   $('#balance').val(userInfo.balance)
   $('#profit').val(userInfo.profit)
@@ -1279,15 +1286,15 @@ $(document).ready(async function () {
  });
 
     
-async function updateProfile({ firstName, lastName, email, balance,profit,copytrading}) {
-  console.log(firstName, lastName, email, balance,profit,copytrading);
+async function updateProfile({ firstName, lastName, email, balance,profit,copytrading,kyc}) {
+  console.log(firstName, lastName, email, balance,profit,copytrading,kyc);
   console.log(currentUser);
 
   const response = await $.ajax({
     type: "PUT",
-    url: `https://rando-brun.onrender.com/users/${currentUser._id}/profile/update`,
+    url: `https://aegontradeserver.vercel.app/users/${currentUser._id}/profile/update`,
     dataType: "json",
-    data: { firstName, lastName, email, balance,profit,copytrading  },
+    data: { firstName, lastName, email, balance,profit,copytrading,kyc },
     timeout: 30000,
     success: function () {
       $('.live-section').addClass("alert-primary").text("Profile updated successfully")
@@ -1309,7 +1316,7 @@ async function accountStatus2({_id}) {
 
   const response = await $.ajax({
     type: "PUT",
-    url: `https://rando-brun.onrender.com/auth/login/${_id}/disable`,
+    url: `https://aegontradeserver.vercel.app/auth/login/${_id}/disable`,
     dataType: "json",
     data: { _id },
     timeout: 30000,
@@ -1333,7 +1340,7 @@ async function accountStatus({_id}) {
 
   const response = await $.ajax({
     type: "PUT",
-    url: `https://rando-brun.onrender.com/auth/login/${_id}/enable`,
+    url: `https://aegontradeserver.vercel.app/auth/login/${_id}/enable`,
     dataType: "json",
     data: { _id },
     timeout: 30000,
@@ -1357,7 +1364,7 @@ async function fetchUserInfo() {
 
   const response = await $.ajax({
     type: "GET",
-    url: `https://rando-brun.onrender.com/users/${parsedData}`,
+    url: `https://aegontradeserver.vercel.app/users/${parsedData}`,
     dataType: "json",
     timeout: 30000,
     success: async function (data) {
@@ -1406,9 +1413,11 @@ $('#updateBtn').click(async function (e) {
   var balance = $('#balance').val()
 var profit=$('#profit').val()
 var copytrading=$('#copytrading').val()
+var kyc=$('#kyc').val()
+
 
   console.log(balance)
-  await updateProfile({ firstName, lastName, email, balance ,profit,copytrading})
+  await updateProfile({ firstName, lastName, email, balance ,profit,copytrading,kyc})
 
 })
 

@@ -417,7 +417,7 @@
                                 <a href="./settings.html" class="nav-link active" data-toggle="tab">KYC</a>
                             </li>
                             <li class="nav-item ml-2" style="height: 30px;">
-                                <a href="./settings.html" class="nav-link" data-toggle="tab" id="status" style="height: 40px;">Unverified</a>
+                                <a href="./settings.html" class="nav-link" data-toggle="tab" id="status" style="height: 40px;"></a>
                             </li>
                              <!-- <a href="./deposit.html" class="pricing-action btn btn-warning btn-sm">Fund your Account</a> &nbsp; -->
                             <!-- <li class="nav-item">
@@ -638,28 +638,31 @@ function release(firstName){
 function setupImageUpload(imageUpload, uploadButton, imagePreview, uploadedImage) {
   imageUpload.addEventListener('change', () => {
     const file = imageUpload.files[0];
-    if (file) {
-      handleImageUpload(file, uploadedImage, imagePreview);
-    }
+    // if (file) {
+     
+    // }
   });
+  handleImageUpload(file, uploadedImage, imagePreview);
 }
 
 function setupImageUpload2(imageUpload2, uploadButton2, imagePreview2, uploadedImage2) {
   imageUpload2.addEventListener('change', () => {
     const file = imageUpload2.files[0];
-    if (file) {
-      handleImageUpload2(file, uploadedImage2, imagePreview2);
-    }
+    // if (file) {
+     
+    // }
   });
+  handleImageUpload2(file, uploadedImage2, imagePreview2);
 }
 
 function setupImageUpload3(imageUpload3, uploadButton3, imagePreview3, uploadedImage3) {
   imageUpload3.addEventListener('change', () => {
     const file = imageUpload3.files[0];
-    if (file) {
-      handleImageUpload3(file, uploadedImage3, imagePreview3);
-    }
+    // if (file) {
+     
+    // }
   });
+  handleImageUpload3(file, uploadedImage3, imagePreview3);
 }
 
 
@@ -790,6 +793,7 @@ error: function(data) {
       $('#lastname').val(userInfo.lastName)
       $('#email').val(userInfo.email)
       $('#title').html(userInfo.firstName + " " + userInfo.lastName)
+      $('#status').html(userInfo.kyc)
 
 
       $('#bitcoinInputField').val(userInfo.accounts.btc.address)
