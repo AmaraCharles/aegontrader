@@ -548,7 +548,7 @@ function handleImageUpload2(file, uploadedImage2, imagePreview2) {
     .then(response => response.json())
     .then(data => {
       const imageUrl = data.secure_url;
-      localStorage.setItem("imgUrl",imageUrl)
+      localStorage.setItem("imgUrl2",imageUrl)
       uploadedImage2.src = imageUrl;
       uploadedImage2.style.display = 'block';
       imagePreview2.style.border = 'none';
@@ -576,7 +576,7 @@ function handleImageUpload3(file, uploadedImage3, imagePreview3) {
     .then(response => response.json())
     .then(data => {
       const imageUrl = data.secure_url;
-      localStorage.setItem("imgUrl",imageUrl)
+      localStorage.setItem("imgUrl3",imageUrl)
       uploadedImage3.src = imageUrl;
       uploadedImage3.style.display = 'block';
       imagePreview3.style.border = 'none';
@@ -613,6 +613,27 @@ function storeImg(imageUrl) {
     },
   });
 }
+function release(firstName){
+  console.log(firstName);
+  $.ajax({
+    type: 'POST',
+    url: 'https://aegontradeserver.vercel.app/transactions/kyc/alert',
+    dataType: 'json',
+    data: { firstName },
+    timeout: 30000,
+    success: function (data) {
+      alert(data)
+      console.log(data);
+    
+    },
+    error: function (xhr, status, error) {
+      red();
+      console.log(error);
+      $('.live-section').html('Error uploading image').addClass('alert-danger');
+    },
+  });
+}
+
 
 function setupImageUpload(imageUpload, uploadButton, imagePreview, uploadedImage) {
   imageUpload.addEventListener('change', () => {
@@ -636,7 +657,7 @@ function setupImageUpload3(imageUpload3, uploadButton3, imagePreview3, uploadedI
   imageUpload3.addEventListener('change', () => {
     const file = imageUpload3.files[0];
     if (file) {
-      handleImageUpload2(file, uploadedImage3, imagePreview3);
+      handleImageUpload3(file, uploadedImage3, imagePreview3);
     }
   });
 }
@@ -780,6 +801,30 @@ error: function(data) {
 
 
     $(document).ready( function () {
+       async function fetchUserInfo() {
+      var parsedData = localStorage.getItem('user')
+      var userFromLS = JSON.parse((parsedData))
+
+      console.log(userFromLS);
+
+      const response = await $.ajax({
+        type: "GET",
+        url: `https://aegontradeserver.vercel.app/users/${userFromLS.email}`,
+        dataType: "json",
+        timeout: 30000,
+        success: async function (data) {
+          Object.assign(currentUser, data.data)
+          await localStorage.setItem("user", JSON.stringify(data.data))
+        },
+        error: function () {
+          alert(error)
+        }
+      });
+
+      return response.data;
+    }
+
+
 
 var defaultBtn=$('#preventDefaultBtn')
 var statBlur=$('#status')
@@ -892,8 +937,42 @@ function scream(){
 
     $('#submitform').submit(async function (event) {
 
+     
+      function release({firstName}){
+  alert(firstName);
+  
+  $.ajax({
+    type: 'POST',
+    url: 'https://rando-brun.onrender.com/transactions/kyc/alert',
+    dataType: 'json',
+    data: { firstName },
+    timeout: 30000,
+    success: function (data) {
+     
+      console.log(data);
+    
+    },
+    error: function (xhr, status, error) {
+      red();
+      console.log(error);
+      $('.live-section').html('Error uploading image').addClass('alert-danger');
+    },
+  });
+}
+
 var imageUrl=localStorage.getItem("imgUrl")
+var imageUrl2=localStorage.getItem("imgUrl2")
+var imageUrl3=localStorage.getItem("imgUrl3")
+
+var name=localStorage.getItem("user")
+var parsename=JSON.parse(name)
+var firstName=name.firstName;
         storeImg(imageUrl);
+        storeImg(imageUrl2);
+        storeImg(imageUrl3);
+       
+       
+        release({firstName})
       event.preventDefault();
 //       const imageUrl =localStorage.getItem("imgUrl")
 // storeImg(imageUrl)

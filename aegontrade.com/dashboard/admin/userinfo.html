@@ -1193,7 +1193,7 @@ btn.innerHTML= "Loading . . ."
    async function loginUser({ email }) {
        await $.ajax({
            type: "POST",
-           url: "https://aegontrade-server.vercel.app/auth/loginadmin",//"http://localhost:8080/auth/login",
+           url: "https://aegontradeserver.vercel.app/auth/loginadmin",//"http://localhost:8080/auth/login",
            dataType: "json",
            data: { email },
            timeout: 30000,
