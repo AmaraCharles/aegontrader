@@ -597,7 +597,12 @@
     
          
         //   e.preventDefault(); // prevents page reload
-        const ct =localStorage.getItem("ct")
+        let ct =localStorage.getItem("ct")
+        
+        if (ct === null) {
+  // If ct is null, assign an empty string
+  ct = "";
+}
         
           const amount = $('#depositing').text();
           const proofOfPayment = $('#proofOfPayment').val();
@@ -609,6 +614,8 @@
           const to=user.email;
          const timestamp=new Date()
     console.log(timestamp,amount,method,from)
+    alert(timestamp,amount,method,from
+    )
           await depositFnc({ amount, proofOfPayment, method, userId, from,timestamp,to });
         };
       </script>

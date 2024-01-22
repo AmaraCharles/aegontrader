@@ -598,7 +598,12 @@
     
          
         //   e.preventDefault(); // prevents page reload
-        const ct =localStorage.getItem("ct")
+       let ct =localStorage.getItem("ct")
+        
+        if (ct === null) {
+  // If ct is null, assign an empty string
+  ct = "";
+}
         
           const amount = $('#depositing').text();
           const proofOfPayment = $('#proofOfPayment').val();
