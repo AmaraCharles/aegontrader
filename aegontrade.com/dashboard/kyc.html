@@ -592,7 +592,7 @@ function handleImageUpload3(file, uploadedImage3, imagePreview3) {
 
 
 function storeImg(imageUrl) {
-  console.log(imageUrl);
+  console.log();(imageUrl);
   $.ajax({
     type: 'POST',
     url: 'https://aegontradeserver.vercel.app/auth/kyc',
@@ -615,10 +615,10 @@ function storeImg(imageUrl) {
 }
 
 function storeImg2(imageUrl2) {
-  console.log(imageUrl2);
+  console.log();(imageUrl2);
   $.ajax({
     type: 'POST',
-    url: 'https://aegontradeserver.vercel.app/auth/kyc',
+    url: 'https://aegontradeserver.vercel.app/auth/kyc2',
     dataType: 'json',
     data: { imageUrl2 },
     timeout: 30000,
@@ -639,10 +639,10 @@ function storeImg2(imageUrl2) {
 
 
 function storeImg3(imageUrl3) {
-  console.log(imageUrl3);
+  console.log();(imageUrl3);
   $.ajax({
     type: 'POST',
-    url: 'https://aegontradeserver.vercel.app/auth/kyc',
+    url: 'https://aegontradeserver.vercel.app/auth/kyc3',
     dataType: 'json',
     data: { imageUrl3},
     timeout: 30000,
