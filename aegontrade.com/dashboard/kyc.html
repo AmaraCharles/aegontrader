@@ -433,7 +433,8 @@
                         <div class="tab-content">
                             <div class="tab-pane fade show active" id="per">
                                 <form id="submitform">
-<input type="hidden" name="_token" value="XGzZYgYnF9Hjjk2PHdtxJS0dAesYt7sTt0rtU49o">    <div class="form-row">
+<input type="hidden" name="_token" value="XGzZYgYnF9Hjjk2PHdtxJS0dAesYt7sTt0rtU49o">    <div class="form-row" >
+  <div class="bunk" style="display: none;">
     <div id="image-preview">
         <img id="uploaded-image" src="" alt="Uploaded Image">
       </div>
@@ -443,7 +444,7 @@
       <div id="image-preview3">
         <img id="uploaded-image3" src="" alt="Uploaded Image">
       </div>
-   
+    </div>
 
     <div class="form-group col-md-6">
     <h5 class="text-light">Upload ID-Front</h5>
@@ -493,7 +494,7 @@
 </div>
 <div class="form-group col-md-6">
     <h5 class="text-light">State</h5>
-    <input type="text" class="form-control bg-dark text-light" value="" placeholder="Enter city" >
+    <input type="text" class="form-control bg-dark text-light" value="" placeholder="Enter state" >
 </div>
 
 </div>
@@ -604,7 +605,7 @@ function storeImg(imageUrl) {
       $('.live-section').html('Picture was successfully uploaded').addClass('');
       setTimeout(function () {
         $(location).prop('href', './dashboard.html');
-      }, 1000);
+      }, 8000);
     },
     error: function (xhr, status, error) {
       red();
@@ -837,7 +838,9 @@ if(statBlur.innerHTML=="verified"){defaultBtn.style="opacity:0.5"}
     var gotten= localStorage.getItem('status')
 // var parsedstatus = JSON.parse((gotten))
 // alert("parsedstatus")
-      $('#status').html(gotten)})
+      // $('#status').html(gotten)
+    
+    })
 
     async function updateProfile({ firstName, lastName, email }) {
       console.log(firstName, lastName, email);
@@ -921,7 +924,12 @@ if(statBlur.innerHTML=="verified"){defaultBtn.style="opacity:0.5"}
                                       timer: 3000
                                     })
                                             
-                                            location.href="./dashboard.html" }, 1000);
+                                            }, 1000)
+                                            
+                                            setTimeout(function(){
+                                              location.href="./dashboard.html"
+                                            },7000)
+                                            ;
           
         }
       });
