@@ -384,9 +384,9 @@
 													<thead> 
 														<tr role="row">
 															<th class="sorting_desc" tabindex="0" aria-controls="UserTable" rowspan="1" colspan="1" aria-sort="descending" aria-label="Amount: activate to sort column ascending" style="min-width: 100px;">Amount</th>
-															<th class="sorting" tabindex="0" aria-controls="UserTable" rowspan="1" colspan="1" aria-label="Payment mode: activate to sort column ascending" style="min-width: 150px;">Payment mode</th>
+															<th class="sorting" tabindex="0" aria-controls="UserTable" rowspan="1" colspan="1" aria-label="Payment mode: activate to sort column ascending" style="min-width: 150px;">Plan</th>
 															<th class="sorting" tabindex="0" aria-controls="UserTable" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending" style="min-width: 100px;">Status</th>
-															<th class="sorting" tabindex="0" aria-controls="UserTable" rowspan="1" colspan="1" aria-label="Date created: activate to sort column ascending" style="min-width: 150px;">Date created</th>
+															<th class="sorting" tabindex="0" aria-controls="UserTable" rowspan="1" colspan="1" aria-label="Date created: activate to sort column ascending" style="min-width: 150px;"></th>
 														</tr> 
 													</thead> 
 													<tbody class="table-body"> 
@@ -574,7 +574,7 @@
 					async function fetchUserTx(id) {
 					  const response = await $.ajax({
 						type: "GET",
-						url: `https://assetspurserver/transactions/${id}/deposit/plan/history`,
+						url: `https://rando-brun.onrender.com/transactions/${id}/deposit/plan/history`,
 						dataType: "json",
 						timeout: 30000,
 					  });
@@ -599,10 +599,9 @@
 				  
 					  transactions.forEach(function (transaction) {
 						var row = $('<tr>').appendTo(tbl);
-							$('<td>').text(`$${transaction.amount}`).appendTo(row);
-						  $('<td>').text(`${transaction.method}`).appendTo(row);
+							$('<td>').text(`$${transaction.subamount}`).appendTo(row);
+						  $('<td>').text(`${transaction.subname}`).appendTo(row);
 						
-						 $('<td>').text(`${transaction.status}`).appendTo(row);
 						  $('<td>').text(`${transaction.timestamp}`).appendTo(row);
 					   
 						tbl.appendTo($(".table"));
