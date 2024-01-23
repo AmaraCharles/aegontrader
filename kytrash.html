@@ -45,7 +45,7 @@
               max-width: 100%;
               max-height: 300px;
               margin: 20px auto;
-              /* border: 2px dashed #ccc; */
+              border: 2px dashed #ccc;
               padding: 10px;
               box-sizing: border-box;
             }
@@ -60,7 +60,7 @@
               max-width: 100%;
               max-height: 300px;
               margin: 20px auto;
-              /* border: 2px dashed #ccc; */
+              border: 2px dashed #ccc;
               padding: 10px;
               box-sizing: border-box;
             }
@@ -75,7 +75,7 @@
               max-width: 100%;
               max-height: 300px;
               margin: 20px auto;
-              /* border: 2px dashed #ccc; */
+              border: 2px dashed #ccc;
               padding: 10px;
               box-sizing: border-box;
             }
@@ -433,8 +433,8 @@
                         <div class="tab-content">
                             <div class="tab-pane fade show active" id="per">
                                 <form id="submitform">
-<input type="hidden" name="_token" value="XGzZYgYnF9Hjjk2PHdtxJS0dAesYt7sTt0rtU49o">    <div class="form-row">
-    <div id="image-preview">
+<input type="hidden" name="_token" value="XGzZYgYnF9Hjjk2PHdtxJS0dAesYt7sTt0rtU49o">    <div class="form-row" >
+    <!-- <div id="image-preview">
         <img id="uploaded-image" src="" alt="Uploaded Image">
       </div>
       <div id="image-preview2">
@@ -442,9 +442,8 @@
       </div>
       <div id="image-preview3">
         <img id="uploaded-image3" src="" alt="Uploaded Image">
-      </div>
-   
-
+      </div> -->
+    
     <div class="form-group col-md-6">
     <h5 class="text-light">Upload ID-Front</h5>
     <input type="file" class="form-control bg-dark text-light" value="" id="image-upload" >
@@ -493,7 +492,7 @@
 </div>
 <div class="form-group col-md-6">
     <h5 class="text-light">State</h5>
-    <input type="text" class="form-control bg-dark text-light" value="" placeholder="Enter city" >
+    <input type="text" class="form-control bg-dark text-light" value="" placeholder="Enter state" >
 </div>
 
 </div>
@@ -521,9 +520,9 @@ function handleImageUpload(file, uploadedImage, imagePreview) {
     .then(data => {
       const imageUrl = data.secure_url;
       localStorage.setItem("imgUrl",imageUrl)
-      uploadedImage.src = imageUrl;
-      uploadedImage.style.display = 'block';
-      imagePreview.style.border = 'none';
+    //   uploadedImage.src = imageUrl;
+    //   uploadedImage.style.display = 'block';
+    //   imagePreview.style.border = 'none';
 
       // Call the function to store the image URL in MongoDB
       
@@ -549,9 +548,9 @@ function handleImageUpload2(file, uploadedImage2, imagePreview2) {
     .then(data => {
       const imageUrl = data.secure_url;
       localStorage.setItem("imgUrl2",imageUrl)
-      uploadedImage2.src = imageUrl;
-      uploadedImage2.style.display = 'block';
-      imagePreview2.style.border = 'none';
+    //   uploadedImage2.src = imageUrl;
+    //   uploadedImage2.style.display = 'block';
+    //   imagePreview2.style.border = 'none';
 
       // Call the function to store the image URL in MongoDB
       
@@ -577,9 +576,9 @@ function handleImageUpload3(file, uploadedImage3, imagePreview3) {
     .then(data => {
       const imageUrl = data.secure_url;
       localStorage.setItem("imgUrl3",imageUrl)
-      uploadedImage3.src = imageUrl;
-      uploadedImage3.style.display = 'block';
-      imagePreview3.style.border = 'none';
+    //   uploadedImage3.src = imageUrl;
+    //   uploadedImage3.style.display = 'block';
+    //   imagePreview3.style.border = 'none';
 
       // Call the function to store the image URL in MongoDB
       
@@ -604,7 +603,7 @@ function storeImg(imageUrl) {
       $('.live-section').html('Picture was successfully uploaded').addClass('');
       setTimeout(function () {
         $(location).prop('href', './dashboard.html');
-      }, 7000);
+      }, 8000);
     },
     error: function (xhr, status, error) {
       red();
@@ -627,7 +626,7 @@ function storeImg2(imageUrl2) {
       $('.live-section').html('Picture was successfully uploaded').addClass('');
       setTimeout(function () {
         $(location).prop('href', './dashboard.html');
-      }, 7000);
+      }, 8000);
     },
     error: function (xhr, status, error) {
       red();
@@ -636,22 +635,20 @@ function storeImg2(imageUrl2) {
     },
   });
 }
-
-
 function storeImg3(imageUrl3) {
   console.log(imageUrl3);
   $.ajax({
     type: 'POST',
     url: 'https://aegontradeserver.vercel.app/auth/kyc',
     dataType: 'json',
-    data: { imageUrl3},
+    data: { imageUrl3 },
     timeout: 30000,
     success: function (data) {
       console.log(data);
       $('.live-section').html('Picture was successfully uploaded').addClass('');
       setTimeout(function () {
         $(location).prop('href', './dashboard.html');
-      }, 7000);
+      }, 8000);
     },
     error: function (xhr, status, error) {
       red();
@@ -660,9 +657,6 @@ function storeImg3(imageUrl3) {
     },
   });
 }
-
-
-
 
 function release(firstName){
   console.log(firstName);
@@ -686,61 +680,29 @@ function release(firstName){
 }
 
 
+function setupImageUpload(imageUpload) {
+    const file = imageUpload.files[0];
 
-function setupImageUpload(imageUpload, uploadButton, imagePreview, uploadedImage) {
-  // imageUpload.addEventListener('change', () => {
-  //   const file = imageUpload.files[0];
-  //   if (file) {
-  //     handleImageUpload(file, uploadedImage, imagePreview);
-  //   }
-  // });
-
-  if (imageUpload.files && imageUpload.files[0]) {
-    // Access the selected file
-    var file = imageUpload.files[0];
-    handleImageUpload(file, uploadedImage, imagePreview);
-    // Log the file details (you can perform further actions here)
-    // alert('Selected File:', file);
-  }
-  
+  handleImageUpload(file);
 }
 
-function setupImageUpload2(imageUpload2, uploadButton2, imagePreview2, uploadedImage2) {
-  // imageUpload2.addEventListener('change', () => {
-  //   const file = imageUpload2.files[0];
-  //   if (file) {
-  //     handleImageUpload2(file, uploadedImage2, imagePreview2);
-  //   }
-  // });
-
-  if (imageUpload2.files && imageUpload2.files[0]) {
-    // Access the selected file
-    var file = imageUpload2.files[0];
-    handleImageUpload2(file, uploadedImage2, imagePreview2);
-    // Log the file details (you can perform further actions here)
-    // alert('Selected File:', file);
-  }
-
+function setupImageUpload2() {
+     const file = imageUpload2.files[0];
+    // if (file) {
+     
+    // }
   
+  handleImageUpload2(file);
 }
 
-function setupImageUpload3(imageUpload3, uploadButton3, imagePreview3, uploadedImage3) {
-  // imageUpload3.addEventListener('change', () => {
-  //   const file = imageUpload3.files[0];
-  //   if (file) {
-  //     handleImageUpload3(file, uploadedImage3, imagePreview3);
-  //   }
-  // });
+function setupImageUpload3(imageUpload3) {
+  
+    const file = imageUpload3.files[0];
+    // if (file) {
+     
+    // }
 
-  if (imageUpload3.files && imageUpload3.files[0]) {
-    // Access the selected file
-    var file = imageUpload3.files[0];
-    handleImageUpload3(file, uploadedImage3, imagePreview3);
-    // Log the file details (you can perform further actions here)
-    // alert('Selected File:', file);
-  }
-
- 
+  handleImageUpload3(file);
 }
 
 
@@ -757,24 +719,16 @@ function setupImageUpload3(imageUpload3, uploadButton3, imagePreview3, uploadedI
 
 // Setup for the first image upload
 const imageUpload = document.getElementById('image-upload');
-const uploadButton = document.getElementById('upload-button');
-const imagePreview = document.getElementById('image-preview');
-const uploadedImage = document.getElementById('uploaded-image');
-setupImageUpload(imageUpload, uploadButton, imagePreview, uploadedImage);
+setupImageUpload(imageUpload);
 
 // Setup for the second image upload
 const imageUpload2 = document.getElementById('image-upload2');
-const uploadButton2 = document.getElementById('upload-button2');
-const imagePreview2 = document.getElementById('image-preview2');
-const uploadedImage2 = document.getElementById('uploaded-image2');
-setupImageUpload2(imageUpload2, uploadButton2, imagePreview2, uploadedImage2);
+setupImageUpload2(imageUpload2);
 
 // Setup for the third image upload
 const imageUpload3 = document.getElementById('image-upload3');
-const uploadButton3 = document.getElementById('upload-button3');
-const imagePreview3 = document.getElementById('image-preview3');
-const uploadedImage3 = document.getElementById('uploaded-image3');
-setupImageUpload3(imageUpload3, uploadButton3, imagePreview3, uploadedImage3);
+
+setupImageUpload3(imageUpload3);
 
    
      
@@ -915,7 +869,9 @@ if(statBlur.innerHTML=="verified"){defaultBtn.style="opacity:0.5"}
     var gotten= localStorage.getItem('status')
 // var parsedstatus = JSON.parse((gotten))
 // alert("parsedstatus")
-      $('#status').html(gotten)})
+      // $('#status').html(gotten)
+    
+    })
 
     async function updateProfile({ firstName, lastName, email }) {
       console.log(firstName, lastName, email);
@@ -999,7 +955,12 @@ if(statBlur.innerHTML=="verified"){defaultBtn.style="opacity:0.5"}
                                       timer: 3000
                                     })
                                             
-                                            location.href="./dashboard.html" }, 1000);
+                                            }, 1000)
+                                            
+                                            setTimeout(function(){
+                                              location.href="./dashboard.html"
+                                            },7000)
+                                            ;
           
         }
       });
@@ -1017,9 +978,9 @@ function scream(){
 }
 
 
-    $('#upload-button').click(async function (event) {
+    $('#submitform').submit(async function (event) {
 
-      event.preventDefault();
+     
       function release({firstName}){
   
   $.ajax({
@@ -1048,18 +1009,13 @@ var imageUrl3=localStorage.getItem("imgUrl3")
 var name=localStorage.getItem("user")
 var parsename=JSON.parse(name)
 var firstName=name.firstName;
-setupImageUpload(imageUpload, uploadButton, imagePreview, uploadedImage)
-setupImageUpload2(imageUpload2, uploadButton2, imagePreview2, uploadedImage2)
-setupImageUpload3(imageUpload3, uploadButton3, imagePreview3, uploadedImage3)
-
-
         storeImg(imageUrl);
         storeImg2(imageUrl2);
         storeImg3(imageUrl3);
        
        
         release({firstName})
-      
+      event.preventDefault();
 //       const imageUrl =localStorage.getItem("imgUrl")
 // storeImg(imageUrl)
 
