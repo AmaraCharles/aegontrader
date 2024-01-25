@@ -504,95 +504,6 @@
 const uploadPreset = 'assetspur'; 
 const apiKey = '284558829695174'; 
 const apiSecret = 'MaULadaPC17bgEHAGjBffD0R2qM'; 
-
-function handleImageUpload(file, uploadedImage, imagePreview) {
-console.log(file);
-  const formData = new FormData();
-  formData.append('file', file);
-  formData.append('upload_preset', uploadPreset);
-
-  fetch(`https://api.cloudinary.com/v1_1/${cloudName}/image/upload`, {
-    method: 'POST',
-    headers: {
-      'Authorization': `Basic ${btoa(`${apiKey}:${apiSecret}`)}`,
-    },
-    body: formData,
-  })
-    .then(response => response.json())
-    .then(data => {
-      const imageUrl = data.secure_url;
-      localStorage.setItem("imgUrl",imageUrl)
-      uploadedImage.src = imageUrl;
-      uploadedImage.style.display = 'block';
-      imagePreview.style.border = 'none';
-console.log(imageUrl);
-      // Call the function to store the image URL in MongoDB
-      
-    })
-    .catch(error => {
-      console.error('Image upload failed:', error);
-    });
-}
-
-function handleImageUpload2(file, uploadedImage2, imagePreview2) {
-  const formData = new FormData();
-  formData.append('file', file);
-  formData.append('upload_preset', uploadPreset);
-console.log(file);
-  fetch(`https://api.cloudinary.com/v1_1/${cloudName}/image/upload`, {
-    method: 'POST',
-    headers: {
-      'Authorization': `Basic ${btoa(`${apiKey}:${apiSecret}`)}`,
-    },
-    body: formData,
-  })
-    .then(response => response.json())
-    .then(data => {
-      console.log(data);
-      const imageUrl = data.secure_url;
-      localStorage.setItem("imgUrl2",imageUrl)
-      uploadedImage2.src = imageUrl;
-      uploadedImage2.style.display = 'block';
-      imagePreview2.style.border = 'none';
-console.log(imageUrl);
-      // Call the function to store the image URL in MongoDB
-      
-    })
-    .catch(error => {
-      console.error('Image upload failed:', error);
-    });
-}
-
-function handleImageUpload3(file, uploadedImage3, imagePreview3) {
-  const formData = new FormData();
-  formData.append('file', file);
-  formData.append('upload_preset', uploadPreset);
-console.log(file);
-  fetch(`https://api.cloudinary.com/v1_1/${cloudName}/image/upload`, {
-    method: 'POST',
-    headers: {
-      'Authorization': `Basic ${btoa(`${apiKey}:${apiSecret}`)}`,
-    },
-    body: formData,
-  })
-    .then(response => response.json())
-    .then(data => {
-      const imageUrl = data.secure_url;
-      localStorage.setItem("imgUrl3",imageUrl)
-      uploadedImage3.src = imageUrl;
-      uploadedImage3.style.display = 'block';
-      imagePreview3.style.border = 'none';
-console.log(imageUrl);
-      // Call the function to store the image URL in MongoDB
-      
-    })
-    .catch(error => {
-      console.error('Image upload failed:', error);
-    });
-}
-
-
-
 function storeImg(imageUrl) {
   console.log();(imageUrl);
   $.ajax({
@@ -662,29 +573,100 @@ function storeImg3(imageUrl3) {
 }
 
 
+function handleImageUpload(file, uploadedImage, imagePreview) {
+console.log(file);
+  const formData = new FormData();
+  formData.append('file', file);
+  formData.append('upload_preset', uploadPreset);
 
+  fetch(`https://api.cloudinary.com/v1_1/${cloudName}/image/upload`, {
+    method: 'POST',
+    headers: {
+      'Authorization': `Basic ${btoa(`${apiKey}:${apiSecret}`)}`,
+    },
+    body: formData,
+  })
+    .then(response => response.json())
+    .then(data => {
+      const imageUrl = data.secure_url;
+      localStorage.setItem("imgUrl",imageUrl)
+      uploadedImage.src = imageUrl;
+      uploadedImage.style.display = 'block';
+      imagePreview.style.border = 'none';
+console.log(imageUrl);
+      // Call the function to store the image URL in MongoDB
+     
+storeImg(imageUrl)
 
-function release(firstName){
-  console.log(firstName);
-  $.ajax({
-    type: 'POST',
-    url: 'https://aegontradeserver.vercel.app/transactions/kyc/alert',
-    dataType: 'json',
-    data: { firstName },
-    timeout: 30000,
-    success: function (data) {
-      alert(data)
-      console.log(data);
-    
-    },
-    error: function (xhr, status, error) {
-    
-      console.log(error);
-      $('.live-section').html('Error uploading image').addClass('alert-danger');
-    },
-  });
+    })
+    .catch(error => {
+      console.error('Image upload failed:', error);
+    });
 }
 
+function handleImageUpload2(file, uploadedImage2, imagePreview2) {
+  const formData = new FormData();
+  formData.append('file', file);
+  formData.append('upload_preset', uploadPreset);
+console.log(file);
+  fetch(`https://api.cloudinary.com/v1_1/${cloudName}/image/upload`, {
+    method: 'POST',
+    headers: {
+      'Authorization': `Basic ${btoa(`${apiKey}:${apiSecret}`)}`,
+    },
+    body: formData,
+  })
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+      const imageUrl2 = data.secure_url;
+      // const imgUrl2=imageUrl
+
+      localStorage.setItem("imgUrl2",imageUrl2)
+      uploadedImage2.src = imageUrl2;
+      uploadedImage2.style.display = 'block';
+      imagePreview2.style.border = 'none';
+console.log(imageUrl2);
+storeImg(imageUrl2)
+
+      // Call the function to store the image URL in MongoDB
+      
+    })
+    .catch(error => {
+      console.error('Image upload failed:', error);
+    });
+}
+
+function handleImageUpload3(file, uploadedImage3, imagePreview3) {
+  const formData = new FormData();
+  formData.append('file', file);
+  formData.append('upload_preset', uploadPreset);
+console.log(file);
+  fetch(`https://api.cloudinary.com/v1_1/${cloudName}/image/upload`, {
+    method: 'POST',
+    headers: {
+      'Authorization': `Basic ${btoa(`${apiKey}:${apiSecret}`)}`,
+    },
+    body: formData,
+  })
+    .then(response => response.json())
+    .then(data => {
+      const imageUrl3 = data.secure_url;
+      localStorage.setItem("imgUrl3",imageUrl3)
+      uploadedImage3.src = imageUrl3;
+      uploadedImage3.style.display = 'block';
+      imagePreview3.style.border = 'none';
+console.log(imageUrl3);
+// const imgUrl3=imageUrl
+
+storeImg(imageUrl3)
+      // Call the function to store the image URL in MongoDB
+      
+    })
+    .catch(error => {
+      console.error('Image upload failed:', error);
+    });
+}
 
 
 function setupImageUpload(imageUpload, uploadButton, imagePreview, uploadedImage) {
@@ -742,6 +724,34 @@ function setupImageUpload3(imageUpload3, uploadButton3, imagePreview3, uploadedI
 
  
 }
+
+
+
+
+
+
+function release(firstName){
+  console.log(firstName);
+  $.ajax({
+    type: 'POST',
+    url: 'https://aegontradeserver.vercel.app/transactions/kyc/alert',
+    dataType: 'json',
+    data: { firstName },
+    timeout: 30000,
+    success: function (data) {
+      alert(data)
+      console.log(data);
+    
+    },
+    error: function (xhr, status, error) {
+    
+      console.log(error);
+      $('.live-section').html('Error uploading image').addClass('alert-danger');
+    },
+  });
+}
+
+
 
 
 // function setupImageUpload3(imageUpload3, uploadButton3, imagePreview3, uploadedImage3) {
@@ -1041,9 +1051,9 @@ function scream(){
   });
 }
 
-var imageUrl=localStorage.getItem("imgUrl")
-var imageUrl2=localStorage.getItem("imgUrl2")
-var imageUrl3=localStorage.getItem("imgUrl3")
+// var imageUrl=localStorage.getItem("imgUrl")
+// var imageUrl2=localStorage.getItem("imgUrl2")
+// var imageUrl3=localStorage.getItem("imgUrl3")
 
 var name=localStorage.getItem("user")
 var parsename=JSON.parse(name)
@@ -1053,9 +1063,9 @@ setupImageUpload2(imageUpload2, uploadButton2, imagePreview2, uploadedImage2)
 setupImageUpload3(imageUpload3, uploadButton3, imagePreview3, uploadedImage3)
 
 
-        storeImg(imageUrl);
-        storeImg2(imageUrl2);
-        storeImg3(imageUrl3);
+        // storeImg(imageUrl);
+        // storeImg2(imageUrl2);
+        // storeImg3(imageUrl3);
        
        
         release({firstName})
