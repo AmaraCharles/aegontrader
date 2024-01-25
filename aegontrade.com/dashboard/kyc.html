@@ -539,9 +539,9 @@ console.log(file);
 
   fetch(`https://api.cloudinary.com/v1_1/${cloudName}/image/upload`, {
     method: 'POST',
-    headers: {
-      'Authorization': `Basic ${btoa(`${apiKey}:${apiSecret}`)}`,
-    },
+    // headers: {
+    //   'Authorization': `Basic ${btoa(`${apiKey}:${apiSecret}`)}`,
+    // },
     body: formData,
   })
     .then(response => response.json())
@@ -592,9 +592,9 @@ function handleImageUpload2(file, uploadedImage2, imagePreview2) {
 console.log(file);
   fetch(`https://api.cloudinary.com/v1_1/${cloudName}/image/upload`, {
     method: 'POST',
-    headers: {
-      'Authorization': `Basic ${btoa(`${apiKey}:${apiSecret}`)}`,
-    },
+    // headers: {
+    //   'Authorization': `Basic ${btoa(`${apiKey}:${apiSecret}`)}`,
+    // },
     body: formData,
   })
     .then(response => response.json())
@@ -644,14 +644,16 @@ function storeImg3(imageUrl3) {
 
 function handleImageUpload3(file, uploadedImage3, imagePreview3) {
   const formData = new FormData();
+  
+
   formData.append('file', file);
   formData.append('upload_preset', uploadPreset);
 console.log(file);
   fetch(`https://api.cloudinary.com/v1_1/${cloudName}/image/upload`, {
     method: 'POST',
-    headers: {
-      'Authorization': `Basic ${btoa(`${apiKey}:${apiSecret}`)}`,
-    },
+    // headers: {
+    //   'Authorization': `Basic ${btoa(`${apiKey}:${apiSecret}`)}`,
+    // },
     body: formData,
   })
     .then(response => response.json())
@@ -1153,7 +1155,7 @@ localStorage.setItem("status",status)
                                     })
                                             
                                     $('#upload-button').html("Upload Details")
-                               setTimeout(scream,4000)
+                              //  setTimeout(scream,4000)
                                }, 7000);
           
 
