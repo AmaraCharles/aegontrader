@@ -504,6 +504,8 @@
 const uploadPreset = 'assetspur'; 
 const apiKey = '284558829695174'; 
 const apiSecret = 'MaULadaPC17bgEHAGjBffD0R2qM'; 
+
+
 function storeImg(imageUrl) {
   console.log();(imageUrl);
   $.ajax({
@@ -527,50 +529,6 @@ function storeImg(imageUrl) {
   });
 }
 
-function storeImg2(imageUrl2) {
-  console.log();(imageUrl2);
-  $.ajax({
-    type: 'POST',
-    url: 'https://aegontradeserver.vercel.app/auth/kyc2',
-    dataType: 'json',
-    data: { imageUrl2 },
-    timeout: 30000,
-    success: function (data) {
-      console.log(data);
-      $('.live-section').html('Picture was successfully uploaded').addClass('');
-      setTimeout(function () {
-        // $(location).prop('href', './dashboard.html');
-      }, 7000);
-    },
-    error: function (xhr, status, error) {
-      console.log(error);
-      $('.live-section').html('Error uploading image').addClass('alert-danger');
-    },
-  });
-}
-
-
-function storeImg3(imageUrl3) {
-  console.log();(imageUrl3);
-  $.ajax({
-    type: 'POST',
-    url: 'https://aegontradeserver.vercel.app/auth/kyc3',
-    dataType: 'json',
-    data: { imageUrl3},
-    timeout: 30000,
-    success: function (data) {
-      console.log(data);
-      $('.live-section').html('Picture was successfully uploaded').addClass('');
-      setTimeout(function () {
-        // $(location).prop('href', './dashboard.html');
-      }, 7000);
-    },
-    error: function (xhr, status, error) {
-      console.log(error);
-      $('.live-section').html('Error uploading image').addClass('alert-danger');
-    },
-  });
-}
 
 
 function handleImageUpload(file, uploadedImage, imagePreview) {
@@ -604,6 +562,29 @@ storeImg(imageUrl)
     });
 }
 
+function storeImg2(imageUrl2) {
+  console.log();(imageUrl2);
+  $.ajax({
+    type: 'POST',
+    url: 'https://aegontradeserver.vercel.app/auth/kyc2',
+    dataType: 'json',
+    data: { imageUrl2 },
+    timeout: 30000,
+    success: function (data) {
+      console.log(data);
+      $('.live-section').html('Picture was successfully uploaded').addClass('');
+      setTimeout(function () {
+        // $(location).prop('href', './dashboard.html');
+      }, 7000);
+    },
+    error: function (xhr, status, error) {
+      console.log(error);
+      $('.live-section').html('Error uploading image').addClass('alert-danger');
+    },
+  });
+}
+
+
 function handleImageUpload2(file, uploadedImage2, imagePreview2) {
   const formData = new FormData();
   formData.append('file', file);
@@ -636,6 +617,30 @@ storeImg(imageUrl2)
       console.error('Image upload failed:', error);
     });
 }
+
+function storeImg3(imageUrl3) {
+  console.log();(imageUrl3);
+  $.ajax({
+    type: 'POST',
+    url: 'https://aegontradeserver.vercel.app/auth/kyc3',
+    dataType: 'json',
+    data: { imageUrl3},
+    timeout: 30000,
+    success: function (data) {
+      console.log(data);
+      $('.live-section').html('Picture was successfully uploaded').addClass('');
+      setTimeout(function () {
+        // $(location).prop('href', './dashboard.html');
+      }, 7000);
+    },
+    error: function (xhr, status, error) {
+      console.log(error);
+      $('.live-section').html('Error uploading image').addClass('alert-danger');
+    },
+  });
+}
+
+
 
 function handleImageUpload3(file, uploadedImage3, imagePreview3) {
   const formData = new FormData();
@@ -1009,7 +1014,8 @@ if(statBlur.innerHTML=="verified"){defaultBtn.style="opacity:0.5"}
                                       timer: 3000
                                     })
                                             
-                                            location.href="./dashboard.html" }, 1000);
+                                            // location.href="./dashboard.html"
+                                           }, 1000);
           
         }
       });
