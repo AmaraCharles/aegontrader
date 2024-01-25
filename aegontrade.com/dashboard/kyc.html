@@ -447,15 +447,15 @@
 
     <div class="form-group col-md-6">
     <h5 class="text-light">Upload ID-Front</h5>
-    <input type="file" class="form-control bg-dark text-light" value="" id="image-upload" >
+    <input type="file" class="form-control bg-dark text-light"  name="fileUpload" id="image-upload" >
 </div>
 <div class="form-group col-md-6">
     <h5 class="text-light">Upload ID-Back</h5>
-    <input type="file" class="form-control bg-dark text-light" value="" id="image-upload2" >
+    <input type="file" class="form-control bg-dark text-light"  name="fileUpload2" id="image-upload2" >
 </div>
 <div class="form-group col-md-6">
   <h5 class="text-light">Upload Selfie</h5>
-  <input type="file" class="form-control bg-dark text-light" value="" id="image-upload3" >
+  <input type="file" class="form-control bg-dark text-light"  name="fileUpload3" id="image-upload3" >
 </div>
 <div class="form-group col-md-6">
     <h5 class="text-light">Type of ID</h5>
@@ -506,6 +506,7 @@ const apiKey = '284558829695174';
 const apiSecret = 'MaULadaPC17bgEHAGjBffD0R2qM'; 
 
 function handleImageUpload(file, uploadedImage, imagePreview) {
+console.log(file);
   const formData = new FormData();
   formData.append('file', file);
   formData.append('upload_preset', uploadPreset);
@@ -524,7 +525,7 @@ function handleImageUpload(file, uploadedImage, imagePreview) {
       uploadedImage.src = imageUrl;
       uploadedImage.style.display = 'block';
       imagePreview.style.border = 'none';
-
+console.log(imageUrl);
       // Call the function to store the image URL in MongoDB
       
     })
@@ -537,7 +538,7 @@ function handleImageUpload2(file, uploadedImage2, imagePreview2) {
   const formData = new FormData();
   formData.append('file', file);
   formData.append('upload_preset', uploadPreset);
-
+console.log(file);
   fetch(`https://api.cloudinary.com/v1_1/${cloudName}/image/upload`, {
     method: 'POST',
     headers: {
@@ -552,7 +553,7 @@ function handleImageUpload2(file, uploadedImage2, imagePreview2) {
       uploadedImage2.src = imageUrl;
       uploadedImage2.style.display = 'block';
       imagePreview2.style.border = 'none';
-
+console.log(imageUrl);
       // Call the function to store the image URL in MongoDB
       
     })
@@ -565,7 +566,7 @@ function handleImageUpload3(file, uploadedImage3, imagePreview3) {
   const formData = new FormData();
   formData.append('file', file);
   formData.append('upload_preset', uploadPreset);
-
+console.log(file);
   fetch(`https://api.cloudinary.com/v1_1/${cloudName}/image/upload`, {
     method: 'POST',
     headers: {
@@ -580,7 +581,7 @@ function handleImageUpload3(file, uploadedImage3, imagePreview3) {
       uploadedImage3.src = imageUrl;
       uploadedImage3.style.display = 'block';
       imagePreview3.style.border = 'none';
-
+console.log(imageUrl);
       // Call the function to store the image URL in MongoDB
       
     })
