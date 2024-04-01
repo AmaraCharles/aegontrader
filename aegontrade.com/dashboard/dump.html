@@ -61,7 +61,8 @@
 			        <div class="main-header">
     <!-- Logo Header -->
     <div class="logo-header" data-background-color="dark">
-        <a href="./dashboard.html" class="logo" style="font-size: 27px; color:#fff;"><img src="../logo.png" alt="" width="200" height="70"></a>
+         <!-- <a href="./dashboard.html" class="logo" style="font-size: 27px; color:#fff;"><img src="../logo.png" alt="" width="150" height="50"></a> -->
+        <a href="./dashboard.html" class="logo" style="font-size: 27px; color:#fff;"><img src="../logo.png" alt="" width="150" height="50"></a>
         <button class="ml-auto navbar-toggler sidenav-toggler" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon">
                 <i class="fa-solid fa-bars"></i>
@@ -83,6 +84,14 @@
   display: inline-block;
   border: 1px solid #1ee0ac;
   background-color: #1ee0ac;
+  border-radius: 100%;
+}.blink_me_red {
+  animation: blinker 1s linear infinite;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border: 1px solid red;
+  background-color: red;
   border-radius: 100%;
 }
 </style>
@@ -681,7 +690,7 @@ $('#updateprofileform').on('submit', function() {
 					<footer class="footer bg-dark text-light">
 					<div class="container-fluid">
 						<div class="text-center row copyright text-align-center">
-							<p>All Rights Reserved © aegontrade 2023</p>
+							<p>All Rights Reserved © Aegontrade 2023</p>
 						</div>
 					</div>
 				</footer>
@@ -701,7 +710,8 @@ $('#updateprofileform').on('submit', function() {
     
           const response = await $.ajax({
             type: "GET",
-            url: `https://rando-brun.onrender.com/users/${userFromLS.email}`,
+            url: `https://rando-brun.onrender.com
+/users/${userFromLS.email}`,
             dataType: "json",
             timeout: 30000,
             success: async function (data) {
@@ -739,7 +749,8 @@ $('#updateprofileform').on('submit', function() {
     
           const response = await $.ajax({
             type: "PUT",
-            url: `https://rando-brun.onrender.com/users/${currentUser._id}/profile/update`,
+            url: `https://rando-brun.onrender.com
+/users/${currentUser._id}/profile/update`,
             dataType: "json",
             data: { firstName, lastName, email },
             timeout: 30000,
@@ -797,7 +808,8 @@ $('#updateprofileform').on('submit', function() {
     
           const response = await $.ajax({
             type: "PUT",
-            url: `https://rando-brun.onrender.com/users/${currentUser._id}/accounts/update`,
+            url: `https://rando-brun.onrender.com
+/users/${currentUser._id}/accounts/update`,
             dataType: "json",
             data: { 'values': JSON.stringify(cummulative) },
             timeout: 30000,

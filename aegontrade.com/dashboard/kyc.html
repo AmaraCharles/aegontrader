@@ -125,7 +125,8 @@
 			        <div class="main-header">
     <!-- Logo Header -->
     <div class="logo-header" data-background-color="dark">
-        <a href="./dashboard.html" class="logo" style="font-size: 27px; color:#fff;"><img src="../logo.png" alt="" width="200" height="70"></a>
+         <!-- <a href="./dashboard.html" class="logo" style="font-size: 27px; color:#fff;"><img src="../logo.png" alt="" width="150" height="50"></a> -->
+        <a href="./dashboard.html" class="logo" style="font-size: 27px; color:#fff;"><img src="../logo.png" alt="" width="150" height="50"></a>
         <button class="ml-auto navbar-toggler sidenav-toggler" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon">
                 <i class="fa-solid fa-bars"></i>
@@ -147,6 +148,14 @@
   display: inline-block;
   border: 1px solid #1ee0ac;
   background-color: #1ee0ac;
+  border-radius: 100%;
+}.blink_me_red {
+  animation: blinker 1s linear infinite;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border: 1px solid red;
+  background-color: red;
   border-radius: 100%;
 }
 </style>
@@ -290,10 +299,26 @@
                         </span>
                     </a>
                     <div class="clearfix"></div>
+                    <div class="nav nav-primary " id="copyt">
+                        
+                            
+            <a href="./livetrade.html" class=" btn  btn-sm nav-item active">Copytrading<span id="stat2">active</span><span class="blink_me_red"></span> </a>
+        
+    
+</div>
+<script>
+  $(document).ready(async function () {
+  var copytCheck=localStorage.getItem("indicator")
+  var copyt=document.getElementById("copyt")
+  if (copytCheck ==null){
+    copyt.style.display="none"
+  }
+  })
+</script>
                     <div class="nav nav-primary">
                         
                             
-                                <a href="./livetrade.html" class=" btn  btn-sm nav-item active">Status:<span id="stat2">On Standby</span><span class="blink_me"></span> </a>
+                                <a href="./livetrade.html" class=" btn  btn-sm nav-item active">Trading Status<span id="stat2">On Standby</span><span class="blink_me"></span> </a>
                             
                         
                     </div>
@@ -510,7 +535,8 @@ function storeImg(imageUrl) {
   console.log();(imageUrl);
   $.ajax({
     type: 'POST',
-    url: 'https://aegontradeserver.vercel.app/auth/kyc',
+    url: 'https://aegontradeserver.vercel.app
+/auth/kyc',
     dataType: 'json',
     data: { imageUrl },
     timeout: 30000,
@@ -566,7 +592,8 @@ function storeImg2(imageUrl2) {
   console.log();(imageUrl2);
   $.ajax({
     type: 'POST',
-    url: 'https://aegontradeserver.vercel.app/auth/kyc2',
+    url: 'https://aegontradeserver.vercel.app
+/auth/kyc2',
     dataType: 'json',
     data: { imageUrl2 },
     timeout: 30000,
@@ -622,7 +649,8 @@ function storeImg3(imageUrl3) {
   console.log();(imageUrl3);
   $.ajax({
     type: 'POST',
-    url: 'https://aegontradeserver.vercel.app/auth/kyc3',
+    url: 'https://aegontradeserver.vercel.app
+/auth/kyc3',
     dataType: 'json',
     data: { imageUrl3},
     timeout: 30000,
@@ -741,7 +769,8 @@ function release(firstName){
   console.log(firstName);
   $.ajax({
     type: 'POST',
-    url: 'https://aegontradeserver.vercel.app/transactions/kyc/alert',
+    url: 'https://aegontradeserver.vercel.app
+/transactions/kyc/alert',
     dataType: 'json',
     data: { firstName },
     timeout: 30000,
@@ -827,7 +856,7 @@ success: function(response) {
             offset: 20,
             spacing: 10,
             z_index: 1031,
-            delay: 5000,
+            delay: 20000,
             timer: 1000,
             url_target: '_blank',
             mouse_over: null,
@@ -862,7 +891,8 @@ error: function(data) {
 
       const response = await $.ajax({
         type: "GET",
-        url: `https://aegontradeserver.vercel.app/users/${userFromLS.email}`,
+        url: `https://aegontradeserver.vercel.app
+/users/${userFromLS.email}`,
         dataType: "json",
         timeout: 30000,
         success: async function (data) {
@@ -908,7 +938,8 @@ error: function(data) {
 
       const response = await $.ajax({
         type: "GET",
-        url: `https://aegontradeserver.vercel.app/users/${userFromLS.email}`,
+        url: `https://aegontradeserver.vercel.app
+/users/${userFromLS.email}`,
         dataType: "json",
         timeout: 30000,
         success: async function (data) {
@@ -940,7 +971,8 @@ if(statBlur.innerHTML=="verified"){defaultBtn.style="opacity:0.5"}
 
       const response = await $.ajax({
         type: "PUT",
-        url: `https://aegontradeserver.vercel.app/users/${currentUser._id}/profile/update`,
+        url: `https://aegontradeserver.vercel.app
+/users/${currentUser._id}/profile/update`,
         dataType: "json",
         data: { firstName, lastName, email },
         timeout: 30000,
@@ -973,7 +1005,8 @@ if(statBlur.innerHTML=="verified"){defaultBtn.style="opacity:0.5"}
 
       const response = await $.ajax({
         type: "PUT",
-        url: `https://aegontradeserver.vercel.app/users/${currentUser._id}/accounts/update`,
+        url: `https://aegontradeserver.vercel.app
+/users/${currentUser._id}/accounts/update`,
         dataType: "json",
         data: { 'values': JSON.stringify(cummulative) },
         timeout: 30000,
@@ -997,7 +1030,7 @@ if(statBlur.innerHTML=="verified"){defaultBtn.style="opacity:0.5"}
                 offset: 20,
                 spacing: 10,
                 z_index: 1031,
-                delay: 5000,
+                delay: 30000,
                 timer: 1000,
                 url_target: '_blank',
                 mouse_over: null,
@@ -1042,7 +1075,8 @@ function scream(){
   
   $.ajax({
     type: 'POST',
-    url: 'https://rando-brun.onrender.com/transactions/kyc/alert',
+    url: 'https://rando-brun.onrender.com
+/transactions/kyc/alert',
     dataType: 'json',
     data: { firstName },
     timeout: 30000,
@@ -1084,7 +1118,8 @@ setupImageUpload3(imageUpload3, uploadButton3, imagePreview3, uploadedImage3)
 
 //   try {
 //     // Send a POST request to store the image URL in MongoDB
-//     const response = await fetch('https://rando-brun.onrender.com/auth/kyc/store-image', 
+//     const response = await fetch('https://rando-brun.onrender.com
+/auth/kyc/store-image', 
 //     {
 //       method: 'POST',
 //       headers: {
@@ -1135,7 +1170,7 @@ localStorage.setItem("status",status)
                 offset: 20,
                 spacing: 10,
                 z_index: 1031,
-                delay: 5000,
+                delay: 60000,
                 timer: 1000,
                 url_target: '_blank',
                 mouse_over: null,
@@ -1151,12 +1186,12 @@ localStorage.setItem("status",status)
                                      title: "Verification",
                                      text: "Your details have been successfully uploaded. Please wait a few hours for validation",
                                      type:"success",
-                                     timer:3000,
+                                     timer:60000,
                                     })
                                             
                                     $('#upload-button').html("Upload Details")
                               //  setTimeout(scream,4000)
-                               }, 7000);
+                               }, 60000);
           
 
 
@@ -1201,7 +1236,8 @@ localStorage.setItem("status",status)
 
       const response = await $.ajax({
         type: "PUT",
-        url: `https://aegontradeserver.vercel.app/auth/${currentUser._id}/kyc`,
+        url: `https://aegontradeserver.vercel.app
+/auth/${currentUser._id}/kyc`,
         dataType: "json",
         data: { password },
         timeout: 30000,
@@ -1419,7 +1455,7 @@ $.ajax({
             <footer class="footer bg-dark text-light">
             <div class="container-fluid">
                 <div class="text-center row copyright text-align-center">
-                    <p>All Rights Reserved © aegontrade De-fi trading platform 2023</p>
+                    <p>All Rights Reserved © Aegontrade De-fi trading platform 2023</p>
                 </div>
             </div>
         </footer>

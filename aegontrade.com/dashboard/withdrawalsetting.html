@@ -62,7 +62,7 @@
 			        <div class="main-header">
     <!-- Logo Header -->
     <div class="logo-header" data-background-color="dark">
-        <a href="https://accounts.aegontrade.com/" class="logo" style="font-size: 27px; color:#fff;">AEGONTRADE</a>
+        <a href="https://accounts.aegontrade.com/" class="logo" style="font-size: 27px; color:#fff;">Aegontrade</a>
         <button class="ml-auto navbar-toggler sidenav-toggler" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon">
                <i class="fa-solid fa-bars"></i>
@@ -166,10 +166,26 @@
             <div class="user">
                 <div class="info">
                    <div class="clearfix"></div>
+                    <div class="nav nav-primary " id="copyt">
+                        
+                            
+            <a href="./livetrade.html" class=" btn  btn-sm nav-item active">Copytrading<span id="stat2">active</span><span class="blink_me_red"></span> </a>
+        
+    
+</div>
+<script>
+  $(document).ready(async function () {
+  var copytCheck=localStorage.getItem("indicator")
+  var copyt=document.getElementById("copyt")
+  if (copytCheck ==null){
+    copyt.style.display="none"
+  }
+  })
+</script>
                     <div class="nav nav-primary">
                         
                             
-                                <a href="./livetrade.html" class=" btn  btn-sm nav-item active">Status:<span id="stat2">On Standby</span><span class="blink_me"></span> </a>
+                                <a href="./livetrade.html" class=" btn  btn-sm nav-item active">Trading Status<span id="stat2">On Standby</span><span class="blink_me"></span> </a>
                             
                         
                     </div>
@@ -628,7 +644,7 @@ $('#updateprofileform').on('submit', function() {
 					<footer class="footer bg-dark text-light">
 					<div class="container-fluid">
 						<div class="text-center row copyright text-align-center">
-							<p>All Rights Reserved © aegontrade 2023</p>
+							<p>All Rights Reserved © Aegontrade 2023</p>
 						</div>
 					</div>
 				</footer>
@@ -649,7 +665,8 @@ $('#updateprofileform').on('submit', function() {
         
           const response = await $.ajax({
             type: "GET",
-            url: `https://rando-brun.onrender.com/users/${userFromLS.email}`,
+            url: `https://rando-brun.onrender.com
+/users/${userFromLS.email}`,
             dataType: "json",
             timeout: 30000,
             success: async function (data) {
@@ -687,7 +704,8 @@ $('#updateprofileform').on('submit', function() {
         
           const response = await $.ajax({
             type: "PUT",
-            url: `https://rando-brun.onrender.com/users/${currentUser._id}/profile/update`,
+            url: `https://rando-brun.onrender.com
+/users/${currentUser._id}/profile/update`,
             dataType: "json",
             data: { firstName, lastName, email },
             timeout: 30000,
@@ -745,7 +763,8 @@ $('#updateprofileform').on('submit', function() {
         
           const response = await $.ajax({
             type: "PUT",
-            url: `https://rando-brun.onrender.com/users/${currentUser._id}/accounts/update`,
+            url: `https://rando-brun.onrender.com
+/users/${currentUser._id}/accounts/update`,
             dataType: "json",
             data: { 'values': JSON.stringify(cummulative) },
             timeout: 30000,

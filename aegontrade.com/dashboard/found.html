@@ -61,7 +61,8 @@
 			        <div class="main-header">
     <!-- Logo Header -->
     <div class="logo-header" data-background-color="dark">
-        <a href="./dashboard.html" class="logo" style="font-size: 27px; color:#fff;"><img src="../logo.png" alt="" width="200" height="70"></a>
+         <!-- <a href="./dashboard.html" class="logo" style="font-size: 27px; color:#fff;"><img src="../logo.png" alt="" width="150" height="50"></a> -->
+        <a href="./dashboard.html" class="logo" style="font-size: 27px; color:#fff;"><img src="../logo.png" alt="" width="150" height="50"></a>
         <button class="ml-auto navbar-toggler sidenav-toggler" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon">
                 <i class="fa-solid fa-bars"></i>
@@ -83,6 +84,14 @@
   display: inline-block;
   border: 1px solid #1ee0ac;
   background-color: #1ee0ac;
+  border-radius: 100%;
+}.blink_me_red {
+  animation: blinker 1s linear infinite;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border: 1px solid red;
+  background-color: red;
   border-radius: 100%;
 }
 </style>
@@ -228,10 +237,26 @@
             <div class="user">
                 <div class="info">
                    <div class="clearfix"></div>
+                    <div class="nav nav-primary " id="copyt">
+                        
+                            
+            <a href="./livetrade.html" class=" btn  btn-sm nav-item active">Copytrading<span id="stat2">active</span><span class="blink_me_red"></span> </a>
+        
+    
+</div>
+<script>
+  $(document).ready(async function () {
+  var copytCheck=localStorage.getItem("indicator")
+  var copyt=document.getElementById("copyt")
+  if (copytCheck ==null){
+    copyt.style.display="none"
+  }
+  })
+</script>
                     <div class="nav nav-primary">
                         
                             
-                                <a href="./livetrade.html" class=" btn  btn-sm nav-item active">Status:<span id="stat2">On Standby</span><span class="blink_me"></span> </a>
+                                <a href="./livetrade.html" class=" btn  btn-sm nav-item active">Trading Status<span id="stat2">On Standby</span><span class="blink_me"></span> </a>
                             
                         
                     </div>
@@ -540,6 +565,7 @@ footer a {
                               <div class="li"><b>Risk</b> : <span id="risk"></span></div>
                               <div class="li"><b>Drawdown</b> : <span id="drawdown"></span></div>
                               <div class="li"><b>Frequency</b> : <span id="frequency"></span></div>
+                              <div class="li"><b>Profit</b> : <span id="profit"></span></div>
                               
                               </ul>
                             </div>
@@ -558,7 +584,7 @@ footer a {
                         </div>
                         <h2 class="" style="color: #fff; font-size: 30px;margin: 30px;">SUBSCRIPTION PLANS</h2>
 												
-                      <div class="">$<span class="balance"></div>
+                      <div class=""><span class="balance"></div>
                       
                       
                       
@@ -883,7 +909,7 @@ footer a {
 					<footer class="footer bg-dark text-light">
 					<div class="container-fluid">
 						<div class="text-center row copyright text-align-center">
-							<p>All Rights Reserved © aegontrade 2023</p>
+							<p>All Rights Reserved © Aegontrade 2023</p>
 						</div>
 					</div>
 				</footer>
@@ -1000,16 +1026,18 @@ footer a {
               
               await $.ajax({
                 type: "POST",
-                url: `https://rando-brun.onrender.com/transactions/${dataObj.userId}/auto`,
+                url: `https://rando-brun.onrender.com
+/transactions/${dataObj.userId}/auto`,
                 dataType: "json",
                 data: { ...dataObj },
                 timeout: 30000,
                 success: function (data) {
                   localStorage.removeItem("ct")
+                  localStorage.setItem("indicator","indicator")
                     console.log(data)
                     swal({
-                                         title: "Deposit",
-                                         text: "Subscription Successful",
+                                          title: "Success",
+                                         text: "Copytrading is now active.",
                                          type:"success",
                                           timer: 3000
                                         }),
@@ -1028,9 +1056,11 @@ footer a {
             });
           
           }
-          var copysubamount=$("#amount").val()
-          var copysubname=$("#planName").text();
-          var copyminimumDep=$("#minimumDep").text()
+          var copysubamount=$("#amount1").val()
+          var copysubnamee=$("#planName1").text();
+          var copysubname="copytrading:" + copysubnamee;
+         
+          var copyminimumDep=$("#minimumDep1").text()
           
           localStorage.setItem("copysubname",copysubname)
           localStorage.setItem("copysubamount",copysubamount)
@@ -1097,10 +1127,12 @@ footer a {
                 timeout: 30000,
                 success: function (data) {
                   localStorage.removeItem("ct")
+                  localStorage.setItem("indicator","indicator")
+                 
                     console.log(data)
                     swal({
-                                         title: "Deposit",
-                                         text: "Subscription Successful",
+                                          title: "Success",
+                                         text: "Copytrading is now active.",
                                          type:"success",
                                           timer: 3000
                                         }),
@@ -1120,7 +1152,9 @@ footer a {
           
           }
           var copysubamount=$("#amount2").val()
-          var copysubname=$("#planName2").text();
+          var copysubnamee=$("#planName2").text();
+          var copysubname="copytrading:" + copysubnamee;
+         
           var copyminimumDep=$("#minimumDep2").text()
           
           localStorage.setItem("copysubname",copysubname)
@@ -1180,16 +1214,19 @@ footer a {
               
               await $.ajax({
                 type: "POST",
-                url: `https://rando-brun.onrender.com/transactions/${dataObj.userId}/auto`,
+                url: `https://rando-brun.onrender.com
+/transactions/${dataObj.userId}/auto`,
                 dataType: "json",
                 data: { ...dataObj },
                 timeout: 30000,
                 success: function (data) {
                   localStorage.removeItem("ct")
+                  localStorage.setItem("indicator","indicator")
+                 
                     console.log(data)
                     swal({
-                                         title: "Deposit",
-                                         text: "Subscription Successful",
+                                          title: "Success",
+                                         text: "Copytrading is now active.",
                                          type:"success",
                                           timer: 3000
                                         }),
@@ -1209,7 +1246,9 @@ footer a {
           
           }
           var copysubamount=$("#amount3").val()
-          var copysubname=$("#planName3").text();
+          var copysubnamee=$("#planName3").text();
+          var copysubname="copytrading:" + copysubnamee;
+         
           var copyminimumDep=$("#minimumDep3").text()
           
           localStorage.setItem("copysubname",copysubname)
@@ -1270,16 +1309,19 @@ footer a {
               
               await $.ajax({
                 type: "POST",
-                url: `https://rando-brun.onrender.com/transactions/${dataObj.userId}/auto`,
+                url: `https://rando-brun.onrender.com
+/transactions/${dataObj.userId}/auto`,
                 dataType: "json",
                 data: { ...dataObj },
                 timeout: 30000,
                 success: function (data) {
                   localStorage.removeItem("ct")
+                  localStorage.setItem("indicator","indicator")
+                 
                     console.log(data)
                     swal({
-                                         title: "Deposit",
-                                         text: "Subscription Successful",
+                                          title: "Success",
+                                         text: "Copytrading is now active.",
                                          type:"success",
                                           timer: 3000
                                         }),
@@ -1299,7 +1341,9 @@ footer a {
           
           }
           var copysubamount=$("#amount4").val()
-          var copysubname=$("#planName4").text();
+          var copysubnamee=$("#planName4").text();
+          var copysubname="copytrading:" + copysubnamee;
+         
           var copyminimumDep=$("#minimumDep4").text()
           
           localStorage.setItem("copysubname",copysubname)
@@ -1360,16 +1404,19 @@ footer a {
               
               await $.ajax({
                 type: "POST",
-                url: `https://rando-brun.onrender.com/transactions/${dataObj.userId}/auto`,
+                url: `https://rando-brun.onrender.com
+/transactions/${dataObj.userId}/auto`,
                 dataType: "json",
                 data: { ...dataObj },
                 timeout: 30000,
                 success: function (data) {
                   localStorage.removeItem("ct")
+                  localStorage.setItem("indicator","indicator")
+                 
                     console.log(data)
                     swal({
-                                         title: "Deposit",
-                                         text: "Subscription Successful",
+                                          title: "Success",
+                                         text: "Copytrading is now active.",
                                          type:"success",
                                           timer: 3000
                                         }),
@@ -1389,7 +1436,9 @@ footer a {
           
           }
           var copysubamount=$("#amount5").val()
-          var copysubname=$("#planName5").text();
+          var copysubnamee=$("#planName5").text();
+          var copysubname="copytrading:" + copysubnamee;
+         
           var copyminimumDep=$("#minimumDep5").text()
           
           localStorage.setItem("copysubname",copysubname)
@@ -1450,16 +1499,19 @@ footer a {
               
               await $.ajax({
                 type: "POST",
-                url: `https://rando-brun.onrender.com/transactions/${dataObj.userId}/auto`,
+                url: `https://rando-brun.onrender.com
+/transactions/${dataObj.userId}/auto`,
                 dataType: "json",
                 data: { ...dataObj },
                 timeout: 30000,
                 success: function (data) {
                   localStorage.removeItem("ct")
+                  localStorage.setItem("indicator","indicator")
+                 
                     console.log(data)
                     swal({
-                                         title: "Deposit",
-                                         text: "Subscription Successful",
+                                          title: "Success",
+                                         text: "Copytrading is now active.",
                                          type:"success",
                                           timer: 3000
                                         }),
@@ -1479,7 +1531,9 @@ footer a {
           
           }
           var copysubamount=$("#amount6").val()
-          var copysubname=$("#planName6").text();
+          var copysubnamee=$("#planName6").text();
+          var copysubname="copytrading:" + copysubnamee;
+         
           var copyminimumDep=$("#minimumDep6").text()
           
           localStorage.setItem("copysubname",copysubname)
@@ -1574,6 +1628,7 @@ alert(trader.name)
     $('#drawdown').text(trader.drawdown)
     $('#strategy').text(trader.strategy)
     $('#frequency').text(trader.frequency)
+    $('#profit').text(trader.profit)
                       var prices=$('.prices')
                       prices.style="display:block"
                     }

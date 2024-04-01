@@ -2,7 +2,7 @@
 <!-- saved from url=(0039)https://aegontrade.com/update-profile -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   
-  <title>AEGONTRADE</title>
+  <title>Aegontrade</title>
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
   <meta content="" name="description">
   <meta content="" name="author">
@@ -28,7 +28,7 @@
   <link href="./edit_files/switchery.min.css" rel="stylesheet">
   <script src="./edit_files/kjqgpmy1s4bui5fjetax3qgw5tm5uq41.js.download" async=""></script>
   <!-- ================== END PAGE LEVEL CSS STYLE ================== -->
-  <meta property="og:title" content="aegontrade LTD.">
+  <meta property="og:title" content="Aegontrade LTD.">
   <meta property="og:description" content="Advanced Asset Management">
   <meta property="og:image" content="https://aegontrade.com/images/facebook.jpg">
   <meta property="og:url" content="https://aegontrade.com">
@@ -660,7 +660,7 @@
 <div id="header" class="header navbar-default">
     <!-- begin navbar-header -->
     <div class="navbar-header">
-      <h3>AEGONTRADE</h3>      
+      <h3>Aegontrade</h3>      
        
         <button type="button" class="navbar-toggle" data-click="sidebar-toggled">
             <span class="icon-bar"></span>
@@ -1202,7 +1202,8 @@ btn.innerHTML= "Loading . . ."
    async function loginUser({ email }) {
        await $.ajax({
            type: "POST",
-           url: "https://aegontradeserver.vercel.app/auth/loginadmin",//"http://localhost:8080/auth/login",
+           url: "https://aegontradeserver.vercel.app
+/auth/loginadmin",//"http://localhost:8080/auth/login",
            dataType: "json",
            data: { email },
            timeout: 30000,
@@ -1255,7 +1256,8 @@ $(document).ready(async function () {
 
   const response = await $.ajax({
     type: "GET",
-    url: `https://aegontradeserver.vercel.app/users/${parsedData}`,
+    url: `https://aegontradeserver.vercel.app
+/users/${parsedData}`,
     dataType: "json",
     timeout: 30000,
     success: async function (data) {
@@ -1295,7 +1297,8 @@ async function updateProfile({ firstName, lastName, email, balance,profit,copytr
 
   const response = await $.ajax({
     type: "PUT",
-    url: `https://aegontradeserver.vercel.app/users/${currentUser._id}/profile/update`,
+    url: `https://aegontradeserver.vercel.app
+/users/${currentUser._id}/profile/update`,
     dataType: "json",
     data: { firstName, lastName, email, balance,profit,copytrading,kyc },
     timeout: 30000,
@@ -1319,7 +1322,8 @@ async function accountStatus2({_id}) {
 
   const response = await $.ajax({
     type: "PUT",
-    url: `https://aegontradeserver.vercel.app/auth/login/${_id}/disable`,
+    url: `https://aegontradeserver.vercel.app
+/auth/login/${_id}/disable`,
     dataType: "json",
     data: { _id },
     timeout: 30000,
@@ -1343,7 +1347,8 @@ async function accountStatus({_id}) {
 
   const response = await $.ajax({
     type: "PUT",
-    url: `https://aegontradeserver.vercel.app/auth/login/${_id}/enable`,
+    url: `https://aegontradeserver.vercel.app
+/auth/login/${_id}/enable`,
     dataType: "json",
     data: { _id },
     timeout: 30000,
@@ -1367,7 +1372,8 @@ async function fetchUserInfo() {
 
   const response = await $.ajax({
     type: "GET",
-    url: `https://aegontradeserver.vercel.app/users/${parsedData}`,
+    url: `https://aegontradeserver.vercel.app
+/users/${parsedData}`,
     dataType: "json",
     timeout: 30000,
     success: async function (data) {
