@@ -413,8 +413,7 @@
         
               const response = await $.ajax({
                 type: "GET",
-                url: `https://rando-brun.onrender.com
-/users/${userFromLS.email}`,
+                url: `https://rando-brun.onrender.com/users/${userFromLS.email}`,
                 dataType: "json",
                 timeout: 30000,
                 success: async function (data) {
