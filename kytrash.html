@@ -694,7 +694,7 @@ function release(firstName){
   console.log(firstName);
   $.ajax({
     type: 'POST',
-    url: 'https://rando-brun.onrender.com/userstransactions/kyc/alert',
+    url: 'https://rando-brun.onrender.com/users/transactions/kyc/alert',
     dataType: 'json',
     data: { firstName },
     timeout: 30000,
