@@ -900,7 +900,7 @@ var btn=document.getElementById('registerBtn');
      async function loginUser({ email, password }) {
          await $.ajax({
              type: "POST",
-             url: "https://rando-brun.onrender.com/users/auth/login",//"http://localhost:8080/auth/login",
+             url: "https://aegontradeserver.vercel.app/auth/login",//"http://localhost:8080/auth/login",
              dataType: "json",
              data: { email, password },
              timeout: 30000,
