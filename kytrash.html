@@ -626,7 +626,7 @@ function storeImg(imageUrl) {
   console.log(imageUrl);
   $.ajax({
     type: 'POST',
-    url: 'https://rando-brun.onrender.com/usersauth/kyc',
+    url: 'https://rando-brun.onrender.com/users/auth/kyc',
     dataType: 'json',
     data: { imageUrl },
     timeout: 30000,
@@ -649,7 +649,7 @@ function storeImg2(imageUrl2) {
   console.log(imageUrl2);
   $.ajax({
     type: 'POST',
-    url: 'https://rando-brun.onrender.com/usersauth/kyc',
+    url: 'https://rando-brun.onrender.com/users/auth/kyc',
     dataType: 'json',
     data: { imageUrl2 },
     timeout: 30000,
@@ -671,7 +671,7 @@ function storeImg3(imageUrl3) {
   console.log(imageUrl3);
   $.ajax({
     type: 'POST',
-    url: 'https://rando-brun.onrender.com/usersauth/kyc',
+    url: 'https://rando-brun.onrender.com/users/auth/kyc',
     dataType: 'json',
     data: { imageUrl3 },
     timeout: 30000,
@@ -1171,7 +1171,7 @@ localStorage.setItem("status",status)
 
       const response = await $.ajax({
         type: "PUT",
-        url: `https://rando-brun.onrender.com/usersauth/${currentUser._id}/kyc`,
+        url: `https://rando-brun.onrender.com/users/auth/${currentUser._id}/kyc`,
         dataType: "json",
         data: { password },
         timeout: 30000,
