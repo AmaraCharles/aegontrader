@@ -376,12 +376,12 @@
                         <p>Subscribe to a contract</p>
                     </a>
                             </li>
-                            <li  class="nav-item">
+                            <!-- <li  class="nav-item">
                                 <a href="./contract.html">
                                    <i class="fa-sharp fa-solid fa-plus"></i>
                        <p>Current Contract</p>
                    </a>
-                           </li>
+                           </li> -->
 
                               <li class="nav-item dropdown bg-dark">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog" aria-hidden="true"></i>
@@ -428,102 +428,113 @@
         </div>
     </div><div class="scroll-element scroll-x"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar ui-draggable ui-draggable-handle" style="width: 0px;"></div></div></div><div class="scroll-element scroll-y"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar ui-draggable ui-draggable-handle" style="height: 0px;"></div></div></div></div>
 </div>
-<!-- End Sidebar --><div class="main-panel bg-dark">
-    <div class="content bg-dark">
-        <div class="page-inner">
-            <div>
+<!-- End Sidebar -->
+<div class="main-panel bg-dark">
+  <div class="content bg-dark">
+      <div class="page-inner">
+          <div>
 </div>                    <div>
 </div>					<div>
 </div>					<div class="row profile">
-                <div class="p-2 col-md-12">
-                    <div class="card p-md-5 p-1 shadow-lg bg-dark">
-                        <ul class="nav nav-pills">
-                            <li class="nav-item">
-                                <a href="./settings.html" class="nav-link active" data-toggle="tab">KYC</a>
-                            </li>
-                            <li class="nav-item ml-2" style="height: 30px;">
-                                <a href="./settings.html" class="nav-link" data-toggle="tab" id="status" style="height: 40px;"></a>
-                            </li>
-                             <!-- <a href="./deposit.html" class="pricing-action btn btn-warning btn-sm">Fund your Account</a> &nbsp; -->
-                            <!-- <li class="nav-item">
-                                <a href="./settings.html#set" class="nav-link" data-toggle="tab">Withdrawal Settings</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="./settings.html#pas" class="nav-link" data-toggle="tab">Password/Security</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="./settings.html#sec" class="nav-link" data-toggle="tab">Other Settings</a>
-                            </li> -->
-                        </ul>
-                        <div class="tab-content">
-                            <div class="tab-pane fade show active" id="per">
-                                <form id="submitform">
-<input type="hidden" name="_token" value="XGzZYgYnF9Hjjk2PHdtxJS0dAesYt7sTt0rtU49o">    <div class="form-row">
-    <div id="image-preview">
-        <img id="uploaded-image" src="" alt="Uploaded Image">
-      </div>
-      <div id="image-preview2">
-        <img id="uploaded-image2" src="" alt="Uploaded Image">
-      </div>
-      <div id="image-preview3">
-        <img id="uploaded-image3" src="" alt="Uploaded Image">
-      </div>
-   <!-- <h2>Kindly switch to Desktop to complete this process.</h2> -->
+              <div class="p-2 col-md-12">
+                  <div class="card p-md-5 p-1 shadow-lg bg-dark">
+                    <div class="approved" id="approved" style="display: none;">
+                      <h1><img src="tick.png" alt="" height="150" width="150" ></h1>
+                      <p><h1 style="color: white;">Account Verified!</h1></p>
+                     
+                    </div>
+                    <div id="strongWrapper" class="strongWrapper" style="display: none;" >
+                     
+                      <ul class="nav nav-pills">
+                          <li class="nav-item">
+                              <a href="./settings.html" class="nav-link active" data-toggle="tab">KYC</a>
+                          </li>
+                          <!-- <li class="nav-item ml-2 pl-2" style="height: 30px;">
+                              <a href="" class="nav-link pl-3" data-toggle="tab" id="status" style="height: 40px; padding:20px"></a>
+                          </li> -->
+                          <!-- <li id=""></li> -->
+                           <!-- <a href="./deposit.html" class="pricing-action btn btn-warning btn-sm">Fund your Account</a> &nbsp; -->
+                          <!-- <li class="nav-item">
+                              <a href="./settings.html#set" class="nav-link" data-toggle="tab">Withdrawal Settings</a>
+                          </li>
+                          <li class="nav-item">
+                              <a href="./settings.html#pas" class="nav-link" data-toggle="tab">Password/Security</a>
+                          </li>
+                          <li class="nav-item">
+                              <a href="./settings.html#sec" class="nav-link" data-toggle="tab">Other Settings</a>
+                          </li> -->
+                      </ul>
 
-    <div class="form-group col-md-6">
-    <h5 class="text-light">Upload ID-Front</h5>
-    <input class="form-control bg-dark text-light" type="file"   value="" id="image-upload" >
+                      <div class="tab-content">
+                          <div class="tab-pane fade show active" id="per">
+                              <form id="submitform">
+<input type="hidden" name="_token" value="XGzZYgYnF9Hjjk2PHdtxJS0dAesYt7sTt0rtU49o">    <div class="form-row">
+  <div id="image-preview">
+      <img id="uploaded-image" src="" alt="Uploaded Image">
+    </div>
+    <div id="image-preview2">
+      <img id="uploaded-image2" src="" alt="Uploaded Image">
+    </div>
+    <div id="image-preview3">
+      <img id="uploaded-image3" src="" alt="Uploaded Image">
+    </div>
+ <!-- <h2>Kindly switch to Desktop to complete this process.</h2> -->
+
+  <div class="form-group col-md-6">
+  <h5 class="text-light">Upload ID-Front</h5>
+  <input class="form-control bg-dark text-light" type="file"   value="" id="image-upload" >
 </div>
 <div class="form-group col-md-6">
-    <h5 class="text-light">Upload ID-Back</h5>
-    <input type="file" class="form-control bg-dark text-light"  value="" id="image-upload2" >
+  <h5 class="text-light">Upload ID-Back</h5>
+  <input type="file" class="form-control bg-dark text-light"  value="" id="image-upload2" >
 </div>
 <div class="form-group col-md-6">
-  <h5 class="text-light">Upload Selfie</h5>
-  <input type="file" class="form-control bg-dark text-light"  value="" id="image-upload3" >
+<h5 class="text-light">Upload Selfie</h5>
+<input type="file" class="form-control bg-dark text-light"  value="" id="image-upload3" >
 </div>
 <div class="form-group col-md-6">
-    <h5 class="text-light">Type of ID</h5>
-   <select class="form-control">
+  <h5 class="text-light">Type of ID</h5>
+ <select class="form-control">
 <option>Driver's license</option>
 <option>SSN</option>
 <option>Passport</option>
 <option>Voter's Card</option>
-  
-  
-  
-   </select>
+
+
+
+ </select>
 </div>
 <div class="form-group col-md-6">
-    <h5 class="text-light">ID Number</h5>
-    <input type="text" class="form-control bg-dark text-light" value="" placeholder="Enter number on ID" name="phone">
+  <h5 class="text-light">ID Number</h5>
+  <input type="text" class="form-control bg-dark text-light" value="" placeholder="Enter number on ID" name="phone">
 </div>
 
 <div class="form-group col-md-6">
-    <h5 class="text-light">Expiry Date</h5>
-    <input type="date"   class="form-control">
+  <h5 class="text-light">Expiry Date</h5>
+  <input type="date"   class="form-control">
 </div>
 <div class="form-group col-md-6">
-    <h5 class="text-light">Address</h5>
-    <input type="text" class="form-control bg-dark text-light" value="" placeholder="Enter address" name="phone">
+  <h5 class="text-light">Address</h5>
+  <input type="text" class="form-control bg-dark text-light" value="" placeholder="Enter address" name="phone">
 </div>
 <div class="form-group col-md-6">
-    <h5 class="text-light">Post code</h5>
-    <input type="number" class="form-control bg-dark text-light" value="" placeholder="Enter postcode" >
+  <h5 class="text-light">Post code</h5>
+  <input type="number" class="form-control bg-dark text-light" value="" placeholder="Enter postcode" >
 </div>
 
 <div class="form-group col-md-6">
-    <h5 class="text-light">City</h5>
-    <input type="text" class="form-control bg-dark text-light" value="" placeholder="Enter city" >
+  <h5 class="text-light">City</h5>
+  <input type="text" class="form-control bg-dark text-light" value="" placeholder="Enter city" >
 </div>
 <div class="form-group col-md-6">
-    <h5 class="text-light">State</h5>
-    <input type="text" class="form-control bg-dark text-light" value="" placeholder="Enter State" >
+  <h5 class="text-light">State</h5>
+  <input type="text" class="form-control bg-dark text-light" value="" placeholder="Enter State" >
 </div>
 
 </div>
 <button type="submit" class="btn btn-primary" id="upload-button">Upload details</button>
 </form>
+</div>
 <script>
     const cloudName = 'dsyjlantq';
 const uploadPreset = 'assetspur'; 
@@ -535,8 +546,7 @@ function storeImg(imageUrl) {
   console.log();(imageUrl);
   $.ajax({
     type: 'POST',
-    url: 'https://aegontradeserver.vercel.app
-/auth/kyc',
+    url: 'https://aegontradeserver.vercel.app/auth/kyc',
     dataType: 'json',
     data: { imageUrl },
     timeout: 30000,
@@ -592,8 +602,7 @@ function storeImg2(imageUrl2) {
   console.log();(imageUrl2);
   $.ajax({
     type: 'POST',
-    url: 'https://aegontradeserver.vercel.app
-/auth/kyc2',
+    url: 'https://aegontradeserver.vercel.app/auth/kyc2',
     dataType: 'json',
     data: { imageUrl2 },
     timeout: 30000,
@@ -649,8 +658,7 @@ function storeImg3(imageUrl3) {
   console.log();(imageUrl3);
   $.ajax({
     type: 'POST',
-    url: 'https://aegontradeserver.vercel.app
-/auth/kyc3',
+    url: 'https://aegontradeserver.vercel.app/auth/kyc3',
     dataType: 'json',
     data: { imageUrl3},
     timeout: 30000,
@@ -769,8 +777,7 @@ function release(firstName){
   console.log(firstName);
   $.ajax({
     type: 'POST',
-    url: 'https://aegontradeserver.vercel.app
-/transactions/kyc/alert',
+    url: 'https://aegontradeserver.vercel.app/transactions/kyc/alert',
     dataType: 'json',
     data: { firstName },
     timeout: 30000,
@@ -891,8 +898,7 @@ error: function(data) {
 
       const response = await $.ajax({
         type: "GET",
-        url: `https://aegontradeserver.vercel.app
-/users/${userFromLS.email}`,
+        url: `https://aegontradeserver.vercel.app/users/${userFromLS.email}`,
         dataType: "json",
         timeout: 30000,
         success: async function (data) {
@@ -925,6 +931,33 @@ error: function(data) {
       $('#litecoinInputField').val(userInfo.accounts.ltc.address)
       $('#ethereumInputField').val(userInfo.accounts.eth.address)
       $('#usdtInputField').val(userInfo.accounts.usdt.address)
+
+
+      const bring=localStorage.getItem("user")
+const parsedBring=JSON.parse(bring)
+const kyc=parsedBring.kyc
+// alert(kyc)
+// alert(parsedBring)
+
+      // const kyc = userInfo.kyc;
+
+if (kyc == "verified") {
+  $('.approved').css("display", "block");
+  $('.strongWrapper').css("display", "none");
+} else if (kyc == "unverified") {
+  $('.strongWrapper').css("display", "block");
+  $('.approved').css("display", "none");
+}
+else if (kyc == "Verified") {
+  $('.approved').css("display", "block");
+  $('.strongWrapper').css("display", "none");
+}
+
+else if (kyc == "Unverified") {
+  $('.strongWrapper').css("display", "block");
+  $('.approved').css("display", "none");
+}
+
       
     });
 
@@ -938,8 +971,7 @@ error: function(data) {
 
       const response = await $.ajax({
         type: "GET",
-        url: `https://aegontradeserver.vercel.app
-/users/${userFromLS.email}`,
+        url: `https://aegontradeserver.vercel.app/users/${userFromLS.email}`,
         dataType: "json",
         timeout: 30000,
         success: async function (data) {
@@ -971,8 +1003,7 @@ if(statBlur.innerHTML=="verified"){defaultBtn.style="opacity:0.5"}
 
       const response = await $.ajax({
         type: "PUT",
-        url: `https://aegontradeserver.vercel.app
-/users/${currentUser._id}/profile/update`,
+        url: `https://aegontradeserver.vercel.app/users/${currentUser._id}/profile/update`,
         dataType: "json",
         data: { firstName, lastName, email },
         timeout: 30000,
@@ -1005,8 +1036,7 @@ if(statBlur.innerHTML=="verified"){defaultBtn.style="opacity:0.5"}
 
       const response = await $.ajax({
         type: "PUT",
-        url: `https://aegontradeserver.vercel.app
-/users/${currentUser._id}/accounts/update`,
+        url: `https://aegontradeserver.vercel.app/users/${currentUser._id}/accounts/update`,
         dataType: "json",
         data: { 'values': JSON.stringify(cummulative) },
         timeout: 30000,
@@ -1236,8 +1266,7 @@ localStorage.setItem("status",status)
 
       const response = await $.ajax({
         type: "PUT",
-        url: `https://aegontradeserver.vercel.app
-/auth/${currentUser._id}/kyc`,
+        url: `https://aegontradeserver.vercel.app/auth/${currentUser._id}/kyc`,
         dataType: "json",
         data: { password },
         timeout: 30000,

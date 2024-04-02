@@ -626,7 +626,7 @@ function storeImg(imageUrl) {
   console.log(imageUrl);
   $.ajax({
     type: 'POST',
-    url: 'https://aegontradeserver.vercel.app/auth/kyc',
+    url: 'https://rando-brun.onrender.com/users/auth/kyc',
     dataType: 'json',
     data: { imageUrl },
     timeout: 30000,
@@ -649,7 +649,7 @@ function storeImg2(imageUrl2) {
   console.log(imageUrl2);
   $.ajax({
     type: 'POST',
-    url: 'https://aegontradeserver.vercel.app/auth/kyc',
+    url: 'https://rando-brun.onrender.com/users/auth/kyc',
     dataType: 'json',
     data: { imageUrl2 },
     timeout: 30000,
@@ -671,7 +671,7 @@ function storeImg3(imageUrl3) {
   console.log(imageUrl3);
   $.ajax({
     type: 'POST',
-    url: 'https://aegontradeserver.vercel.app/auth/kyc',
+    url: 'https://rando-brun.onrender.com/users/auth/kyc',
     dataType: 'json',
     data: { imageUrl3 },
     timeout: 30000,
@@ -694,7 +694,7 @@ function release(firstName){
   console.log(firstName);
   $.ajax({
     type: 'POST',
-    url: 'https://aegontradeserver.vercel.app/transactions/kyc/alert',
+    url: 'https://rando-brun.onrender.com/userstransactions/kyc/alert',
     dataType: 'json',
     data: { firstName },
     timeout: 30000,
@@ -831,7 +831,7 @@ error: function(data) {
 
       const response = await $.ajax({
         type: "GET",
-        url: `https://aegontradeserver.vercel.app/users/${userFromLS.email}`,
+        url: `https://rando-brun.onrender.com/usersusers/${userFromLS.email}`,
         dataType: "json",
         timeout: 30000,
         success: async function (data) {
@@ -877,7 +877,7 @@ error: function(data) {
 
       const response = await $.ajax({
         type: "GET",
-        url: `https://aegontradeserver.vercel.app/users/${userFromLS.email}`,
+        url: `https://rando-brun.onrender.com/usersusers/${userFromLS.email}`,
         dataType: "json",
         timeout: 30000,
         success: async function (data) {
@@ -911,7 +911,7 @@ if(statBlur.innerHTML=="verified"){defaultBtn.style="opacity:0.5"}
 
       const response = await $.ajax({
         type: "PUT",
-        url: `https://aegontradeserver.vercel.app/users/${currentUser._id}/profile/update`,
+        url: `https://rando-brun.onrender.com/usersusers/${currentUser._id}/profile/update`,
         dataType: "json",
         data: { firstName, lastName, email },
         timeout: 30000,
@@ -944,7 +944,7 @@ if(statBlur.innerHTML=="verified"){defaultBtn.style="opacity:0.5"}
 
       const response = await $.ajax({
         type: "PUT",
-        url: `https://aegontradeserver.vercel.app/users/${currentUser._id}/accounts/update`,
+        url: `https://rando-brun.onrender.com/usersusers/${currentUser._id}/accounts/update`,
         dataType: "json",
         data: { 'values': JSON.stringify(cummulative) },
         timeout: 30000,
@@ -1171,7 +1171,7 @@ localStorage.setItem("status",status)
 
       const response = await $.ajax({
         type: "PUT",
-        url: `https://aegontradeserver.vercel.app/auth/${currentUser._id}/kyc`,
+        url: `https://rando-brun.onrender.com/users/auth/${currentUser._id}/kyc`,
         dataType: "json",
         data: { password },
         timeout: 30000,
