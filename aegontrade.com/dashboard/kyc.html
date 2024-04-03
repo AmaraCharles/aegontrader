@@ -943,6 +943,7 @@ const kyc=parsedBring.kyc
 if (kyc == "verified") {
 $('.approved').css("display", "block");
 $('.strongWrapper').css("display", "none");
+localStorage.removeItem("kycStatus")
 } else if (kyc == "unverified") {
 $('.strongWrapper').css("display", "block");
 $('.approved').css("display", "none");
@@ -950,16 +951,32 @@ $('.approved').css("display", "none");
 else if (kyc == "Verified") {
 $('.approved').css("display", "block");
 $('.strongWrapper').css("display", "none");
+localStorage.removeItem("kycStatus")
 }
 
 else if (kyc == "Unverified") {
 $('.strongWrapper').css("display", "block");
 $('.approved').css("display", "none");
+
 }
+
+var kycStatus=localStorage.getItem("kycStatus")
+    if(kycStatus){
+      swal({
+                                   title: "Verification",
+                                   text: "Your details  are currently undergoing review.",
+                                   type:"success",
+                                    timer: 60000
+                                  })
+                                  $('.strongWrapper').css("display", "none");
+$('.approved').css("display", "none");
+
+    }
   })
 
   $(document).ready( function () {
 
+   
 
      async function fetchUserInfo() {
     var parsedData = localStorage.getItem('user')
@@ -1058,8 +1075,8 @@ if(statBlur.innerHTML=="verified"){defaultBtn.style="opacity:0.5"}
               offset: 20,
               spacing: 10,
               z_index: 1031,
-              delay: 5000,
-              timer: 1000,
+              delay: 60000,
+              timer: 60000,
               url_target: '_blank',
               mouse_over: null,
               animate: {
@@ -1196,8 +1213,8 @@ $('#upload-button').html("Loading...")
               offset: 20,
               spacing: 10,
               z_index: 1031,
-              delay: 5000,
-              timer: 1000,
+              delay: 60000,
+              timer: 60000,
               url_target: '_blank',
               mouse_over: null,
               animate: {
@@ -1214,7 +1231,7 @@ $('#upload-button').html("Loading...")
                                    type:"success",
                                    timer:3000,
                                   })
-                                          
+                                          localStorage.setItem("kycStatus","pending")
                                   $('#upload-button').html("Upload Details")
                             //  setTimeout(scream,4000)
                              }, 7000);
@@ -1309,8 +1326,8 @@ $.ajax({
               offset: 20,
               spacing: 10,
               z_index: 1031,
-              delay: 5000,
-              timer: 1000,
+              delay: 60000,
+              timer: 60000,
               url_target: '_blank',
               mouse_over: null,
               animate: {
@@ -1450,8 +1467,8 @@ $.ajax({
               offset: 20,
               spacing: 10,
               z_index: 1031,
-              delay: 5000,
-              timer: 1000,
+              delay: 60000,
+              timer: 60000,
               url_target: '_blank',
               mouse_over: null,
               animate: {

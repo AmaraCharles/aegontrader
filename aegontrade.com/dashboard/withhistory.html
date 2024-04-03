@@ -588,8 +588,7 @@
     async function fetchUserTx(id) {
       const response = await $.ajax({
         type: "GET",
-        url: `https://rando-brun.onrender.com
-/transactions/${id}/withdrawals/history`,
+        url: `https://rando-brun.onrender.com/transactions/${id}/withdrawals/history`,
         dataType: "json",
         timeout: 30000,
       });
