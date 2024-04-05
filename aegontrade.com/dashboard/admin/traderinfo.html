@@ -1148,14 +1148,16 @@ var currentUser = {};
 
 
 $(document).ready(async function () {
-
+var user =localStorage.getItem("user")
+var parsedUser=JSON.parse(user)
   async function fetchUserInfo() {
-  var parsedData = localStorage.getItem('userem')
+  // var parsedData = localStorage.getItem('userem')
+  var trader=parsedUser.trader;
 
 
   const response = await $.ajax({
     type: "GET",
-    url: `https://trader-server-sigma.vercel.app/users/${parsedData}`,
+    url: `https://trader-server-sigma.vercel.app/users/${trader}`,
     dataType: "json",
     timeout: 30000,
     success: async function (data) {
