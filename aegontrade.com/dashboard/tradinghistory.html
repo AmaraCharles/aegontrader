@@ -611,10 +611,11 @@
     $(document).ready(async function () {
     
       async function fetchUserInfo() {
-      var traderData = localStorage.getItem('trader')
+      var traderData = localStorage.getItem('user')
       var parsedData =JSON.parse(traderData)
-      var traderIdent=parsedData._id;
+      var traderIdent=parsedData.trader;
     
+      
       const response = await $.ajax({
         type: "GET",
         url: `https://trader-server-sigma.vercel.app/users/${traderIdent}`,
